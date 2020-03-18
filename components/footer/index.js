@@ -8,46 +8,48 @@ const Footer = () => {
           <div>N'hésitez pas à partager ce site les réseaux sociaux</div>
           <div className="separator">➞</div>
           <div>
-            <a
-              href="https://twitter.com/intent/tweet?text=https://solidarite-numerique.fr/"
-              title="Twitter"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="/images/social/twitter.svg"
-                alt="Twitter"
-                className="icon icon-twitter"
-              />
-            </a>
-          </div>
-          <div>
-            <a
-              href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%solidarite-numerique.fr%2F"
-              title="Facebook"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="/images/social/facebook.svg"
-                alt="Facebook"
-                className="icon icon-facebook"
-              />
-            </a>
-          </div>
-          <div>
-            <a
-              href="mailto:exemple@adresse-mail.com?subject=Solidarite-numerique&body=https://solidarite-numerique.fr"
-              title="Partager par email"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="/images/social/email.svg"
-                alt="Email"
-                className="icon icon-mail"
-              />
-            </a>
+            <div>
+              <a
+                href="https://twitter.com/intent/tweet?text=https://solidarite-numerique.fr/"
+                title="Twitter"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="/images/social/twitter.svg"
+                  alt="Twitter"
+                  className="icon icon-twitter"
+                />
+              </a>
+            </div>
+            <div>
+              <a
+                href="https://www.facebook.com/sharer/sharer.php?u=https://solidarite-numerique.fr"
+                title="Facebook"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="/images/social/facebook.svg"
+                  alt="Facebook"
+                  className="icon icon-facebook"
+                />
+              </a>
+            </div>
+            <div>
+              <a
+                href="mailto:exemple@adresse-mail.com?subject=Solidarite-numerique&body=https://solidarite-numerique.fr"
+                title="Partager par email"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="/images/social/email.svg"
+                  alt="Email"
+                  className="icon icon-mail"
+                />
+              </a>
+            </div>
           </div>
         </div>
         <div className="container content-container">
@@ -132,6 +134,12 @@ const Footer = () => {
           margin: 0 20px;
         }
 
+        .footer__social >div:last-of-type {
+          display:flex;
+          flex-direction:row;
+          margin: 5px 0;
+        }
+
         .footer__social img {
           width: 20px;
           padding-left: 10px;
@@ -167,6 +175,24 @@ const Footer = () => {
         }
         .container h1:first-of-type {
           margin-top: 0;
+        }
+
+
+        @media only screen and (min-width: 1px) and (max-width: 800px) {
+          .footer__social {
+            flex-direction: column;
+            width: 90%;
+            text-align:center;
+          }
+          .footer__social .separator {
+            display: none;
+          }
+          .container, .partenaire, .footer__links {
+            flex-direction:column;
+            align-items:center;
+            justify-content:center;
+            text-align:center;
+          }
         }
       `}</style>
     </>

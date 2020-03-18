@@ -2,13 +2,19 @@ import React from 'react';
 
 import { Footer, Header, Meta } from '../components';
 
-const Page = ({ title, description, headerKey, children }) => (
+const Page = ({
+  title,
+  description,
+  headerKey,
+  children,
+  useFooter = true,
+}) => (
   <>
     <div id="page-layout">
       <Meta title={title} description={description} />
       <Header headerKey={headerKey || 'home'} />
       <main>{children}</main>
-      <Footer />
+      {useFooter && <Footer />}
     </div>
     <style jsx>{`
       #page-layout {
@@ -20,7 +26,7 @@ const Page = ({ title, description, headerKey, children }) => (
       }
 
       main {
-        flex: 1;
+        flex-grow: 1;
         background-color: #f9f9f9;
       }
     `}</style>

@@ -37,14 +37,27 @@ const BandeauMediateur = () => (
         margin: 0;
         padding: 0;
       }
+
       .container {
         display: flex;
-        flex-direction: row;
         align-items: center;
       }
 
       .container > div:first-of-type {
         flex-grow: 1;
+      }
+      .container > div:last-of-type {
+        flex-shrink: 0;
+      }
+
+      @media only screen and (min-width: 1px) and (max-width: 600px) {
+        .container {
+          flex-direction: column;
+        }
+
+        .container > div:last-of-type {
+          margin-top: 20px;
+        }
       }
     `}</style>
   </>
@@ -57,9 +70,9 @@ const tripletData = [
     txt: 'Besoin d’aide avec vos démarches numériques pendant le confinement ?',
   },
   {
-    alt: 'Des resources à votre disposition',
+    alt: 'Des ressources à votre disposition',
     src: '/images/illus/illu_2.svg',
-    txt: 'Des resources pour vous guider pas à pas',
+    txt: 'Des ressources pour vous guider pas à pas',
   },
   {
     alt: 'Des conseillers à votre écoute',
@@ -106,6 +119,23 @@ const Triplet = () => (
       p {
         text-align: center;
         font-size: 0.9rem;
+      }
+
+      @media only screen and (min-width: 1px) and (max-width: 800px) {
+        .triplet-illu {
+          flex-direction: column;
+        }
+        .triplet-illu > div {
+          width: 80%;
+          margin: auto;
+        }
+        .triplet-illu > div:after {
+          display: none;
+        }
+
+        .triplet-illu > div:not(:last-of-type) {
+          margin-right: 0;
+        }
       }
     `}</style>
   </>

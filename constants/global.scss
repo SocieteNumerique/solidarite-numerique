@@ -168,7 +168,13 @@ p {
   }
 
   ul {
-    list-style: none;
+    list-style: number;
+    margin-left: 35px;
+    margin-top: 10px;
+
+    li {
+      margin-top: 10px;
+    }
   }
 }
 

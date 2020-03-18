@@ -21,7 +21,7 @@ const JoinUs = () => {
   }
 
   return (
-    <Page>
+    <Page useFooter={false}>
       <div
         class="typeform-widget"
         data-url="https://startupdetat.typeform.com/to/YyiJzW"

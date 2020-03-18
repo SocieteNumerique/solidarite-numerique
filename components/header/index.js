@@ -72,7 +72,7 @@ const Header = ({ headerKey = 'home' }) => {
           z-index: 1000;
           width: 100%;
           background: #fff;
-          height: 60px;
+          min-height: 60px;
         }
 
         a {
@@ -101,7 +101,7 @@ const Header = ({ headerKey = 'home' }) => {
           justify-content: space-between;
           flex-wrap: wrap;
           align-items: center;
-          height: 100%;
+          min-height: 60px;
         }
 
         #site-title {
@@ -109,6 +109,7 @@ const Header = ({ headerKey = 'home' }) => {
           font-weight: 600;
           flex-grow: 1;
           text-align: left;
+          height: 100%;
         }
         a.logo-wrapper {
           display: flex;
