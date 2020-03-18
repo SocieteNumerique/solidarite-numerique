@@ -4,6 +4,37 @@ const Footer = () => {
   return (
     <>
       <footer id="footer">
+        <div className="footer__social">
+          <div>N'hésitez pas à partager ce site les réseaux sociaux</div>
+          <div className="separator">➞</div>
+          <div>
+            <a href="https://twitter.com/BetaGouv" title="Twitter">
+              <img
+                src="/images/social/twitter.svg"
+                alt="Twitter"
+                className="icon icon-twitter"
+              />
+            </a>
+          </div>
+          <div>
+            <a href="https://github.com/betagouv/api.gouv.fr" title="Github">
+              <img
+                src="/images/social/github.svg"
+                alt="Github"
+                className="icon icon-github"
+              />
+            </a>
+          </div>
+          <div>
+            <a href="/contact" title="Nous contacter">
+              <img
+                src="/images/social/email.svg"
+                alt="Email"
+                className="icon icon-mail"
+              />
+            </a>
+          </div>
+        </div>
         <div className="container content-container">
           <ul className="footer__links">
             <li>
@@ -27,59 +58,37 @@ const Footer = () => {
             <li>
               <a href="/mentions-legales">Mentions Légales</a>
             </li>
-            <li>
-              <a href="/vie-privee">Suivi d'audience & vie privée</a>
-            </li>
           </ul>
         </div>
-        <ul className="footer__social">
-          <li>
-            <a href="https://twitter.com/BetaGouv" title="Twitter">
-              <img
-                src="/images/social/twitter.svg"
-                alt="Twitter"
-                className="icon icon-twitter"
-              />
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/betagouv/api.gouv.fr" title="Github">
-              <img
-                src="/images/social/github.svg"
-                alt="Github"
-                className="icon icon-github"
-              />
-            </a>
-          </li>
-          <li>
-            <a href="/contact" title="Nous contacter">
-              <img
-                src="/images/social/email.svg"
-                alt="Email"
-                className="icon icon-mail"
-              />
-            </a>
-          </li>
-        </ul>
+        <div className="partenaire layout-center">
+          <a
+            href="https://etatplateforme.modernisation.gouv.fr/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <img
+              src="/images/bloc-marque.svg"
+              alt="En partenariat avec le gouvernement"
+            />
+          </a>
+        </div>
       </footer>
       <style jsx>{`
         #footer {
           background: #fff;
           color: #272c32;
+          opacity: 0.7;
+          font-size: 0.9rem;
           padding: 2em 0;
         }
 
         a {
-          opacity: 0.7;
           text-decoration: none;
           color: #272c32;
         }
         a:hover,
         a:focus {
           opacity: 1;
-          color: #272c32;
-          background-color: transparent;
-          text-decoration: underline;
         }
 
         ul {
@@ -90,22 +99,45 @@ const Footer = () => {
         .footer__links {
           display: flex;
           width: 100%;
-          justify-content: space-between;
+          justify-content: center;
           margin: 0;
           line-height: 2em;
+        }
+        .footer__links li {
+          margin: 0 20px;
         }
 
         .footer__social {
           height: auto;
-          margin: 10px auto;
+          margin: 5px auto 30px;
           display: flex;
           flex-direction: row;
           justify-content: center;
+          align-items: center;
+          font-style: italic;
+        }
+
+        .footer__social .separator {
+          margin: 0 20px;
         }
 
         .footer__social img {
-          width: 25px;
-          padding: 10px;
+          width: 20px;
+          padding-left: 10px;
+        }
+        .footer__social a:hover {
+          background: none;
+        }
+
+        .partenaire {
+          margin: auto;
+          margin 10px 0;
+        }
+
+        .partenanire img {
+          width: 132px;
+          height: 132px;
+          margin:3px;
         }
 
         .container {

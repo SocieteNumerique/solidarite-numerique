@@ -6,7 +6,7 @@ const Contact = () => {
   return (
     <Page
       title="Contactez-nous"
-      description="Comment contacter l'équipe de solidarité numériques"
+      description="Comment contacter l'équipe de solidarité numérique"
     >
       <div className="text-container">
         <h1>Nous contacter</h1>

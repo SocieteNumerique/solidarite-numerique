@@ -39,12 +39,12 @@ const Header = ({ headerKey = 'home' }) => {
               <a className="logo-wrapper">
                 <img
                   className="logo"
-                  src="/images/bloc_marque.svg"
+                  src="/images/logo_med_num.png"
                   alt="Accueil de solidarite-numerique.fr"
                 />
               </a>
             </Link>
-            <div id="site-title">Solidarité numériques</div>
+            <div id="site-title">Solidarité numérique</div>
 
             <ul className="links">
               {HEADER.map(item => (
@@ -53,9 +53,9 @@ const Header = ({ headerKey = 'home' }) => {
                   id={item.id || ''}
                   className={`${headerKey === item.key ? 'current' : ''}`}
                 >
-                  <a className="dont-apply-link-style" href={`${item.href}`}>
-                    {item.txt}
-                  </a>
+                  <Link href={`${item.href}`}>
+                    <a className="dont-apply-link-style">{item.txt}</a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -104,15 +104,18 @@ const Header = ({ headerKey = 'home' }) => {
           font-weight: 600;
           flex-grow: 1;
           text-align: left;
+          margin-left: 15px;
         }
         a.logo-wrapper {
           display: flex;
           align-items: center;
-          margin: 0 14px;
+          margin: 10px 0px;
         }
 
         a.logo-wrapper .logo {
-          height: 170px;
+          height: auto;
+          width: 82px;
+          margin: 10px 5px;
           width: auto;
           padding: 0;
           box-sizing: content-box;
@@ -128,12 +131,8 @@ const Header = ({ headerKey = 'home' }) => {
         }
 
         .links a {
-          padding: 8px 10px;
+          padding: 20px 10px;
           margin: 0 5px;
-          border-radius: 3px;
-        }
-        .links a:after {
-          content: none;
         }
 
         .links > li {
@@ -170,18 +169,33 @@ const Header = ({ headerKey = 'home' }) => {
         }
 
         @media (max-width: 1024px) {
-          font-size: 18px;
+          .nav {
+            font-size: 18px;
+            width: 100%;
+          }
 
-          .nav > .container > .links {
+          .nav > .container > .links,
+          #site-title {
             opacity: 0;
             display: none;
             height: auto;
           }
 
+          a.logo-wrapper {
+            margin: 10px 20px;
+          }
+
+          a.logo-wrapper .logo {
+            width: 102px;
+            height: 102px;
+            margin: 10px 5px;
+          }
+
           .menu-btn:checked ~ .container {
             height: 100vh;
             width: 100%;
-            flex-direction: column;
+            position: fixed;
+            flex-direction: column-reverse;
             align-items: center;
             justify-content: center;
             background-color: #fff;
@@ -196,7 +210,7 @@ const Header = ({ headerKey = 'home' }) => {
             margin: 10px 0;
           }
 
-          .menu-btn:checked ~ .container .links .logo-wrapper {
+          .menu-btn:checked ~ .container .logo-wrapper {
             display: none;
           }
 
@@ -210,6 +224,7 @@ const Header = ({ headerKey = 'home' }) => {
             top: 0px;
             right: 0px;
             cursor: pointer;
+            z-index: 1000;
           }
 
           .hamburger-menu:focus {
