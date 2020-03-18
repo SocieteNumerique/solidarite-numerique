@@ -8,7 +8,12 @@ const Footer = () => {
           <div>N'hésitez pas à partager ce site les réseaux sociaux</div>
           <div className="separator">➞</div>
           <div>
-            <a href="https://twitter.com/BetaGouv" title="Twitter">
+            <a
+              href="https://twitter.com/intent/tweet?text=https://solidarite-numerique.fr/"
+              title="Twitter"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img
                 src="/images/social/twitter.svg"
                 alt="Twitter"
@@ -17,16 +22,26 @@ const Footer = () => {
             </a>
           </div>
           <div>
-            <a href="https://github.com/betagouv/api.gouv.fr" title="Github">
+            <a
+              href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%solidarite-numerique.fr%2F"
+              title="Facebook"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img
-                src="/images/social/github.svg"
-                alt="Github"
-                className="icon icon-github"
+                src="/images/social/facebook.svg"
+                alt="Facebook"
+                className="icon icon-facebook"
               />
             </a>
           </div>
           <div>
-            <a href="/contact" title="Nous contacter">
+            <a
+              href="mailto:exemple@adresse-mail.com?subject=Solidarite-numerique&body=https://solidarite-numerique.fr"
+              title="Partager par email"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img
                 src="/images/social/email.svg"
                 alt="Email"
@@ -44,40 +59,22 @@ const Footer = () => {
             >
               <img
                 className="logo"
-                src="/images/bloc-marque.svg"
-                alt="Accueil de solidarite-numerique.fr"
+                src="/images/logo/bloc-marque.svg"
+                alt="En partenariat avec le gouvernement"
               />
             </a>
             <a
-              href="https://etatplateforme.modernisation.gouv.fr/"
+              href="https://www.lamednum.coop/"
               rel="noopener noreferrer"
               target="_blank"
             >
               <img
-                src="/images/logo_med_num.png"
-                alt="En partenariat avec le gouvernement"
+                src="/images/logo/logo_mednum.svg"
+                alt="Une initiative de la MedNum"
               />
             </a>
           </div>
           <ul className="footer__links">
-            <li>
-              <a
-                href="https://beta.gouv.fr/"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                Une réalisation de beta.gouv.fr
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://gouvernement.fr/"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                En partenariat avec le gouvernement
-              </a>
-            </li>
             <li>
               <a href="/mentions-legales">Mentions Légales</a>
             </li>
@@ -154,6 +151,7 @@ const Footer = () => {
 
         .partenaire img {
           width: auto;
+          max-width: 152px;
           height: 82px;
           margin:3px;
         }

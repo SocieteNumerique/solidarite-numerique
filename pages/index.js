@@ -17,7 +17,7 @@ const BandeauMediateur = () => (
           </p>
         </div>
         <div>
-          <ButtonLink href="stuff" alt large>
+          <ButtonLink href="/rejoignez-nous" alt large>
             Rejoignez-nous ➞
           </ButtonLink>
         </div>
@@ -53,17 +53,17 @@ const BandeauMediateur = () => (
 const tripletData = [
   {
     alt: 'Une aide pendant le confinement',
-    src: '/images/illu_1.svg',
+    src: '/images/illus/illu_1.svg',
     txt: 'Besoin d’aide avec vos démarches numériques pendant le confinement ?',
   },
   {
     alt: 'Des resources à votre disposition',
-    src: '/images/illu_1.svg',
+    src: '/images/illus/illu_2.svg',
     txt: 'Des resources pour vous guider pas à pas',
   },
   {
     alt: 'Des conseillers à votre écoute',
-    src: '/images/illu_3.svg',
+    src: '/images/illus/illu_3.svg',
     txt:
       'Des conseillers mobilisés pour vous accompagner par téléphone et à distance',
   },
@@ -113,7 +113,7 @@ const Triplet = () => (
 
 const HomePage = () => {
   return (
-    <Page>
+    <Page title="Solidarité numérique">
       <BandeauMediateur />
       <div className="baseline layout-center content-container">
         <h1>Centre d’aide pour les démarches en ligne essentielles</h1>

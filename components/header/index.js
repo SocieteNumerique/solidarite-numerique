@@ -44,7 +44,11 @@ const Header = ({ headerKey = 'home' }) => {
                 />
               </a>
             </Link> */}
-            <div id="site-title">Solidarité numérique</div>
+            <Link href="/">
+              <a>
+                <div id="site-title">Solidarité numérique</div>
+              </a>
+            </Link>
 
             <ul className="links">
               {HEADER.map(item => (
