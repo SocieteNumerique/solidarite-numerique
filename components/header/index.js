@@ -35,15 +35,15 @@ const Header = ({ headerKey = 'home' }) => {
             <span />
           </label>
           <div className="container">
-            <Link href="/">
+            {/* <Link href="/">
               <a className="logo-wrapper">
                 <img
                   className="logo"
-                  src="/images/logo_med_num.png"
+                  src="/images/bloc-marque.svg"
                   alt="Accueil de solidarite-numerique.fr"
                 />
               </a>
-            </Link>
+            </Link> */}
             <div id="site-title">Solidarité numérique</div>
 
             <ul className="links">
@@ -68,6 +68,7 @@ const Header = ({ headerKey = 'home' }) => {
           z-index: 1000;
           width: 100%;
           background: #fff;
+          height: 60px;
         }
 
         a {
@@ -104,7 +105,6 @@ const Header = ({ headerKey = 'home' }) => {
           font-weight: 600;
           flex-grow: 1;
           text-align: left;
-          margin-left: 15px;
         }
         a.logo-wrapper {
           display: flex;
@@ -113,8 +113,8 @@ const Header = ({ headerKey = 'home' }) => {
         }
 
         a.logo-wrapper .logo {
-          height: auto;
-          width: 82px;
+          height: 132px;
+          width: 132px;
           margin: 10px 5px;
           width: auto;
           padding: 0;
@@ -124,7 +124,7 @@ const Header = ({ headerKey = 'home' }) => {
         .links {
           display: inline-flex;
           margin: 0;
-          padding: 0em 1em;
+          padding: 0em;
           list-style-type: none;
           align-items: center;
           height: 100%;
@@ -174,8 +174,11 @@ const Header = ({ headerKey = 'home' }) => {
             width: 100%;
           }
 
-          .nav > .container > .links,
           #site-title {
+            margin-left: 20px;
+          }
+
+          .nav > .container > .links {
             opacity: 0;
             display: none;
             height: auto;
@@ -186,8 +189,8 @@ const Header = ({ headerKey = 'home' }) => {
           }
 
           a.logo-wrapper .logo {
-            width: 102px;
-            height: 102px;
+            width: 132px;
+            height: 132px;
             margin: 10px 5px;
           }
 
@@ -200,6 +203,7 @@ const Header = ({ headerKey = 'home' }) => {
             justify-content: center;
             background-color: #fff;
           }
+
           .menu-btn:checked ~ .container .links {
             display: block;
             opacity: 1;
@@ -209,8 +213,11 @@ const Header = ({ headerKey = 'home' }) => {
           .menu-btn:checked ~ .container .links > li {
             margin: 10px 0;
           }
+          .menu-btn:checked ~ .container #site-title {
+            display: none;
+          }
 
-          .menu-btn:checked ~ .container .logo-wrapper {
+          a.logo-wrapper {
             display: none;
           }
 

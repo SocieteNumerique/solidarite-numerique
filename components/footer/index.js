@@ -36,6 +36,29 @@ const Footer = () => {
           </div>
         </div>
         <div className="container content-container">
+          <div className="partenaire layout-center">
+            <a
+              href="https://gouvernement.fr/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <img
+                className="logo"
+                src="/images/bloc-marque.svg"
+                alt="Accueil de solidarite-numerique.fr"
+              />
+            </a>
+            <a
+              href="https://etatplateforme.modernisation.gouv.fr/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <img
+                src="/images/logo_med_num.png"
+                alt="En partenariat avec le gouvernement"
+              />
+            </a>
+          </div>
           <ul className="footer__links">
             <li>
               <a
@@ -48,11 +71,11 @@ const Footer = () => {
             </li>
             <li>
               <a
-                href="https://etatplateforme.modernisation.gouv.fr/"
+                href="https://gouvernement.fr/"
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                Un site de l'État plateforme
+                En partenariat avec le gouvernement
               </a>
             </li>
             <li>
@@ -60,29 +83,17 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div className="partenaire layout-center">
-          <a
-            href="https://etatplateforme.modernisation.gouv.fr/"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            <img
-              src="/images/bloc-marque.svg"
-              alt="En partenariat avec le gouvernement"
-            />
-          </a>
-        </div>
       </footer>
       <style jsx>{`
         #footer {
           background: #fff;
           color: #272c32;
-          opacity: 0.7;
           font-size: 0.9rem;
           padding: 2em 0;
         }
 
         a {
+          opacity: 0.7;
           text-decoration: none;
           color: #272c32;
         }
@@ -99,9 +110,12 @@ const Footer = () => {
         .footer__links {
           display: flex;
           width: 100%;
+          flex-direction:column;
           justify-content: center;
           margin: 0;
           line-height: 2em;
+          flex-grow:0;
+          align-items: flex-end;
         }
         .footer__links li {
           margin: 0 20px;
@@ -129,14 +143,18 @@ const Footer = () => {
           background: none;
         }
 
+        .partenaire a {
+          opacity: 1;
+          margin:0 20px;
+        }
         .partenaire {
           margin: auto;
-          margin 10px 0;
+          margin 20px 0;
         }
 
-        .partenanire img {
-          width: 132px;
-          height: 132px;
+        .partenaire img {
+          width: auto;
+          height: 82px;
           margin:3px;
         }
 
@@ -146,7 +164,7 @@ const Footer = () => {
           margin: 0 auto;
           padding: 0 20px;
           display: flex;
-          flex-flow: row wrap;
+          flex-flow: row;
           justify-content: space-between;
         }
         .container h1:first-of-type {
