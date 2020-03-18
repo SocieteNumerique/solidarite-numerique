@@ -24,7 +24,7 @@ const JoinUs = () => {
     <Page useFooter={false}>
       <div
         class="typeform-widget"
-        data-url="https://startupdetat.typeform.com/to/YyiJzW"
+        data-url="https://solidarite-numerique.typeform.com/to/kbQREh"
         data-transparency="100"
         data-hide-headers="true"
         data-hide-footer="true"
@@ -42,7 +42,7 @@ const JoinUs = () => {
         {' '}
         powered by{' '}
         <a
-          href="https://admin.typeform.com/signup?utm_campaign=YyiJzW&utm_source=typeform.com-01D8JTJAAA57FA6F2GTW5THHM4-professional&utm_medium=typeform&utm_content=typeform-embedded-poweredbytypeform&utm_term=EN"
+          href="https://admin.typeform.com/signup?utm_campaign=kbQREh&utm_source=typeform.com-01E3Q3A23CRDWF3T14HMDZB144-professional&utm_medium=typeform&utm_content=typeform-embedded-poweredbytypeform&utm_term=EN"
           style={{ color: '#999' }}
           target="_blank"
           rel="noopener noreferrer"
@@ -54,7 +54,7 @@ const JoinUs = () => {
         Cliquez sur "Je veux aider" pour commencer le questionnaire. Si le
         questionnaire ne s'affiche pas,
         <a
-          href="https://startupdetat.typeform.com/to/YyiJzW"
+          href="https://solidarite-numerique.typeform.com/to/kbQREh"
           target="_blank"
           rel="noopener noreferrer"
         >
