@@ -9,7 +9,6 @@ import '../constants/global.scss';
 class MyApp extends App {
   componentDidMount() {
     if (!process.env.MATOMO_SITE_ID || !process.env.MATOMO_URL) {
-      console.log('missing env');
       return;
     }
 

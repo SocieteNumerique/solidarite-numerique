@@ -16,7 +16,7 @@ const MentionsLegales = () => {
         <h2>Illustrations</h2>
         <p>
           <a href="https://fr.freepik.com/photos-vecteurs-libre/affaires">
-            Affaires vecteur créé par pikisuperstar - fr.freepik.com
+            Visuels Freepik - pikisuperstar.
           </a>
         </p>
       </div>

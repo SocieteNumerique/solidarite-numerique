@@ -1,0 +1,8 @@
+{
+  "build": {
+    "env": {
+      "MATOMO_SITE_ID": "@matomo-site-id",
+      "MATOMO_URL": "@matomo-url"
+    }
+  }
+}
