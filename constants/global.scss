@@ -115,6 +115,26 @@ a:not(.dont-apply-link-style):hover {
   line-height: 1.6rem;
   color: #373c42;
 
+  p {
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+    margin: 5px 0 40px;
+
+    br {
+      margin-bottom: 15px;
+    }
+  }
+
+  ul {
+    list-style: decimal;
+    margin-left: 35px;
+    margin-bottom: 40px;
+
+    li {
+      margin-top: 10px;
+    }
+  }
+
   @media only screen and (min-width: 1124px) {
     width: 780px;
   }
@@ -155,26 +175,6 @@ a:not(.dont-apply-link-style):hover {
     font-size: 1.2rem;
     line-height: 1.8rem;
     margin: 12px 0 16px;
-  }
-}
-
-p {
-  font-size: 1.1rem;
-  line-height: 1.8rem;
-  margin: 5px 0 40px;
-
-  br {
-    margin-bottom: 15px;
-  }
-
-  ul {
-    list-style: number;
-    margin-left: 35px;
-    margin-top: 10px;
-
-    li {
-      margin-top: 10px;
-    }
   }
 }
 

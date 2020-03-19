@@ -3,9 +3,10 @@ import Head from 'next/head';
 import { NextSeo } from 'next-seo';
 import { truncate } from 'lodash';
 
-const SITE_URL = '';
-const SITE_NAME = '';
-const SITE_DESCRIPTION = '';
+const SITE_URL = 'https://solidarite-numerique.fr';
+const SITE_NAME = 'Solidarité Numérique';
+const SITE_DESCRIPTION =
+  'Un centre de ressources et d’aide par téléphone, pour vous accompagner dans vos démarches pendant la crise du covid19';
 
 const Meta = ({ title, description }) => {
   description = truncate(description, { length: 160, omission: ' [...]' });
@@ -23,10 +24,10 @@ const Meta = ({ title, description }) => {
           description: description || SITE_DESCRIPTION,
           images: [
             {
-              url: '/images/linkedin.jpg',
+              url: SITE_URL + '/images/open_graph.png',
               width: 1200,
               height: 627,
-              alt: 'api.gouv.fr',
+              alt: 'solidarité numérique',
             },
           ],
           site_name: SITE_NAME,
@@ -40,7 +41,6 @@ const Meta = ({ title, description }) => {
 
         {/* Search Engine */}
         <meta name="description" content={description || SITE_DESCRIPTION} />
-        <meta name="image" content="/images/api.gouv.fr.svg" />
 
         {/* Schema.org for Google */}
         <meta itemProp="name" content={title || SITE_NAME} />

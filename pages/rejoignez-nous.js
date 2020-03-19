@@ -23,7 +23,7 @@ const JoinUs = () => {
   return (
     <Page useFooter={false}>
       <div
-        class="typeform-widget"
+        className="typeform-widget"
         data-url="https://solidarite-numerique.typeform.com/to/kbQREh"
         data-transparency="100"
         data-hide-headers="true"

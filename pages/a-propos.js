@@ -16,22 +16,20 @@ const About = () => {
           Secrétaire d’Etat chargé du Numérique pour accompagner les Français
           dans leurs démarches numériques quotidiennes.
         </p>
-        <p>
-          Vous trouverez sur ce site :
-          <ul>
-            <li>
-              Des conseils, ressources et tutoriels pour vos démarches
-              numériques essentielles. Par exemple : mieux communiquer avec vos
-              proches, télétravailler, suivre vos cours à distance, effectuer
-              vos démarches en ligne, effectuer vos consultations médicales à
-              distance, faire vos courses en ligne, …
-            </li>
-            <li>
-              Un numéro vert pour être accompagné par un conseiller dans toutes
-              vos démarches du quotidien en ligne
-            </li>
-          </ul>
-        </p>
+        <p>Vous trouverez sur ce site :</p>
+        <ul>
+          <li>
+            Des conseils, ressources et tutoriels pour vos démarches numériques
+            essentielles. Par exemple : mieux communiquer avec vos proches,
+            télétravailler, suivre vos cours à distance, effectuer vos démarches
+            en ligne, effectuer vos consultations médicales à distance, faire
+            vos courses en ligne…
+          </li>
+          <li>
+            Un numéro vert pour être accompagné par un conseiller dans toutes
+            vos démarches du quotidien en ligne
+          </li>
+        </ul>
         <p>
           La{' '}
           <a href="https://lamednum.coop" rel="noopener noreferrer">

@@ -51,7 +51,9 @@ const ButtonLink = ({
   onClick,
 }) => {
   if (!(onClick || type) && !href) {
-    throw new Error('Invalid props');
+    throw new Error(
+      'Invalid props, to make a link specify href, or to make a button specify onClick or type'
+    );
   }
   return (
     <>

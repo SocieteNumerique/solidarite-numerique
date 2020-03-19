@@ -134,7 +134,7 @@ const Triplet = () => (
         }
 
         .triplet-illu > div:not(:last-of-type) {
-          margin-right: 0;
+          margin: 0 auto;
         }
       }
     `}</style>

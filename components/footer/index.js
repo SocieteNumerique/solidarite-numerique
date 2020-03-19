@@ -5,7 +5,7 @@ const Footer = () => {
     <>
       <footer id="footer">
         <div className="footer__social">
-          <div>N'hésitez pas à partager ce site les réseaux sociaux</div>
+          <div>N'hésitez pas à partager ce site sur les réseaux sociaux</div>
           <div className="separator">➞</div>
           <div>
             <div>
@@ -55,17 +55,6 @@ const Footer = () => {
         <div className="container content-container">
           <div className="partenaire layout-center">
             <a
-              href="https://gouvernement.fr/"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              <img
-                className="logo"
-                src="/images/logo/bloc-marque.svg"
-                alt="En partenariat avec le gouvernement"
-              />
-            </a>
-            <a
               href="https://www.lamednum.coop/"
               rel="noopener noreferrer"
               target="_blank"
@@ -75,10 +64,25 @@ const Footer = () => {
                 alt="Une initiative de la MedNum"
               />
             </a>
+            <a
+              href="https://www.gouvernement.fr/le-secretariat-d-etat-charge-du-numerique/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              avec le soutien du
+              <img
+                className="logo"
+                src="/images/logo/logo_secnum.svg"
+                alt="En partenariat avec le gouvernement"
+              />
+            </a>
           </div>
           <ul className="footer__links">
             <li>
               <a href="/mentions-legales">Mentions Légales</a>
+            </li>
+            <li>
+              <a href="/vie-privee">Politique de confidentialité</a>
             </li>
           </ul>
         </div>
@@ -192,6 +196,12 @@ const Footer = () => {
             align-items:center;
             justify-content:center;
             text-align:center;
+          }
+
+          .partenaire a {
+            display:flex;
+            flex-direction:column;
+            margin: 10px auto;
           }
         }
       `}</style>
