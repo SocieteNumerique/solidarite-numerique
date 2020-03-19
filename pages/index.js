@@ -13,7 +13,7 @@ const BandeauMediateur = () => (
           <h3>Vous êtes un médiateur numérique ?</h3>
           <p>
             Nous avons besoin de vous pour conseiller les usagers et produire
-            des resources
+            des ressources
           </p>
         </div>
         <div>
