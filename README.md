@@ -1,6 +1,9 @@
-# solidarite-numerique
+# Solidarité numérique
 
-Un centre de ressources et d'aide par téléphone, pour vous accompagner dans vos démarches pendant la crise du covid19
+Face à l’épidémie du Coronavirus COVID-19, une plateforme (http://solidarite-numerique.fr) a été créée pour accompagner les usagers dans leurs démarches en ligne avec : 
+
+- des ressources pour mieux communiquer, télétravailler, suivre ses cours à distance, effectuer ses démarches en ligne, effectuer des consultations médicales à distance, faire ses courses en ligne, etc.
+- un numéro vert pour être accompagné par un volontaire qualifié dans ses démarches du quotidien 
 
 ## Installation 
 
