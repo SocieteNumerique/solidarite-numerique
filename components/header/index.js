@@ -181,6 +181,7 @@ const Header = ({ headerKey = 'home' }) => {
 
           #site-title {
             margin-left: 20px;
+            font-size: 1.3rem;
           }
 
           .nav > .container > .links {
