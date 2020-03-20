@@ -18,7 +18,7 @@ const BandeauMediateur = () => (
         </div>
         <div>
           <ButtonLink href="/rejoignez-nous" alt large>
-            Rejoignez-nous ➞
+            Je veux aider ➞
           </ButtonLink>
         </div>
       </div>

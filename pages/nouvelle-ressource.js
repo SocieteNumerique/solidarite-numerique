@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Page } from '../layouts';
 
-const JoinUs = () => {
+const NewResource = () => {
   if (typeof window !== 'undefined') {
     let js;
     let q;
@@ -24,7 +24,7 @@ const JoinUs = () => {
     <Page useFooter={false}>
       <div
         className="typeform-widget"
-        data-url="https://solidarite-numerique.typeform.com/to/kbQREh"
+        data-url="https://solidarite-numerique.typeform.com/to/JFkqkU"
         data-transparency="100"
         data-hide-headers="true"
         data-hide-footer="true"
@@ -42,7 +42,7 @@ const JoinUs = () => {
         {' '}
         powered by{' '}
         <a
-          href="https://admin.typeform.com/signup?utm_campaign=kbQREh&utm_source=typeform.com-01E3Q3A23CRDWF3T14HMDZB144-professional&utm_medium=typeform&utm_content=typeform-embedded-poweredbytypeform&utm_term=FR"
+          href="https://admin.typeform.com/signup?utm_campaign=JFkqkU&utm_source=typeform.com-01E3Q3A23CRDWF3T14HMDZB144-professional&utm_medium=typeform&utm_content=typeform-embedded-poweredbytypeform&utm_term=FR"
           style={{ color: '#999' }}
           target="_blank"
           rel="noopener noreferrer"
@@ -51,10 +51,10 @@ const JoinUs = () => {
         </a>{' '}
       </div>
       <div className="no-typeform layout-center">
-        Cliquez sur "Je veux aider" pour commencer le questionnaire. Si le
-        questionnaire ne s'affiche pas,
+        Cliquez sur "Je propose une ressource" pour commencer le questionnaire.
+        Si le questionnaire ne s'affiche pas,
         <a
-          href="https://solidarite-numerique.typeform.com/to/kbQREh"
+          href="https://solidarite-numerique.typeform.com/to/JFkqkU"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -75,4 +75,4 @@ const JoinUs = () => {
   );
 };
 
-export default JoinUs;
+export default NewResource;
