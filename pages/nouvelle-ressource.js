@@ -21,7 +21,7 @@ const NewResource = () => {
   }
 
   return (
-    <Page useFooter={false}>
+    <Page useFooter={false} title="Proposer une nouvelle ressource">
       <div
         className="typeform-widget"
         data-url="https://solidarite-numerique.typeform.com/to/JFkqkU"

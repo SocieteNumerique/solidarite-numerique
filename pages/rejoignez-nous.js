@@ -21,7 +21,7 @@ const JoinUs = () => {
   }
 
   return (
-    <Page useFooter={false}>
+    <Page useFooter={false} title="Rejoindre l’équipe des mediateurs">
       <div
         className="typeform-widget"
         data-url="https://solidarite-numerique.typeform.com/to/kbQREh"
