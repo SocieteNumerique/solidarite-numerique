@@ -2,7 +2,9 @@
   "build": {
     "env": {
       "MATOMO_SITE_ID": "@matomo-site-id",
-      "MATOMO_URL": "@matomo-url"
+      "MATOMO_URL": "@matomo-url",
+      "AIRTABLE_APP": "@airtable-app",
+      "AIRTABLE_API_KEY": "@airtable-api-key"
     }
   }
 }
