@@ -10,7 +10,7 @@ const BandeauMediateur = () => (
     <div className="bandeau-mediateur">
       <div className="container content-container">
         <div>
-          <h3>Vous êtes un médiateur numérique ?</h3>
+          <h3>Vous êtes un médiateur numérique&nbsp;?</h3>
           <p>
             Nous avons besoin de vous pour conseiller les usagers et produire
             des ressources
@@ -18,7 +18,7 @@ const BandeauMediateur = () => (
         </div>
         <div>
           <ButtonLink href="/rejoignez-nous" alt large>
-            Je veux aider ➞
+            Je veux aider&nbsp;➞
           </ButtonLink>
         </div>
       </div>
@@ -45,6 +45,7 @@ const BandeauMediateur = () => (
 
       .container > div:first-of-type {
         flex-grow: 1;
+        margin-right: 10px;
       }
       .container > div:last-of-type {
         flex-shrink: 0;
@@ -53,6 +54,9 @@ const BandeauMediateur = () => (
       @media only screen and (min-width: 1px) and (max-width: 600px) {
         .container {
           flex-direction: column;
+        }
+        .container > div:first-of-type {
+          margin-right: 0;
         }
 
         .container > div:last-of-type {
@@ -67,7 +71,8 @@ const tripletData = [
   {
     alt: 'Une aide pendant le confinement',
     src: '/images/illus/illu_1.svg',
-    txt: 'Besoin d’aide avec vos démarches numériques pendant le confinement ?',
+    txt:
+      'Besoin d’aide avec vos démarches numériques pendant le confinement&nbsp;?',
   },
   {
     alt: 'Des ressources à votre disposition',
@@ -88,7 +93,7 @@ const Triplet = () => (
       {tripletData.map(data => (
         <div key={data.src}>
           <img src={data.src} alt={data.alt} />
-          <p>{data.txt}</p>
+          <p dangerouslySetInnerHTML={{ __html: data.txt }} />
         </div>
       ))}
     </div>
@@ -97,7 +102,7 @@ const Triplet = () => (
         display: flex;
         flex-direction: row;
         justify-content: center;
-        margin-bottom: 30px;
+        margin-bottom: 60px;
       }
       .triplet-illu > div {
         width: 25%;
@@ -109,6 +114,7 @@ const Triplet = () => (
       }
       img {
         width: 100%;
+        height: 250px;
       }
       .triplet-illu > div:not(:last-of-type):after {
         content: url('/images/arrow.svg');
@@ -118,7 +124,8 @@ const Triplet = () => (
       }
       p {
         text-align: center;
-        font-size: 0.9rem;
+        font-size: 1rem;
+        line-height: 1.4rem;
       }
 
       @media only screen and (min-width: 1px) and (max-width: 800px) {
@@ -134,7 +141,7 @@ const Triplet = () => (
         }
 
         .triplet-illu > div:not(:last-of-type) {
-          margin: 0 auto;
+          margin: 0 auto 30px;
         }
       }
     `}</style>
@@ -166,6 +173,12 @@ const HomePage = () => {
         }
         h2 {
           font-size: 1.2rem;
+        }
+
+        @media only screen and (min-width: 1px) and (max-width: 800px) {
+          h2 {
+            display: none;
+          }
         }
       `}</style>
     </Page>

@@ -110,7 +110,7 @@ const ButtonLink = ({
 
         .button-link.large > .content-wrapper {
           padding: 12px 20px;
-          font-size: 1.15rem;
+          font-size: 1rem;
         }
 
         .button-link:hover > .content-wrapper {

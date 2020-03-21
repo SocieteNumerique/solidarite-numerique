@@ -1,5 +1,7 @@
 import React from 'react';
 
+import constants from '../../constants';
+
 const Footer = () => {
   return (
     <>
@@ -92,7 +94,7 @@ const Footer = () => {
           background: #fff;
           color: #272c32;
           font-size: 0.9rem;
-          padding: 2em 0;
+          padding: 0 0 2rem 0;
         }
 
         a {
@@ -126,12 +128,15 @@ const Footer = () => {
 
         .footer__social {
           height: auto;
-          margin: 5px auto 30px;
+          margin: 0 auto 30px;
+          color: #fff;
+          background-color: ${constants.colors.darkBlue};
+          padding:20px 0;
           display: flex;
           flex-direction: row;
           justify-content: center;
           align-items: center;
-          font-style: italic;
+          font-size:1rem;
         }
 
         .footer__social .separator {
@@ -185,8 +190,11 @@ const Footer = () => {
         @media only screen and (min-width: 1px) and (max-width: 800px) {
           .footer__social {
             flex-direction: column;
-            width: 90%;
+            padding:inherit 20px;
             text-align:center;
+          }
+          .footer__social > div:first-of-type {
+            margin-bottom:20px;
           }
           .footer__social .separator {
             display: none;

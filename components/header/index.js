@@ -175,13 +175,13 @@ const Header = ({ headerKey = 'home' }) => {
 
         @media (max-width: 1024px) {
           .nav {
-            font-size: 18px;
+            font-size: 1rem;
             width: 100%;
           }
 
           #site-title {
             margin-left: 20px;
-            font-size: 1.3rem;
+            font-size: 1.4rem;
           }
 
           .nav > .container > .links {

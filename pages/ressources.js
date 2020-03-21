@@ -1,12 +1,26 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import Airtable from 'airtable';
 
 import { Page } from '../layouts';
-import { ButtonLink } from '../uiComponents';
 
 import constants from '../constants';
 
 const ERROR_CODE = -1;
+
+const CATEG = {
+  '1- Consulter son médecin en ligne et déclarer son arrêt maladie':
+    'Se soigner',
+  '2- Faire ses courses alimentaires en ligne': 'Acheter en lignes',
+  '3- Télétravailler': 'Télétravailler',
+  '4- Rester en contact avec ses proches': 'Échanger avec ses proches',
+  "5- S'informer et trouver des informations vérifiées": 'S’informer',
+  "6- Faire l'école à la maison": 'Faire l’école à la maison',
+  '7- Faire ses déclarations pour soi et sa famille':
+    'Faire ses déclaration en ligne',
+  '8 - Faire ses déclarations pour son travail':
+    'Faire ses déclaration en ligne',
+  '9 - Faire ses démarches d’entreprises': 'Faire ses déclaration en ligne',
+};
 
 const fetchResources = () => {
   return new Promise((resolve, reject) => {
@@ -42,31 +56,34 @@ const fetchResources = () => {
       );
   });
 };
-const Resources = ({ resources }) => (
+const Resources = ({ resources, categories }) => (
   <Page>
-    <div className="text-container">
+    <div className="content-container">
       <h1>Ressources numériques sur le COVID-19</h1>
       <div className="resources-container">
-        {resources.map(resource => (
-          <>
-            {resource === ERROR_CODE ? (
-              <div>Erreur</div>
-            ) : (
-              <div className="resource">
-                <h2>{resource['Intitulé de la ressource proposée']}</h2>
-                <p>{resource['Descriptif sommaire']}</p>
-                <div className="resource-btn-container">
-                  <ButtonLink
+        {categories.map(categ => (
+          <Fragment key={categ}>
+            <h2>{categ}</h2>
+            <div className="categorie-container">
+              {resources
+                .filter(
+                  a =>
+                    (CATEG[a['Domaines']] || a['Domaines']).indexOf(categ) > -1
+                )
+                .map(resource => (
+                  <a
+                    key={resource['Votre identifiant de confiance']}
                     rel="noopener noreferrer"
                     target="_blank"
                     href={resource['Adresse (URL) de la ressource']}
+                    className="resource dont-apply-link-style"
                   >
-                    Accéder au {resource['Type de ressource'] || 'site web'}
-                  </ButtonLink>
-                </div>
-              </div>
-            )}
-          </>
+                    <h3>{resource['Intitulé de la ressource proposée']}</h3>
+                    <p>{resource['Descriptif sommaire']}</p>
+                  </a>
+                ))}
+            </div>
+          </Fragment>
         ))}
       </div>
     </div>
@@ -74,21 +91,53 @@ const Resources = ({ resources }) => (
       .resources-container {
         margin: 40px auto;
       }
-      .resource {
-        background-color: #fff;
-        border: 1px solid ${constants.colors.blue};
-        border-radius: 5px;
-        padding: 35px;
+      .categorie-container {
+        display: grid;
+        grid-template-columns: 32% 32% 32%;
+        justify-content: space-between;
+        grid-gap: 20px 20px;
+        margin-bottom: 50px;
       }
-      .resource h2 {
-        margin-top: 0;
-      }
-      .resource-btn-container {
+      a.resource {
         width: 100%;
-        display: flex;
-        align-items: flex-end;
-        flex-direction: column;
-        margin-top: 20px;
+        text-decoration: none;
+        background-color: #fff;
+        border: 3px solid ${constants.colors.grey};
+        border-radius: 8px;
+        transition: border 300ms ease-in-out;
+      }
+      a.resource:hover {
+        border: 3px solid ${constants.colors.blue};
+      }
+      .resource h3 {
+        margin: 20px 20px 10px;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        font-weight: bold;
+        text-decoration: underline;
+      }
+      a.resource > p {
+        color: ${constants.colors.fontColor};
+        font-size: 1rem;
+        margin: 0 20px 20px;
+        padding: 0;
+        line-height: 1.5rem;
+      }
+      @media only screen and (min-width: 600px) and (max-width: 1000px) {
+        .categorie-container {
+          display: grid;
+          grid-template-columns: 49% 49%;
+          justify-content: space-between;
+          grid-gap: 20px 20px;
+          margin-bottom: 50px;
+        }
+      }
+      @media only screen and (min-width: 1px) and (max-width: 600px) {
+        .categorie-container {
+          display: grid;
+          grid-template-columns: 100%;
+          justify-content: space-between;
+        }
       }
     `}</style>
   </Page>
@@ -96,7 +145,19 @@ const Resources = ({ resources }) => (
 
 Resources.getInitialProps = async ctx => {
   const resources = await fetchResources();
-  return { resources };
+
+  const categories = resources.reduce((categs, resource) => {
+    resource['Domaines'].forEach(domaine => {
+      console.log(categs, domaine);
+      if (categs.indexOf(CATEG[domaine] || domaine) === -1) {
+        categs.push(CATEG[domaine] || domaine);
+      }
+      console.log(categs, domaine);
+    });
+    return categs;
+  }, []);
+
+  return { resources, categories };
 };
 
 export default Resources;

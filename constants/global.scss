@@ -1,3 +1,5 @@
+$fontColor: #213a64;
+
 @font-face {
   font-family: Evolventa;
   font-style: normal;
@@ -47,7 +49,9 @@
 
 html,
 body {
-  font-size: 16px;
+  font-size: 20px;
+  color: #213a64;
+  line-height: 25px;
 }
 
 html,
@@ -67,7 +71,6 @@ h4 {
 }
 
 a {
-  color: #3a73c0;
   text-decoration: underline;
   background-color: #0058ff00;
   border-radius: 4px;
@@ -90,8 +93,21 @@ a:not(.dont-apply-link-style):hover {
 .content-container {
   margin-left: auto;
   margin-right: auto;
-}
-.content-container {
+
+  h1 {
+    font-size: 2.2rem;
+    line-height: 3rem;
+    margin: 50px 0 50px;
+    color: $fontColor;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+    margin: 20px 0 20px;
+    color: $fontColor;
+  }
+
   @media only screen and (min-width: 1124px) {
     width: 1100px;
   }
@@ -111,12 +127,12 @@ a:not(.dont-apply-link-style):hover {
 
 .text-container {
   margin: 80px auto;
-  font-size: 1.1rem;
+  font-size: 1rem;
   line-height: 1.6rem;
-  color: #373c42;
+  color: $fontColor;
 
   p {
-    font-size: 1.1rem;
+    font-size: 1rem;
     line-height: 1.8rem;
     margin: 5px 0 40px;
 
@@ -155,14 +171,14 @@ a:not(.dont-apply-link-style):hover {
     font-size: 2.2rem;
     line-height: 3rem;
     margin: 30px 0 50px;
-    color: #272c32;
+    color: $fontColor;
   }
 
   h2 {
     font-size: 1.5rem;
     line-height: 2.2rem;
     margin: 20px 0 20px;
-    color: #373c42;
+    color: $fontColor;
   }
 
   h3 {
@@ -182,14 +198,14 @@ h1 {
   font-size: 2.8rem;
   line-height: 3.1rem;
   margin: 15px 0;
-  color: #373c42;
+  color: $fontColor;
 }
 
 h2 {
   font-size: 1.5rem;
   line-height: 2.1rem;
   margin: 10px 0 16px;
-  color: #373c42;
+  color: $fontColor;
 }
 
 h3 {
