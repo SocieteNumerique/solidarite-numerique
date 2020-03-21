@@ -104,7 +104,7 @@ const Resources = ({ resources, categories }) => (
         background-color: #fff;
         border: 3px solid ${constants.colors.grey};
         border-radius: 8px;
-        transition: border 300ms ease-in-out;
+        transition: border 200ms ease-in-out;
       }
       a.resource:hover {
         border: 3px solid ${constants.colors.blue};

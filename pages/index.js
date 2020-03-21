@@ -77,7 +77,8 @@ const tripletData = [
   {
     alt: 'Des ressources à votre disposition',
     src: '/images/illus/illu_2.svg',
-    txt: 'Des ressources pour vous guider pas à pas',
+    txt: 'Accédez à des ressources pour vous guider',
+    linkTo: '/ressources',
   },
   {
     alt: 'Des conseillers à votre écoute',
@@ -91,10 +92,19 @@ const Triplet = () => (
   <>
     <div className="content-container triplet-illu">
       {tripletData.map(data => (
-        <div key={data.src}>
-          <img src={data.src} alt={data.alt} />
-          <p dangerouslySetInnerHTML={{ __html: data.txt }} />
-        </div>
+        <React.Fragment key={data.src}>
+          {data.linkTo ? (
+            <a href={data.linkTo} key={data.src}>
+              <img src={data.src} alt={data.alt} />
+              <p dangerouslySetInnerHTML={{ __html: data.txt }} />
+            </a>
+          ) : (
+            <div key={data.src}>
+              <img src={data.src} alt={data.alt} />
+              <p dangerouslySetInnerHTML={{ __html: data.txt }} />
+            </div>
+          )}
+        </React.Fragment>
       ))}
     </div>
     <style jsx>{`
@@ -104,24 +114,34 @@ const Triplet = () => (
         justify-content: center;
         margin-bottom: 60px;
       }
-      .triplet-illu > div {
+      .triplet-illu > div,
+      .triplet-illu > a {
+        border: 3px solid ${constants.colors.grey};
+        transition: border 200ms ease-in-out;
+        border-radius: 8px;
+        background-color: #fff;
         width: 25%;
         position: relative;
+        padding: 15px;
+      }
+      .triplet-illu > div {
+        background-color: #fefefe;
+        border-color: #e6e6e6;
       }
 
-      .triplet-illu > div:not(:last-of-type) {
-        margin-right: 3%;
+      .triplet-illu > a :hover {
+        border-color: ${constants.colors.blue};
+      }
+
+      .triplet-illu > div,
+      .triplet-illu > a {
+        margin: 0 10px 30px;
       }
       img {
         width: 100%;
         height: 250px;
       }
-      .triplet-illu > div:not(:last-of-type):after {
-        content: url('/images/arrow.svg');
-        position: absolute;
-        top: 30%;
-        right: -10%;
-      }
+
       p {
         text-align: center;
         font-size: 1rem;
@@ -132,16 +152,9 @@ const Triplet = () => (
         .triplet-illu {
           flex-direction: column;
         }
-        .triplet-illu > div {
+        .triplet-illu > div,
+        .triplet-illu > a {
           width: 80%;
-          margin: auto;
-        }
-        .triplet-illu > div:after {
-          display: none;
-        }
-
-        .triplet-illu > div:not(:last-of-type) {
-          margin: 0 auto 30px;
         }
       }
     `}</style>
@@ -170,12 +183,19 @@ const HomePage = () => {
         }
         h1 {
           font-size: 1.6rem;
+          margin: 30px auto 10px;
         }
         h2 {
           font-size: 1.2rem;
         }
 
         @media only screen and (min-width: 1px) and (max-width: 800px) {
+          h1 {
+            margin: 20px auto;
+            text-align: left;
+            font-size: 1.4rem;
+            line-height: 1.8rem;
+          }
           h2 {
             display: none;
           }
