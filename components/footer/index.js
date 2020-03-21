@@ -122,8 +122,10 @@ const Footer = () => {
           flex-grow:0;
           align-items: flex-end;
         }
-        .footer__links li {
-          margin: 0 20px;
+
+        .footer__links li > a{
+          padding: 10px 20px;
+          display: block;
         }
 
         .footer__social {

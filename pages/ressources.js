@@ -10,7 +10,7 @@ const ERROR_CODE = -1;
 const CATEG = {
   '1- Consulter son médecin en ligne et déclarer son arrêt maladie':
     'Se soigner',
-  '2- Faire ses courses alimentaires en ligne': 'Acheter en lignes',
+  '2- Faire ses courses alimentaires en ligne': 'Acheter en ligne',
   '3- Télétravailler': 'Télétravailler',
   '4- Rester en contact avec ses proches': 'Échanger avec ses proches',
   "5- S'informer et trouver des informations vérifiées": 'S’informer',

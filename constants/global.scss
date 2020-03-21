@@ -8,19 +8,12 @@ $fontColor: #213a64;
     url('/fonts/Evolventa-Regular.woff') format('woff');
 }
 
-@font-face {
-  font-family: Evolventa;
-  font-style: normal;
-  font-weight: 800;
-  src: local('Evolventa Bold'), local('Evolventa-Bold'),
-    url('/fonts/Evolventa-Bold.woff') format('woff');
-}
-
 /* source-sans-pro-regular - latin */
 @font-face {
   font-family: 'Source Sans Pro';
   font-style: normal;
   font-weight: 400;
+  font-display: swap;
   src: url('/fonts/source-sans-pro-v13-latin-regular.eot');
   src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'),
     url('/fonts/source-sans-pro-v13-latin-regular.eot?#iefix')
@@ -37,6 +30,7 @@ $fontColor: #213a64;
   font-family: 'Source Sans Pro';
   font-style: normal;
   font-weight: 700;
+  font-display: swap;
   src: url('/fonts/source-sans-pro-v13-latin-700.eot');
   src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'),
     url('/fonts/source-sans-pro-v13-latin-700.eot?#iefix')
