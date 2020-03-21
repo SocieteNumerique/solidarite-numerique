@@ -44,11 +44,9 @@ const Header = ({ headerKey = 'home' }) => {
                 />
               </a>
             </Link> */}
-            <Link href="/">
-              <a>
-                <div id="site-title">Solidarité numérique</div>
-              </a>
-            </Link>
+            <a href="/">
+              <div id="site-title">Solidarité numérique</div>
+            </a>
 
             <ul className="links">
               {HEADER.map(item => (
@@ -57,9 +55,9 @@ const Header = ({ headerKey = 'home' }) => {
                   id={item.id || ''}
                   className={`${headerKey === item.key ? 'current' : ''}`}
                 >
-                  <Link href={`${item.href}`}>
-                    <a className="dont-apply-link-style">{item.txt}</a>
-                  </Link>
+                  <a href={`${item.href}`} className="dont-apply-link-style">
+                    {item.txt}
+                  </a>
                 </li>
               ))}
             </ul>
