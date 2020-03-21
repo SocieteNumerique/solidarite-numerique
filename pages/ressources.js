@@ -148,11 +148,9 @@ Resources.getInitialProps = async ctx => {
 
   const categories = resources.reduce((categs, resource) => {
     resource['Domaines'].forEach(domaine => {
-      console.log(categs, domaine);
       if (categs.indexOf(CATEG[domaine] || domaine) === -1) {
         categs.push(CATEG[domaine] || domaine);
       }
-      console.log(categs, domaine);
     });
     return categs;
   }, []);
