@@ -164,7 +164,6 @@ const Triplet = () => (
 const HomePage = () => {
   return (
     <Page title="Solidarité numérique">
-      <BandeauMediateur />
       <div className="baseline layout-center content-container">
         <h1>Centre d’aide pour les démarches en ligne essentielles</h1>
         <h2>
@@ -173,6 +172,8 @@ const HomePage = () => {
         </h2>
       </div>
       <Triplet />
+      <BandeauMediateur />
+
       <style jsx>{`
         .baseline {
           display: flex;

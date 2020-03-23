@@ -17,7 +17,7 @@ export default {
   lightestBlue: '#f8faff',
   backgroundBlueGradient: 'linear-gradient(45deg, #003189, #005adf)',
   red: '#dc3545',
-  green: '#17bd3d',
+  green: '#093',
   orange: '#ffc107',
   fontColor: '#213a64',
 };

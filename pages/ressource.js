@@ -41,7 +41,7 @@ const fetchResources = () => {
       );
   });
 };
-const Resources = ({ allResourcesByCateg, categories }) => (
+const Resources = ({ resources, categories }) => (
   <Page>
     <div className="content-container">
       <h1>Ressources numériques</h1>
@@ -68,18 +68,31 @@ const Resources = ({ allResourcesByCateg, categories }) => (
               {categ}
             </h2>
             <div className="categorie-container">
-              {allResourcesByCateg[categ].map(resource => (
-                <a
-                  key={resource['Adresse (URL) de la ressource']}
-                  rel="noopener noreferrer"
-                  target="_blank"
-                  href={resource['Adresse (URL) de la ressource']}
-                  className="resource dont-apply-link-style"
-                >
-                  <h3>{resource['Intitulé de la ressource proposée']}</h3>
-                  <p>{resource['Descriptif sommaire']}</p>
-                </a>
-              ))}
+              {JSON.stringify(
+                resources.filter(
+                  a =>
+                    (categMap[a['Domaines']] || a['Domaines']).indexOf(categ) >
+                    -1
+                )
+              )}
+              {resources
+                .filter(
+                  a =>
+                    (categMap[a['Domaines']] || a['Domaines']).indexOf(categ) >
+                    -1
+                )
+                .map(resource => (
+                  <a
+                    key={resource['Votre identifiant de confiance']}
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    href={resource['Adresse (URL) de la ressource']}
+                    className="resource dont-apply-link-style"
+                  >
+                    <h3>{resource['Intitulé de la ressource proposée']}</h3>
+                    <p>{resource['Descriptif sommaire']}</p>
+                  </a>
+                ))}
             </div>
           </Fragment>
         ))}
@@ -174,22 +187,19 @@ const Resources = ({ allResourcesByCateg, categories }) => (
   </Page>
 );
 
-Resources.getInitialProps = async ctx => {
+Resources.getInitialProps = async ({ query }) => {
   const resources = await fetchResources();
 
-  const allResourcesByCateg = resources.reduce((resourcesByCateg, resource) => {
+  const categories = resources.reduce((categs, resource) => {
     resource['Domaines'].forEach(domaine => {
-      const newDomaine = categMap[domaine];
-      if (resourcesByCateg[newDomaine] === undefined) {
-        resourcesByCateg[newDomaine] = [resource];
-      } else {
-        resourcesByCateg[newDomaine].push(resource);
+      if (categs.indexOf(categMap[domaine] || domaine) === -1) {
+        categs.push(categMap[domaine] || domaine);
       }
     });
-    return resourcesByCateg;
-  }, {});
+    return categs;
+  }, []);
 
-  return { allResourcesByCateg, categories: Object.keys(allResourcesByCateg) };
+  return { resources, categories };
 };
 
 export default Resources;
