@@ -1,10 +1,9 @@
 import React from 'react';
 
 import Page from '../layouts/page';
-import { HEADER_PAGE } from '../components/header';
 
 const Privacy = () => (
-  <Page headerKey={HEADER_PAGE.HOME} usePreFooter={false}>
+  <Page usePreFooter={false}>
     <div id="privacy-page" className="text-container">
       <h1 className="layout-center">Politique de confidentialité</h1>
       <h2>Cookies déposés</h2>

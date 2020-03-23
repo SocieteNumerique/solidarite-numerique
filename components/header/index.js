@@ -1,7 +1,5 @@
 import React from 'react';
 
-import constants from '../../constants';
-
 const CallCTA = () => (
   <>
     <a href="tel:0176350378" className="dont-apply-link-style">
@@ -11,13 +9,15 @@ const CallCTA = () => (
       a {
         text-decoration: none;
         padding: 0px 10px;
-        color: ${constants.colors.fontColor};
+        color: #000;
         height: 35px;
-        font-size: 1.3rem;
-        background-color: #7de4b3;
+        font-size: 1.2rem;
+        background-color: #ffc107;
+        border: 1px solid #000;
+        font-weight: bold;
         position: relative;
         display: inline-block;
-        margin: 10px auto 30px;
+        margin: 2px auto 25px;
         align-items: center;
         justify-content: center;
       }
@@ -25,8 +25,8 @@ const CallCTA = () => (
         content: '(appel gratuit)';
         position: absolute;
         right: 2px;
-        bottom: -25px;
-        font-size: 0.8rem;
+        bottom: -20px;
+        font-size: 0.7rem;
         font-weight: bold;
       }
       a > div {
@@ -95,14 +95,15 @@ const Header = ({ headerKey = 'home' }) => {
           flex-direction: row;
         }
         .top-left-wrapper > .logo {
-          margin: 0 20px;
+          margin: 0 20px 0 0;
         }
         .top-left-wrapper > .logo img {
-          width: 30px;
+          width: 60px;
         }
         .top-left-wrapper > .title a {
+          margin-top: 15px;
           display: inherit;
-          font-size: 1.2rem;
+          font-size: 1.1rem;
           text-decoration: none;
           font-weight: bold;
           color: #000;
