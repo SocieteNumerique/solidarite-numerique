@@ -46,16 +46,22 @@ const Resources = ({ allResourcesByCateg, categories }) => (
     <div className="content-container">
       <h1>Ressources numériques</h1>
       <div className="categories-link-wrapper">
-        {categories.map(category => (
-          <a
-            key={encodeURI(category)}
-            className="dont-apply-link-style category-link"
-            href={`#${encodeURI(category)}`}
-            style={{ borderBottom: `3px solid ${categColors[category]}` }}
-          >
-            {category}
-          </a>
-        ))}
+        <div>J’ai besoin d’aide pour :</div>
+        <div>
+          {categories.map(category => (
+            <a
+              key={encodeURI(category)}
+              className="dont-apply-link-style category-link"
+              href={`#${encodeURI(category)}`}
+            >
+              <div
+                className="circle"
+                style={{ backgroundColor: categColors[category] }}
+              />
+              {category}
+            </a>
+          ))}
+        </div>
       </div>
       <div className="resources-container">
         {categories.map(categ => (
@@ -91,29 +97,52 @@ const Resources = ({ allResourcesByCateg, categories }) => (
       }
 
       .categories-link-wrapper {
+        background-color: #ebeff3;
         width: 100%;
+        margin-bottom: 70px;
+        border-radius: 5px;
+        padding: 25px 0;
+      }
+      .categories-link-wrapper > div {
         display: flex;
         justify-content: flex-start;
-        margin-bottom: 70px;
         flex-wrap: wrap;
+        margin: 0 20px;
       }
+
       .category-link {
         border-radius: 0;
         color: ${constants.colors.fontColor};
         text-decoration: none;
-        font-size: 1.2rem;
+        font-size: 1rem;
+        text-decoration: underline;
         line-height: 1.8rem;
-        padding: 5px 0;
-        margin: 5px 30px 5px 0;
+        padding: 3px 10px;
+        margin: 10px 20px 5px 0;
         transition: background 200ms ease-in-out;
+        background-color: #fff;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+      }
+      .category-link:hover {
+        background-color: #ebf2ff;
+        color: ${constants.colors.vividBlue};
+      }
+      .category-link > .circle {
+        border-radius: 50px;
+        width: 10px;
+        height: 10px;
+        display: block;
+        margin-right: 10px;
+        left: -20px;
+        top: 20px;
       }
       .resources-container h2 {
         position: relative;
       }
       .resources-container h2 > .circle {
-        content: '';
         border-radius: 50px;
-        background-color: ${constants.colors.blue};
         width: 10px;
         height: 10px;
         display: block;

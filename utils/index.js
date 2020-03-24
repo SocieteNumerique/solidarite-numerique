@@ -3,7 +3,7 @@ const categMap = {
     'Se soigner',
   '2- Faire ses courses alimentaires en ligne': 'Acheter en ligne',
   '3- Télétravailler': 'Télétravailler',
-  '4- Rester en contact avec ses proches': 'Échanger avec ses proches',
+  '4- Communiquer avec ses proches à distance': 'Échanger avec mes proches',
   "5- S'informer et trouver des informations vérifiées": 'S’informer',
   "6- Faire l'école à la maison": 'Faire l’école à la maison',
   '7- Faire ses déclarations pour soi et sa famille':
@@ -17,9 +17,10 @@ const categColors = {
   'Se soigner': 'green',
   'Acheter en ligne': 'purple',
   Télétravailler: 'orange',
-  'Échanger avec ses proches': 'yellow',
+  'Échanger avec mes proches': 'yellow',
   'S’informer': 'red',
   'Faire l’école à la maison': 'blue',
+  'Faire ses déclaration en ligne': 'grey',
 };
 
 export { categMap, categColors };

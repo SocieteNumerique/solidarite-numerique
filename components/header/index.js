@@ -1,4 +1,5 @@
 import React from 'react';
+import constants from '../../constants';
 
 const CallCTA = () => (
   <>
@@ -13,7 +14,6 @@ const CallCTA = () => (
         height: 35px;
         font-size: 1.2rem;
         background-color: #ffc107;
-        border: 1px solid #000;
         font-weight: bold;
         position: relative;
         display: inline-block;
@@ -36,6 +36,38 @@ const CallCTA = () => (
         align-items: center;
         justify-content: center;
       }
+      @media (max-width: 800px) {
+        a {
+          display: none;
+        }
+      }
+    `}</style>
+  </>
+);
+
+const RessourcesIcon = () => (
+  <>
+    <svg
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <circle cx="4" cy="4" r="2" fill="black" fill-opacity="0.83" />
+      <circle cx="12" cy="4" r="2" fill="black" fill-opacity="0.83" />
+      <circle cx="20" cy="4" r="2" fill="black" fill-opacity="0.83" />
+      <circle cx="4" cy="12" r="2" fill="black" fill-opacity="0.83" />
+      <circle cx="12" cy="12" r="2" fill="black" fill-opacity="0.83" />
+      <circle cx="20" cy="12" r="2" fill="black" fill-opacity="0.83" />
+      <circle cx="4" cy="20" r="2" fill="black" fill-opacity="0.83" />
+      <circle cx="12" cy="20" r="2" fill="black" fill-opacity="0.83" />
+      <circle cx="20" cy="20" r="2" fill="black" fill-opacity="0.83" />
+    </svg>
+    <style jsx>{`
+      svg {
+        margin: 10px;
+      }
     `}</style>
   </>
 );
@@ -48,10 +80,12 @@ const Header = ({ headerKey = 'home' }) => {
           <div className="container">
             <div className="top-left-wrapper">
               <div className="logo layout-center">
-                <img
-                  src="/images/logo/phoneheart.svg"
-                  alt="Logo solidarite-numerique"
-                />
+                <a href="/" className="dont-apply-link-style">
+                  <img
+                    src="/images/logo/phoneheart.svg"
+                    alt="Logo solidarite-numerique"
+                  />
+                </a>
               </div>
               <div className="title">
                 <a href="/" className="dont-apply-link-style">
@@ -59,6 +93,13 @@ const Header = ({ headerKey = 'home' }) => {
                 </a>
                 <CallCTA />
               </div>
+            </div>
+            <div style={{ flexGrow: 1 }} />
+            <div className="ressources-link">
+              <a href="/ressources">
+                <RessourcesIcon />
+                <span>Toutes les ressources</span>
+              </a>
             </div>
           </div>
         </nav>
@@ -111,8 +152,32 @@ const Header = ({ headerKey = 'home' }) => {
         .top-left-wrapper > .title a:hover {
           text-decoration: underline;
         }
-
-        @media (max-width: 1024px) {
+        .ressources-link > a {
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          text-decoration: none;
+          color: ${constants.colors.fontColor};
+          padding-right: 10px;
+        }
+        .ressources-link > a :hover {
+          text-decoration: underline;
+        }
+        @media (max-width: 800px) {
+          .ressources-link > a > span {
+            display: none;
+          }
+          .ressources-link > a {
+            padding-right: 0;
+          }
+          .title,
+          .top-left-wrapper > .logo {
+            margin: 0;
+          }
+          .logo img {
+            margin: 5px;
+            height: 40px;
+          }
         }
       `}</style>
     </>
