@@ -49,7 +49,7 @@ const Header = () => {
                 <a href="/" className="dont-apply-link-style">
                   <div id="site-title">Solidarité numérique</div>
                 </a>
-                <CallCTA withLabel />
+                <CallCTA inHeader />
               </div>
             </div>
             <div style={{ flexGrow: 1 }} />

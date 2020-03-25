@@ -2,7 +2,7 @@ import React from 'react';
 
 import constants from '../../constants';
 
-const CallCTA = ({ withLabel }) => (
+const CallCTA = ({ inHeader }) => (
   <>
     <a href="tel:0176350378" className="dont-apply-link-style">
       <div>01 76 35 03 78</div>
@@ -24,7 +24,7 @@ const CallCTA = ({ withLabel }) => (
       }
       a:after {
         content: '(appel gratuit)';
-        display: ${withLabel ? 'block' : 'none'};
+        display: ${inHeader ? 'block' : 'none'};
         position: absolute;
         right: 2px;
         bottom: -20px;
@@ -40,7 +40,7 @@ const CallCTA = ({ withLabel }) => (
       }
       @media (max-width: 800px) {
         a {
-          display: none;
+          display: ${inHeader ? 'none' : 'inline-block'};
         }
       }
     `}</style>

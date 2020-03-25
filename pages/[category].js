@@ -12,12 +12,11 @@ const fetchResources = airTableCategory => {
     const DB = new Airtable({ apiKey: process.env.AIRTABLE_API_KEY }).base(
       process.env.AIRTABLE_APP
     );
-
     let results = [];
     DB('ressources')
       .select({
         view: 'Grid view',
-        filterByFormula: `AND({Statut} = 'publié', {Domaines} = '${airTableCategory}')`,
+        filterByFormula: `AND({Statut} = 'publié', FIND("${airTableCategory}", {Domaines}) > 0)`,
       })
       .eachPage(
         function page(records, fetchNextPage) {

@@ -101,7 +101,8 @@ const HomePage = () => {
         <div className="hero-text">
           <h1>Centre d’aide pour les démarches en ligne essentielles</h1>
           <h2>
-            Je trouve des réponses en ligne, ou j’appelle le <CallCTA />
+            Je trouve des réponses en ligne, ou j’appelle le&nbsp;
+            <CallCTA />
           </h2>
           <p>Appel gratuit, du lundi au vendredi, de 8h à 18h</p>
         </div>
@@ -112,7 +113,7 @@ const HomePage = () => {
       <style jsx>{`
         .baseline {
           display: flex;
-          flex-direction: rows;
+          flex-direction: row;
           justify-content: space-between;
           text-align: center;
           margin: 50px auto;
@@ -124,22 +125,43 @@ const HomePage = () => {
         }
         h2 {
           font-size: 1.2rem;
+          line-height: 1.6;
+          margin: 30px auto 5px;
+        }
+        p {
+          font-size: 0.9rem;
+          margin: 0px auto 10px;
         }
 
         .hero-img {
-          width: 570px;
+          width: calc(100% - 550px);
         }
         .hero-img img {
+          min-width: 200px;
           width: 100%;
-          height: auto;
+          min-height: 20px;
         }
 
         .hero-text {
+          width: 450px;
           text-align: left;
-          width: calc(100% - 650px);
         }
 
-        @media only screen and (min-width: 1px) and (max-width: 800px) {
+        @media only screen and (min-width: 1px) and (max-width: 1000px) {
+          .baseline {
+            display: flex;
+            flex-direction: column-reverse;
+            text-align: center;
+            margin: 50px auto;
+          }
+          .hero-text,
+          .hero-img {
+            width: 100%;
+            max-width: 570px;
+          }
+          .hero-text {
+            margin-bottom: 50px;
+          }
           h1 {
             margin: 20px auto;
             text-align: left;
@@ -147,7 +169,8 @@ const HomePage = () => {
             line-height: 1.8rem;
           }
           h2 {
-            display: none;
+            font-size: 1rem;
+            line-height: 1.4rem;
           }
         }
       `}</style>

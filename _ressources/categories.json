@@ -70,11 +70,5 @@
       "j’envoie une lettre recommandée. (modifié) "
     ],
     "path": "declaration-travail"
-  },
-  "9 - Faire ses démarches d’entreprises": {
-    "title": "Faire ses déclaration en ligne",
-    "subTitle": "Un sous titre qui decrit des trucs",
-    "description": [""],
-    "path": "declaration-entreprise"
   }
 }
