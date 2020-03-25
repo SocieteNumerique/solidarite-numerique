@@ -1,49 +1,7 @@
 import React from 'react';
 import constants from '../../constants';
 
-const CallCTA = () => (
-  <>
-    <a href="tel:0176350378" className="dont-apply-link-style">
-      <div>01 76 35 03 78</div>
-    </a>
-    <style jsx>{`
-      a {
-        text-decoration: none;
-        padding: 0px 10px;
-        color: #000;
-        height: 35px;
-        font-size: 1.2rem;
-        background-color: #ffc107;
-        font-weight: bold;
-        position: relative;
-        display: inline-block;
-        margin: 2px auto 25px;
-        align-items: center;
-        justify-content: center;
-      }
-      a:after {
-        content: '(appel gratuit)';
-        position: absolute;
-        right: 2px;
-        bottom: -20px;
-        font-size: 0.7rem;
-        font-weight: bold;
-      }
-      a > div {
-        height: 100%;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-      @media (max-width: 800px) {
-        a {
-          display: none;
-        }
-      }
-    `}</style>
-  </>
-);
+import { CallCTA } from '../../uiComponents';
 
 const RessourcesIcon = () => (
   <>
@@ -54,15 +12,15 @@ const RessourcesIcon = () => (
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <circle cx="4" cy="4" r="2" fill="black" fill-opacity="0.83" />
-      <circle cx="12" cy="4" r="2" fill="black" fill-opacity="0.83" />
-      <circle cx="20" cy="4" r="2" fill="black" fill-opacity="0.83" />
-      <circle cx="4" cy="12" r="2" fill="black" fill-opacity="0.83" />
-      <circle cx="12" cy="12" r="2" fill="black" fill-opacity="0.83" />
-      <circle cx="20" cy="12" r="2" fill="black" fill-opacity="0.83" />
-      <circle cx="4" cy="20" r="2" fill="black" fill-opacity="0.83" />
-      <circle cx="12" cy="20" r="2" fill="black" fill-opacity="0.83" />
-      <circle cx="20" cy="20" r="2" fill="black" fill-opacity="0.83" />
+      <circle cx="4" cy="4" r="2" fill={`${constants.colors.fontColor}`} />
+      <circle cx="12" cy="4" r="2" fill={`${constants.colors.fontColor}`} />
+      <circle cx="20" cy="4" r="2" fill={`${constants.colors.fontColor}`} />
+      <circle cx="4" cy="12" r="2" fill={`${constants.colors.fontColor}`} />
+      <circle cx="12" cy="12" r="2" fill={`${constants.colors.fontColor}`} />
+      <circle cx="20" cy="12" r="2" fill={`${constants.colors.fontColor}`} />
+      <circle cx="4" cy="20" r="2" fill={`${constants.colors.fontColor}`} />
+      <circle cx="12" cy="20" r="2" fill={`${constants.colors.fontColor}`} />
+      <circle cx="20" cy="20" r="2" fill={`${constants.colors.fontColor}`} />
     </svg>
     <style jsx>{`
       svg {
@@ -72,7 +30,7 @@ const RessourcesIcon = () => (
   </>
 );
 
-const Header = ({ headerKey = 'home' }) => {
+const Header = () => {
   return (
     <>
       <header role="navigation">
@@ -91,12 +49,12 @@ const Header = ({ headerKey = 'home' }) => {
                 <a href="/" className="dont-apply-link-style">
                   <div id="site-title">Solidarité numérique</div>
                 </a>
-                <CallCTA />
+                <CallCTA withLabel />
               </div>
             </div>
             <div style={{ flexGrow: 1 }} />
             <div className="ressources-link">
-              <a href="/ressources">
+              <a href="/#toutes-les-ressources">
                 <RessourcesIcon />
                 <span>Toutes les ressources</span>
               </a>
@@ -147,7 +105,7 @@ const Header = ({ headerKey = 'home' }) => {
           font-size: 1.1rem;
           text-decoration: none;
           font-weight: bold;
-          color: #000;
+          color: ${constants.colors.solidNumPurple};
         }
         .top-left-wrapper > .title a:hover {
           text-decoration: underline;
@@ -170,12 +128,20 @@ const Header = ({ headerKey = 'home' }) => {
           .ressources-link > a {
             padding-right: 0;
           }
-          .title,
+          .top-left-wrapper > .title a,
           .top-left-wrapper > .logo {
             margin: 0;
           }
+          .title {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+          }
+          .top-left-wrapper {
+            max-width: calc(100% - 70px);
+          }
           .logo img {
-            margin: 5px;
+            margin: 5px 0;
             height: 40px;
           }
         }

@@ -198,7 +198,7 @@ const Footer = () => {
         @media only screen and (min-width: 1px) and (max-width: 800px) {
           .footer__social {
             flex-direction: column;
-            padding:inherit 20px;
+            padding:20px 25px;
             text-align:center;
           }
           .footer__social > div:first-of-type {

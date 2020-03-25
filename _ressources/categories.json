@@ -1,0 +1,80 @@
+{
+  "1- Consulter son médecin en ligne et déclarer son arrêt maladie": {
+    "title": "Voir un médecin",
+    "description": [
+      "Je dois consulter un médecin à distance",
+      "j’ai besoin d’un arrêt maladie"
+    ],
+    "subTitle": "Un sous titre qui decrit des trucs",
+    "path": "se-soigner"
+  },
+  "2- Faire ses courses alimentaires en ligne": {
+    "title": "Faire mes courses sur Internet",
+    "description": [
+      "Je comprends comment fonctionnent les Drive",
+      "je trouve les Drive autour de chez moi."
+    ],
+    "subTitle": "Un sous titre qui decrit des trucs",
+    "path": "acheter-en-ligne"
+  },
+  "3- Télétravailler": {
+    "title": "Travailler depuis chez moi",
+    "description": [
+      "J’améliore mon réseau Internet",
+      "je collabore avec mes collègues à distance grâce à des outils."
+    ],
+    "subTitle": "Un sous titre qui decrit des trucs",
+    "path": "teletravailler"
+  },
+  "4- Communiquer avec ses proches à distance": {
+    "title": "Rester en contact avec mes proches",
+    "description": [
+      "Je reçois et j’envoie des emails",
+      "j’apprends à envoyer des photos en pièce jointe"
+    ],
+    "subTitle": "Un sous titre qui decrit des trucs",
+    "path": "communiquer"
+  },
+  "5- S'informer et trouver des informations vérifiées": {
+    "title": "Trouver des informations vérifiées",
+    "subTitle": "Un sous titre qui decrit des trucs",
+    "description": [
+      "J’apprends à reconnaître les fausses informations",
+      "je choisis mon navigateur Internet."
+    ],
+    "path": "information"
+  },
+  "6- Faire l'école à la maison": {
+    "title": "Faire l’école à la maison",
+    "subTitle": "Un sous titre qui decrit des trucs",
+    "description": [
+      "Je me connecte à un ENT",
+      "je trouve des vidéos pédagogiques"
+    ],
+    "path": "ecole-a-la-maison"
+  },
+  "7- Faire ses déclarations pour soi et sa famille": {
+    "title": "Faire des démarches pour ma famille et moi",
+    "subTitle": "Un sous titre qui decrit des trucs",
+    "description": [
+      "J’imprime l’attestation de déplacement si je dois sortir pendant le confinement",
+      "je vérifie si j’ai droit à des aides sociales."
+    ],
+    "path": "declaration-famille"
+  },
+  "8 - Faire ses déclarations pour son travail": {
+    "title": "Faire des démarches liées à mon travail ou mon entreprise",
+    "subTitle": "Un sous titre qui decrit des trucs",
+    "description": [
+      "Je me renseigne sur le chômage partiel",
+      "j’envoie une lettre recommandée. (modifié) "
+    ],
+    "path": "declaration-travail"
+  },
+  "9 - Faire ses démarches d’entreprises": {
+    "title": "Faire ses déclaration en ligne",
+    "subTitle": "Un sous titre qui decrit des trucs",
+    "description": [""],
+    "path": "declaration-entreprise"
+  }
+}

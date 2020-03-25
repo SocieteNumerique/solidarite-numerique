@@ -1,7 +1,9 @@
 require('dotenv').config();
 const withFonts = require('nextjs-fonts');
 const webpack = require('webpack');
-const data = require('./_ressources/ressources.json');
+const categories = require('./_ressources/categories.json');
+
+const waitFor = ms => new Promise(r => setTimeout(r, ms));
 
 module.exports = withFonts({
   webpack: config => {
@@ -17,15 +19,22 @@ module.exports = withFonts({
       '/mentions-legales': { page: '/mentions-legales' },
       '/contact': { page: '/contact' },
       '/404': { page: '/404' },
-      '/ressources': { page: '/ressources' },
     };
 
-    Object.keys(data).forEach(url => {
-      paths[`/ressource/${url}`] = {
-        page: '/ressource/[id]',
-        query: { id: url },
+    // const resources = await fetchResources();
+    const categoriesArray = Object.keys(categories);
+    for (let i = 0; i < categoriesArray.length; i++) {
+      const categ = categories[categoriesArray[i]];
+
+      await waitFor(100); // waits 5 sec between each call for Airtable limitation
+      //await waitFor(5000); // waits 5 sec between each call for Airtable limitation
+      paths[`/${categ.path}`] = {
+        page: '/[category]',
+        query: { category: categ.path },
       };
-    });
+    }
+
+    // could create a sitemap here with the paths
 
     return paths;
   },

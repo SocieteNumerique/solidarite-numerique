@@ -1,5 +1,4 @@
 import React, { Fragment } from 'react';
-import Airtable from 'airtable';
 
 import { Page } from '../layouts';
 import { categMap, categColors } from '../utils';
@@ -7,40 +6,6 @@ import constants from '../constants';
 
 const ERROR_CODE = -1;
 
-const fetchResources = () => {
-  return new Promise((resolve, reject) => {
-    const DB = new Airtable({ apiKey: process.env.AIRTABLE_API_KEY }).base(
-      process.env.AIRTABLE_APP
-    );
-
-    let results = [];
-    DB('ressources')
-      .select({
-        view: 'Grid view',
-        filterByFormula: "({Statut} = 'publié')",
-      })
-      .eachPage(
-        function page(records, fetchNextPage) {
-          // This function (`page`) will get called for each page of records.
-          records.forEach(record => {
-            results.push(record.fields);
-          });
-
-          // To fetch the next page of records, call `fetchNextPage`.
-          // If there are more records, `page` will get called again.
-          // If there are no more records, `done` will get called.
-          fetchNextPage();
-        },
-        function done(err) {
-          resolve(results);
-          if (err) {
-            console.error(err);
-            reject([ERROR_CODE]);
-          }
-        }
-      );
-  });
-};
 const Resources = ({ allResourcesByCateg, categories }) => (
   <Page>
     <div className="content-container">

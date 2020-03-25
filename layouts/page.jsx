@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Footer, Header, Meta, BandeauGouv } from '../components';
+import { Footer, Header, Meta, BandeauGouv, BandeauPhone } from '../components';
 
 const Page = ({
   title,
@@ -12,8 +12,9 @@ const Page = ({
   <>
     <div id="page-layout">
       <Meta title={title} description={description} />
-      <Header headerKey={headerKey || 'home'} />
       <BandeauGouv />
+      <Header headerKey={headerKey || 'home'} />
+      <BandeauPhone />
       <main>{children}</main>
       {useFooter && <Footer />}
     </div>
@@ -28,7 +29,7 @@ const Page = ({
 
       main {
         flex-grow: 1;
-        background-color: #f9f9f9;
+        background-color: #ecedf3;
       }
     `}</style>
   </>
