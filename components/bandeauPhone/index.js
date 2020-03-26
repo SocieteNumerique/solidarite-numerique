@@ -1,4 +1,5 @@
 import React from 'react';
+import constants from '../../constants';
 
 const phoneIcon = (
   <svg
@@ -70,7 +71,7 @@ const BandeauPhone = () => (
         z-index: 10;
         flex-direction: column;
         padding: 20px 25px;
-        box-shadow: 0 0 3px #ccc;
+        border-top: 3px solid ${constants.colors.grey};
       }
       @media (min-width: 800px) {
         .bandeau-telephone {

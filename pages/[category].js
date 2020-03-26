@@ -3,7 +3,7 @@ import Airtable from 'airtable';
 
 import categories from '../_ressources/categories.json';
 import { Page } from '../layouts';
-import { Breadcrumb } from '../uiComponents';
+import { Breadcrumb, CallCTA } from '../uiComponents';
 
 import constants from '../constants';
 
@@ -184,6 +184,13 @@ const Resource = ({ ressources, category }) => (
           </a>
         ))}
       </div>
+      <div className="phone">
+        <h2>J’ai besoin d’aide</h2>
+        <p>
+          J’appelle le centre d’aide au <CallCTA />
+        </p>
+        <p>Appel gratuit, du lundi au vendredi, de 8h à 18h</p>
+      </div>
     </div>
     <style jsx>{`
       .page-head-wrapper {
@@ -192,13 +199,34 @@ const Resource = ({ ressources, category }) => (
       .ressource-wrapper {
         margin-top: 35px;
         margin-bottom: 70px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
       }
       .container {
+        width: 64%;
         display: grid;
-        grid-template-columns: 32% 32% 32%;
-        justify-content: space-between;
+        grid-template-columns: 49% 49%;
         grid-gap: 20px 20px;
       }
+      .phone {
+        width: calc(33% - 40px);
+        padding: 20px;
+        display: block;
+        position: sticky;
+        background-color: #ecedf3;
+        border-radius: 8px;
+        border: 3px solid ${constants.colors.grey};
+        top: 20px;
+        font-size: 0.9rem;
+      }
+
+      .phone h2 {
+        margin: 0;
+        padding: 0;
+        font-size: 1.4rem;
+      }
+
       a.resource {
         width: 100%;
         text-decoration: none;
@@ -230,18 +258,24 @@ const Resource = ({ ressources, category }) => (
       }
       @media only screen and (min-width: 600px) and (max-width: 1000px) {
         .container {
+          width: 100%;
           display: grid;
           grid-template-columns: 49% 49%;
-          justify-content: space-between;
           grid-gap: 20px 20px;
           margin-bottom: 50px;
+        }
+        .phone {
+          display: none;
         }
       }
       @media only screen and (min-width: 1px) and (max-width: 600px) {
         .container {
+          width: 100%;
           display: grid;
           grid-template-columns: 100%;
-          justify-content: space-between;
+        }
+        .phone {
+          display: none;
         }
       }
     `}</style>
