@@ -15,9 +15,11 @@ export default {
   vividBlue: '#0064f9',
   lightBlue: '#e5efff',
   lightestBlue: '#f8faff',
+  solidNumPurple: '#001F69;',
+  solidNumYellow: '#ffc107',
   backgroundBlueGradient: 'linear-gradient(45deg, #003189, #005adf)',
   red: '#dc3545',
-  green: '#17bd3d',
+  green: '#093',
   orange: '#ffc107',
   fontColor: '#213a64',
 };

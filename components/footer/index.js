@@ -81,7 +81,13 @@ const Footer = () => {
           </div>
           <ul className="footer__links">
             <li>
+              <a href="/contact">Nous contacter</a>
+            </li>
+            <li>
               <a href="/mentions-legales">Mentions Légales</a>
+            </li>
+            <li>
+              <a href="/a-propos">Qui sommes-nous ?</a>
             </li>
             <li>
               <a href="/vie-privee">Politique de confidentialité</a>
@@ -124,7 +130,7 @@ const Footer = () => {
         }
 
         .footer__links li > a{
-          padding: 10px 20px;
+          padding: 6px 20px;
           display: block;
         }
 
@@ -192,7 +198,7 @@ const Footer = () => {
         @media only screen and (min-width: 1px) and (max-width: 800px) {
           .footer__social {
             flex-direction: column;
-            padding:inherit 20px;
+            padding:20px 25px;
             text-align:center;
           }
           .footer__social > div:first-of-type {

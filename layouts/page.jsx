@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Footer, Header, Meta } from '../components';
+import { Footer, Header, Meta, BandeauPhone } from '../components';
 
 const Page = ({
   title,
@@ -13,6 +13,7 @@ const Page = ({
     <div id="page-layout">
       <Meta title={title} description={description} />
       <Header headerKey={headerKey || 'home'} />
+      <BandeauPhone />
       <main>{children}</main>
       {useFooter && <Footer />}
     </div>

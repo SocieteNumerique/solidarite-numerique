@@ -1,0 +1,39 @@
+# CircleCI 2.0 configuration file. See <https://circleci.com/docs/2.0/language-ruby/>.
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/node:12.9.1-browsers
+
+    working_directory: ~/solidarite-numerique
+
+    steps:
+      - checkout
+
+      # Note the YAML heredoc '|' for nicer formatting
+      - run: |
+          npm i
+
+      - restore_cache:
+          keys:
+            - v1-solidnum-{{ checksum "project.clj" }}
+
+      - save_cache:
+          key: v1-solidnum-{{ checksum "project.clj" }}
+          paths:
+            - node_modules
+
+      - run: |
+          npm run lint
+
+      - run: |
+          npm run build
+
+      - run: |
+          npm run export
+
+      - run: |
+          npx serve -p 3000
+
+      - run: |
+          npx blc http://localhost:3000 -ro
