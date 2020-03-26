@@ -8,5 +8,32 @@ jobs:
     working_directory: ~/solidarite-numerique
 
     steps:
+      - checkout
+
+      # Note the YAML heredoc '|' for nicer formatting
       - run: |
-          npx blc https://solidarite-numerique.fr -ro
+          npm i
+
+      - restore_cache:
+          keys:
+            - v1-solidnum-{{ checksum "project.clj" }}
+
+      - save_cache:
+          key: v1-solidnum-{{ checksum "project.clj" }}
+          paths:
+            - node_modules
+
+      - run: |
+          npm run lint
+
+      - run: |
+          npm run build
+
+      - run: |
+          npm run export
+
+      - run: |
+          npx serve -p 3000
+
+      - run: |
+          npx blc http://localhost:3000 -ro
