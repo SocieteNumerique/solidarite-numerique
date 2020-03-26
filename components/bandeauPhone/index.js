@@ -19,10 +19,10 @@ const phoneIcon = (
 
 const CallCTA = () => (
   <>
-    <a href="tel:0176350378" className="dont-apply-link-style">
+    <a href="tel:0170772372" className="dont-apply-link-style">
       <div>
         {phoneIcon}
-        <span>01 76 35 03 78</span>
+        <span>01 70 77 23 72</span>
       </div>
     </a>
     <style jsx>{`

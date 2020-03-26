@@ -5,7 +5,7 @@ import constants from '../../constants';
 const CallCTA = ({ inHeader }) => (
   <>
     <a
-      href="tel:0176350378"
+      href="tel:0170772372"
       title="Numéro de téléphone Solidarité numériqeu"
       className="dont-apply-link-style"
     >
