@@ -21,11 +21,10 @@ const BandeauGouv = () => (
         </svg>
         <div>
           <div>
-            {' '}
-            Les déplacements sont interdits depuis le 17 mars, restez chez vous.
+            Pour protéger vos proches et afin de limiter la diffusion du
+            coronavirus, restez chez vous.
           </div>
           <div>
-            Pour toutes vos questions sur le coronavirus :{' '}
             <a
               href="https://www.gouvernement.fr/info-coronavirus"
               target="_blank"
@@ -40,7 +39,7 @@ const BandeauGouv = () => (
     <style jsx>{`
       .bandeau-gouvernement {
         background-color: #fff9e7;
-        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+        border-bottom: 1px solid #ffe69c;
         z-index: 2;
       }
       .bandeau-gouvernement > div {

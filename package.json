@@ -14,7 +14,7 @@
   "husky": {
     "hooks": {
       "pre-commit": "npm run lint",
-      "pre-push": "npm run lint"
+      "pre-push": "node ./scripts/check-a11y.js"
     }
   },
   "repository": {

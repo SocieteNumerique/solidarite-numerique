@@ -21,9 +21,12 @@ const Categories = () => (
               className="resource dont-apply-link-style"
             >
               <div>
-                <h3>{category.title}</h3>
+                <h3>
+                  <img src={category.picto} alt={category.title} />
+                  {category.title}
+                </h3>
                 {category.description.map(desc => (
-                  <p>{desc}</p>
+                  <p key={desc}>{desc}</p>
                 ))}
               </div>
             </a>
@@ -32,11 +35,14 @@ const Categories = () => (
       </div>
     </div>
     <style jsx>{`
+      #toutes-les-ressources {
+        margin-top: 40px;
+      }
       .categorie-container {
         display: grid;
-        grid-template-columns: 30% 30% 30%;
+        grid-template-columns: 32% 32% 32%;
         justify-content: space-between;
-        grid-gap: 40px 40px;
+        grid-gap: 30px 30px;
         margin-bottom: 50px;
       }
       a.resource {
@@ -55,18 +61,26 @@ const Categories = () => (
         margin: 20px;
       }
       a.resource h3 {
-        margin-bottom: 10px;
+        margin-bottom: 30px;
         font-size: 1rem;
         line-height: 1.5rem;
         font-weight: bold;
         text-decoration: underline;
+        display: flex;
+        align-items: center;
+      }
+
+      a.resource h3 > img {
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
       }
       a.resource p {
         color: ${constants.colors.fontColor};
         font-size: 1rem;
         padding: 0;
         line-height: 1.3rem;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
       }
       @media only screen and (min-width: 600px) and (max-width: 1000px) {
         .categorie-container {
@@ -91,20 +105,22 @@ const Categories = () => (
 const HomePage = () => {
   return (
     <Page title="Solidarité numérique">
-      <div className="baseline layout-center content-container">
-        <div className="hero-img">
-          <img
-            src="/images/illus/illu_solidnum.png"
-            alt="Solidarite numerique, le centre d’aide pour les démarche en ligne"
-          />
-        </div>
-        <div className="hero-text">
-          <h1>Centre d’aide pour les démarches en ligne essentielles</h1>
-          <h2>
-            Je trouve des réponses en ligne, ou j’appelle le&nbsp;
-            <CallCTA />
-          </h2>
-          <p>Appel gratuit, du lundi au vendredi, de 8h à 18h</p>
+      <div className="baseline">
+        <div className="content-container ">
+          <div className="hero-img">
+            <img
+              src="/images/illus/illu_solidnum.png"
+              alt="Solidarite numerique, le centre d’aide pour les démarche en ligne"
+            />
+          </div>
+          <div className="hero-text">
+            <h1>Centre d’aide pour les démarches en ligne essentielles</h1>
+            <h2>
+              Je trouve des réponses en ligne, ou j’appelle le&nbsp;
+              <CallCTA />
+            </h2>
+            <p>Appel gratuit, du lundi au vendredi, de 8h à 18h</p>
+          </div>
         </div>
       </div>
       <Categories />
@@ -112,16 +128,23 @@ const HomePage = () => {
 
       <style jsx>{`
         .baseline {
+          margin: 0;
+          width: 100%;
+          background-color: #ecedf3;
+        }
+        .baseline > div {
+          padding: 0;
+          margin: 0 auto;
           display: flex;
           flex-direction: row;
           justify-content: space-between;
+          align-items: flex-end;
           text-align: center;
-          margin: 50px auto;
         }
         h1 {
           font-size: 1.6rem;
           line-height: 2.4rem;
-          margin: 30px auto 10px;
+          margin: 10px auto 10px;
         }
         h2 {
           font-size: 1.2rem;
@@ -134,25 +157,27 @@ const HomePage = () => {
         }
 
         .hero-img {
-          width: calc(100% - 550px);
+          width: calc(95% - 450px);
         }
         .hero-img img {
           min-width: 200px;
           width: 100%;
           min-height: 20px;
+          display: block;
         }
 
         .hero-text {
           width: 450px;
+          margin: 50px 0;
           text-align: left;
         }
 
         @media only screen and (min-width: 1px) and (max-width: 1000px) {
-          .baseline {
+          .baseline > div {
             display: flex;
             flex-direction: column-reverse;
             text-align: center;
-            margin: 50px auto;
+            align-items: center;
           }
           .hero-text,
           .hero-img {
@@ -160,12 +185,12 @@ const HomePage = () => {
             max-width: 570px;
           }
           .hero-text {
-            margin-bottom: 50px;
+            margin: 30px 0;
           }
           h1 {
-            margin: 20px auto;
+            margin: 0 auto 20px;
             text-align: left;
-            font-size: 1.4rem;
+            font-size: 1.5rem;
             line-height: 1.8rem;
           }
           h2 {

@@ -107,3 +107,7 @@ dist
 .tern-port
 
 .now
+
+
+public/sitemap.xml
+public/url-list.txt

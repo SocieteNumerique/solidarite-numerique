@@ -2,6 +2,7 @@ require('dotenv').config();
 const withFonts = require('nextjs-fonts');
 const webpack = require('webpack');
 const categories = require('./_ressources/categories.json');
+const { saveUrlList, saveSitemap } = require('./scripts/sitemap.js');
 
 const waitFor = ms => new Promise(r => setTimeout(r, ms));
 
@@ -16,6 +17,7 @@ module.exports = withFonts({
       '/a-propos': { page: '/a-propos' },
       '/vie-privee': { page: '/vie-privee' },
       '/nouvelle-ressource': { page: '/nouvelle-ressource' },
+      '/rejoignez-nous': { page: '/rejoignez-nous' },
       '/mentions-legales': { page: '/mentions-legales' },
       '/contact': { page: '/contact' },
       '/404': { page: '/404' },
@@ -34,7 +36,8 @@ module.exports = withFonts({
       };
     }
 
-    // could create a sitemap here with the paths
+    saveSitemap(paths);
+    saveUrlList(paths);
 
     return paths;
   },

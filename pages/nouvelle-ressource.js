@@ -33,7 +33,7 @@ const NewResource = () => {
       <div
         style={{
           fontSize: '12px',
-          color: '#999',
+          color: '#333',
           opacity: 0.5,
           paddingTop: '5px',
           textAlign: 'right',
@@ -43,7 +43,7 @@ const NewResource = () => {
         powered by{' '}
         <a
           href="https://admin.typeform.com/signup?utm_campaign=JFkqkU&utm_source=typeform.com-01E3Q3A23CRDWF3T14HMDZB144-professional&utm_medium=typeform&utm_content=typeform-embedded-poweredbytypeform&utm_term=FR"
-          style={{ color: '#999' }}
+          style={{ color: '#333' }}
           target="_blank"
           rel="noopener noreferrer"
         >

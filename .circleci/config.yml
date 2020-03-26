@@ -1,0 +1,12 @@
+# CircleCI 2.0 configuration file. See <https://circleci.com/docs/2.0/language-ruby/>.
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/node:12.9.1-browsers
+
+    working_directory: ~/solidarite-numerique
+
+    steps:
+      - run: |
+          npx blc https://solidarite-numerique.fr -ro

@@ -15,9 +15,8 @@ const MentionsLegales = () => {
         <p>Emmanuel Vandamme, Président de la SCIC La MedNum</p>
         <h2>Illustrations</h2>
         <p>
-          <a href="https://fr.freepik.com/photos-vecteurs-libre/affaires">
-            Visuels Freepik - pikisuperstar.
-          </a>
+          Visuel principal de la page d’accueil : un grand merci à Sarah
+          Lepreux.
         </p>
       </div>
     </Page>

@@ -4,8 +4,12 @@ import constants from '../../constants';
 
 const CallCTA = ({ inHeader }) => (
   <>
-    <a href="tel:0176350378" className="dont-apply-link-style">
-      <div>01 76 35 03 78</div>
+    <a
+      href="tel:0176350378"
+      title="Numéro de téléphone Solidarité numériqeu"
+      className="dont-apply-link-style"
+    >
+      <div>01 70 77 23 72</div>
     </a>
     <style jsx>{`
       a {
@@ -18,7 +22,7 @@ const CallCTA = ({ inHeader }) => (
         font-weight: bold;
         position: relative;
         display: inline-block;
-        margin: 2px auto 25px;
+        margin: 2px auto 20px;
         align-items: center;
         justify-content: center;
       }
@@ -26,8 +30,8 @@ const CallCTA = ({ inHeader }) => (
         content: '(appel gratuit)';
         display: ${inHeader ? 'block' : 'none'};
         position: absolute;
-        right: 2px;
-        bottom: -20px;
+        right: -100px;
+        top: 5px;
         font-size: 0.7rem;
         font-weight: bold;
       }

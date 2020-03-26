@@ -1,6 +1,7 @@
 import React from 'react';
 import constants from '../../constants';
 
+import { BandeauGouv } from '../../components';
 import { CallCTA } from '../../uiComponents';
 
 const RessourcesIcon = () => (
@@ -33,7 +34,8 @@ const RessourcesIcon = () => (
 const Header = () => {
   return (
     <>
-      <header role="navigation">
+      <header id="header">
+        <BandeauGouv />
         <nav className="nav content-container">
           <div className="container">
             <div className="top-left-wrapper">

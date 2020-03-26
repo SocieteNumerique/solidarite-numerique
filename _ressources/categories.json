@@ -1,74 +1,82 @@
 {
-  "1- Consulter son médecin en ligne et déclarer son arrêt maladie": {
-    "title": "Voir un médecin",
-    "description": [
-      "Je dois consulter un médecin à distance",
-      "j’ai besoin d’un arrêt maladie"
-    ],
-    "subTitle": "Un sous titre qui decrit des trucs",
-    "path": "se-soigner"
-  },
-  "2- Faire ses courses alimentaires en ligne": {
-    "title": "Faire mes courses sur Internet",
-    "description": [
-      "Je comprends comment fonctionnent les Drive",
-      "je trouve les Drive autour de chez moi."
-    ],
-    "subTitle": "Un sous titre qui decrit des trucs",
-    "path": "acheter-en-ligne"
-  },
-  "3- Télétravailler": {
-    "title": "Travailler depuis chez moi",
-    "description": [
-      "J’améliore mon réseau Internet",
-      "je collabore avec mes collègues à distance grâce à des outils."
-    ],
-    "subTitle": "Un sous titre qui decrit des trucs",
-    "path": "teletravailler"
-  },
-  "4- Communiquer avec ses proches à distance": {
-    "title": "Rester en contact avec mes proches",
-    "description": [
-      "Je reçois et j’envoie des emails",
-      "j’apprends à envoyer des photos en pièce jointe"
-    ],
-    "subTitle": "Un sous titre qui decrit des trucs",
-    "path": "communiquer"
-  },
-  "5- S'informer et trouver des informations vérifiées": {
-    "title": "Trouver des informations vérifiées",
-    "subTitle": "Un sous titre qui decrit des trucs",
-    "description": [
-      "J’apprends à reconnaître les fausses informations",
-      "je choisis mon navigateur Internet."
-    ],
-    "path": "information"
-  },
-  "6- Faire l'école à la maison": {
-    "title": "Faire l’école à la maison",
-    "subTitle": "Un sous titre qui decrit des trucs",
-    "description": [
-      "Je me connecte à un ENT",
-      "je trouve des vidéos pédagogiques"
-    ],
-    "path": "ecole-a-la-maison"
-  },
   "7- Faire ses déclarations pour soi et sa famille": {
     "title": "Faire des démarches pour ma famille et moi",
-    "subTitle": "Un sous titre qui decrit des trucs",
+    "subTitle": "Pendant le confinement, je télécharge mon attestation pour sortir prendre l’air avec mes enfants. Je peux vérifier sur Internet si j’ai droit à des aides sociales.",
+    "picto": "/images/pictos/picto_demarchefamille.svg",
     "description": [
-      "J’imprime l’attestation de déplacement si je dois sortir pendant le confinement",
+      "J’imprime l’attestation de déplacement si je dois sortir pendant le confinement,",
       "je vérifie si j’ai droit à des aides sociales."
     ],
     "path": "declaration-famille"
   },
   "8 - Faire ses déclarations pour son travail": {
     "title": "Faire des démarches liées à mon travail ou mon entreprise",
-    "subTitle": "Un sous titre qui decrit des trucs",
+    "subTitle": "Pendant le confinement, je m’informe sur le chômage partiel et sur les aides que je peux recevoir.",
+    "picto": "/images/pictos/picto_demarchetravail.svg",
     "description": [
-      "Je me renseigne sur le chômage partiel",
+      "Je me renseigne sur le chômage partiel,",
       "j’envoie une lettre recommandée. (modifié) "
     ],
     "path": "declaration-travail"
+  },
+  "1- Consulter son médecin en ligne et déclarer son arrêt maladie": {
+    "title": "Voir un médecin",
+    "description": [
+      "Je dois consulter un médecin à distance,",
+      "j’ai besoin d’un arrêt maladie"
+    ],
+    "subTitle": "Pendant le confinement, je peux voir un médecin sur Internet (téléconsultation) si j’ai une question, besoin d’une ordonnance ou d’un arrêt de travail.",
+    "picto": "/images/pictos/picto_telemedecine.svg",
+    "path": "se-soigner"
+  },
+  "4- Communiquer avec ses proches à distance": {
+    "title": "Rester en contact avec mes proches",
+    "description": [
+      "Je reçois et j’envoie des emails,",
+      "j’apprends à envoyer des photos en pièce jointe"
+    ],
+    "subTitle": "Pendant le confinement, je peux continuer à prendre des nouvelles de mes amis et de ma famille. Je peux leur envoyer des photo ou les appeler en utilisant de la vidéo pour qu’ils me voient.",
+    "picto": "/images/pictos/picto_proches.svg",
+    "path": "communiquer"
+  },
+  "3- Télétravailler": {
+    "title": "Travailler depuis chez moi",
+    "description": [
+      "J’améliore mon réseau Internet,",
+      "je collabore avec mes collègues à distance grâce à des outils."
+    ],
+    "subTitle": "Pendant le confinement, des outils peuvent m’aider à faire des réunions en ligne, travailler sur un document avec mes collègues ou améliorer ma connexion Internet.",
+    "picto": "/images/pictos/picto_teletravail.svg",
+    "path": "teletravailler"
+  },
+  "6- Faire l'école à la maison": {
+    "title": "Faire l’école à la maison",
+    "subTitle": "Pendant le confinement, mes enfants continuent à apprendre. Je peux trouver des émissions de radio, des vidéos pédagogiques. Je prévois des activités amusantes à faire avec eux à l’intérieur.",
+    "picto": "/images/pictos/picto_ecole.svg",
+    "description": [
+      "Je me connecte à un ENT,",
+      "je trouve des vidéos pédagogiques"
+    ],
+    "path": "ecole-a-la-maison"
+  },
+  "2- Faire ses courses alimentaires en ligne": {
+    "description": [
+      "Je comprends comment fonctionnent les Drive,",
+      "je trouve les Drive autour de chez moi."
+    ],
+    "title": "Faire mes courses sur internet",
+    "subTitle": "Pendant le confinement, je peux passer ma commande de courses sur Internet. Je peux me les faire livrer ou aller les chercher si j’ai une voiture.",
+    "picto": "/images/pictos/picto_courses.svg",
+    "path": "acheter-en-ligne"
+  },
+  "5- S'informer et trouver des informations vérifiées": {
+    "title": "Trouver des informations vérifiées",
+    "subTitle": "Pendant le confinement, je m’informe sur des sites de confiance pour suivre l’actualité.",
+    "description": [
+      "J’apprends à reconnaître les fausses informations,",
+      "je choisis mon navigateur Internet."
+    ],
+    "picto": "/images/pictos/picto_infoverig.svg",
+    "path": "information"
   }
 }

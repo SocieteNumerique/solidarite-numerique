@@ -46,7 +46,7 @@ const Breadcrumb = ({ name }) => (
             fill={`${constants.colors.fontColor}`}
           />
         </svg>{' '}
-        Toutes les ressources
+        <span>Toutes les ressources</span>
       </a>
       <span>›</span>
       <span>{name}</span>
@@ -70,6 +70,21 @@ const Breadcrumb = ({ name }) => (
       .breadcrumb-wrapper span:first-of-type {
         margin-left: 5px;
         margin-right: 15px;
+      }
+      @media only screen and (min-width: 1px) and (max-width: 800px) {
+        .breadcrumb-wrapper > a > svg {
+          display: none;
+        }
+        .breadcrumb-wrapper span:first-of-type {
+          margin-right: 5px;
+        }
+
+        .breadcrumb-wrapper > a > span,
+        .breadcrumb-wrapper > span:last-of-type {
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
       }
     `}</style>
   </>

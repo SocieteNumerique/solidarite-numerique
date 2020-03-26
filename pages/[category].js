@@ -44,9 +44,18 @@ const fetchResources = airTableCategory => {
 const Pagehead = ({ category }) => (
   <>
     <div className="wrapper content-container">
-      <div className="picto">Picto</div>
+      <div className="picto">
+        <img src={category.picto} alt={category.title} />
+      </div>
       <div>
-        <h1>{`J’ai besoin d’aide pour ${category.title.toLowerCase()}`}</h1>
+        <h1>
+          <img
+            className="mobile-picto"
+            src={category.picto}
+            alt={category.title}
+          />
+          {`J’ai besoin d’aide pour ${category.title.toLowerCase()}`}
+        </h1>
         <h2>{category.subTitle}</h2>
       </div>
     </div>
@@ -57,9 +66,11 @@ const Pagehead = ({ category }) => (
         align-items: center;
       }
 
-      .picto {
+      .picto img {
         height: 80px;
         width: 80px;
+        margin-right: 15px;
+        display: block;
       }
 
       h1 {
@@ -68,15 +79,84 @@ const Pagehead = ({ category }) => (
         line-height: 2.2rem;
         margin: 30px auto 10px;
       }
+
+      h1 .mobile-picto {
+        display: none;
+      }
       h2 {
         color: ${constants.colors.solidNumPurple};
-        font-size: 1.2rem;
-        line-height: 1.6rem;
+        font-size: 1.1rem;
+        line-height: 1.5rem;
         margin: 0px auto 30px;
+      }
+      @media only screen and (min-width: 1px) and (max-width: 800px) {
+        .picto {
+          display: none;
+        }
+
+        h1 {
+          font-size: 1.3rem;
+          line-height: 1.8rem;
+          margin: 30px auto 10px;
+          display: flex;
+
+          align-items: center;
+        }
+        h1 .mobile-picto {
+          height: 50px;
+          width: 50px;
+          margin-right: 10px;
+          display: block;
+        }
+        h2 {
+          font-size: 1rem;
+          line-height: 1.3rem;
+          margin: 20px auto 30px;
+        }
       }
     `}</style>
   </>
 );
+
+const TypeLabel = ({ type }) => {
+  const iconMatcher = {
+    article: { path: 'icon_article.svg', label: 'article' },
+    video: { path: 'icon_video.svg', label: 'video' },
+    'site web': { path: 'icon_site.svg', label: 'site internet' },
+    tutoriel: { path: 'icon_pasapas.svg', label: 'pas à pas' },
+    webinaire: { path: 'icon_webinar.svg', label: 'webinaire' },
+    'document à télécharger': {
+      path: 'icon_document.svg',
+      label: 'document',
+    },
+  };
+  const icon = iconMatcher[type];
+
+  return (
+    <>
+      <div>
+        {icon && <img src={'/images/icon/' + icon.path} alt={type} />}
+        {type}
+      </div>
+      <style jsx>{`
+        div {
+          background-color: #ecedf3;
+          color: #53657d;
+          display: flex;
+          align-items: center;
+          padding: 3px;
+          border-radius: 4px;
+          margin: 0 0 20px 20px;
+        }
+        div > img {
+          width: 20px;
+          height: 20px;
+          padding: 4px;
+        }
+      `}</style>
+    </>
+  );
+};
 
 const Resource = ({ ressources, category }) => (
   <Page>
@@ -98,6 +178,9 @@ const Resource = ({ ressources, category }) => (
           >
             <h3>{resource['Intitulé de la ressource proposée']}</h3>
             <p>{resource['Descriptif sommaire']}</p>
+            <div>
+              <TypeLabel type={resource['Type de ressource']} />
+            </div>
           </a>
         ))}
       </div>
@@ -107,7 +190,7 @@ const Resource = ({ ressources, category }) => (
         background-color: #fff;
       }
       .ressource-wrapper {
-        margin-top: 50px;
+        margin-top: 35px;
         margin-bottom: 70px;
       }
       .container {
@@ -123,6 +206,9 @@ const Resource = ({ ressources, category }) => (
         border: 3px solid ${constants.colors.grey};
         border-radius: 8px;
         transition: border 200ms ease-in-out;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
       }
       a.resource:hover {
         border: 3px solid ${constants.colors.blue};
@@ -140,9 +226,10 @@ const Resource = ({ ressources, category }) => (
         margin: 0 20px 20px;
         padding: 0;
         line-height: 1.5rem;
+        flex-grow: 1;
       }
       @media only screen and (min-width: 600px) and (max-width: 1000px) {
-        .categorie-container {
+        .container {
           display: grid;
           grid-template-columns: 49% 49%;
           justify-content: space-between;
@@ -151,7 +238,7 @@ const Resource = ({ ressources, category }) => (
         }
       }
       @media only screen and (min-width: 1px) and (max-width: 600px) {
-        .categorie-container {
+        .container {
           display: grid;
           grid-template-columns: 100%;
           justify-content: space-between;
