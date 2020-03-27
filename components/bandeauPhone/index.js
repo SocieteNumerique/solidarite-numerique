@@ -59,7 +59,7 @@ const CallCTA = () => (
 const BandeauPhone = () => (
   <>
     <div className="bandeau-telephone layout-center">
-      Être aidé par téléphone (appel gratuit)
+      Être aidé par téléphone (appel non surtaxé)
       <CallCTA />
     </div>
     <style jsx>{`

@@ -115,11 +115,11 @@ const HomePage = () => {
           </div>
           <div className="hero-text">
             <h1>Centre d’aide pour les démarches en ligne essentielles</h1>
-            <h2>
+            {/* <h2>
               Je trouve des réponses en ligne, ou j’appelle le&nbsp;
               <CallCTA />
             </h2>
-            <p>Appel gratuit, du lundi au vendredi, de 8h à 18h</p>
+            <p>Appel non surtaxé, du lundi au vendredi, de 8h à 18h</p> */}
           </div>
         </div>
       </div>

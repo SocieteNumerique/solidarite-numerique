@@ -27,7 +27,7 @@ const CallCTA = ({ inHeader }) => (
         justify-content: center;
       }
       a:after {
-        content: '(appel gratuit)';
+        content: '(appel non surtaxé)';
         display: ${inHeader ? 'block' : 'none'};
         position: absolute;
         right: -100px;

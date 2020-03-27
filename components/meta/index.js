@@ -14,13 +14,16 @@ const Meta = ({ title, description }) => {
   return (
     <>
       <NextSeo
-        title={(title || SITE_NAME) + ' - 📞 01 70 77 23 72 (appel gratuit)'}
+        // title={(title || SITE_NAME) + ' - 📞 01 70 77 23 72 (appel non surtaxé)'}
+        title={title || SITE_NAME}
         description={description || SITE_DESCRIPTION}
         canonical={SITE_URL}
         openGraph={{
           url: SITE_URL,
           locale: 'fr_FR',
-          title: (title || SITE_NAME) + ' - 📞 01 70 77 23 72 (appel gratuit)',
+          title: title || SITE_NAME,
+          // title:
+          //   (title || SITE_NAME) + ' - 📞 01 70 77 23 72 (appel non surtaxé)',
           description: description || SITE_DESCRIPTION,
           images: [
             {
@@ -46,7 +49,8 @@ const Meta = ({ title, description }) => {
         <meta
           itemProp="name"
           content={
-            (title || SITE_NAME) + ' - 📞 01 70 77 23 72 (appel gratuit)'
+            // (title || SITE_NAME) + ' - 📞 01 70 77 23 72 (appel gratuit)'
+            title || SITE_NAME
           }
         />
         <meta

@@ -184,13 +184,13 @@ const Resource = ({ ressources, category }) => (
           </a>
         ))}
       </div>
-      <div className="phone">
+      {/* <div className="phone">
         <h2>J’ai besoin d’aide</h2>
         <p>
           J’appelle le centre d’aide au <CallCTA />
         </p>
-        <p>Appel gratuit, du lundi au vendredi, de 8h à 18h</p>
-      </div>
+        <p>Appel non surtaxé, du lundi au vendredi, de 8h à 18h</p>
+      </div> */}
     </div>
     <style jsx>{`
       .page-head-wrapper {
@@ -204,9 +204,9 @@ const Resource = ({ ressources, category }) => (
         justify-content: space-between;
       }
       .container {
-        width: 64%;
+        width: 100%;
         display: grid;
-        grid-template-columns: 49% 49%;
+        grid-template-columns: 32% 32% 32%;
         grid-gap: 20px 20px;
       }
       .phone {
