@@ -48,6 +48,7 @@ const Resource = ({ ressources, category }) => {
                 {ressourcesBySubCateg[subCateg].map(resource => (
                   <a
                     key={resource['Intitulé de la ressource proposée']}
+                    title={resource['Intitulé de la ressource proposée']}
                     rel="noopener noreferrer"
                     target="_blank"
                     href={resource['Adresse (URL) de la ressource']}

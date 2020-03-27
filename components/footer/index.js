@@ -101,8 +101,12 @@ const Footer = () => {
           médiateurs volontaires et par des organisations qui sont engagées en
           faveur de l’inclusion numérique. Ce recensement n'a pas de visée
           promotionnelle ou exhaustive mais vise à proposer en urgence des
-          réponses aux questions et besoins des Français. Vous pouvez proposer
-          vos ressources <a href="/nouvel-ressource">ici</a>.
+          réponses aux questions et besoins des Français. Vous pouvez nous
+          écrire à{' '}
+          <a href="mailto:contact@solidarite-numerique.fr">
+            contact@solidarite-numerique.fr
+          </a>
+          .
         </div>
       </footer>
       <style jsx>{`
