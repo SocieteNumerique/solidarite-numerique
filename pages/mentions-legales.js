@@ -17,6 +17,10 @@ const MentionsLegales = () => {
         <h2>Directeur de la publication</h2>
         <p>Emmanuel Vandamme, Président de la SCIC La MedNum</p>
         <h2> Hébergeur <h2>
+        <p>
+          Zeit Now - 340 S Lemon Ave #4133, Walnut CA, 91789
+          Adresse contact : support@zeit.co
+        </p>
         <h2>Illustrations</h2>
         <p>
           <a href="https://fr.freepik.com/photos-vecteurs-libre/affaires">
