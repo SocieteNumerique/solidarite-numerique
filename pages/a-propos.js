@@ -26,8 +26,8 @@ const About = () => {
             vos courses en ligne…
           </li>
           <li>
-            Un numéro vert pour être accompagné par un conseiller dans toutes
-            vos démarches du quotidien en ligne
+            Un numéro non surtaxé pour être accompagné par un conseiller dans
+            toutes vos démarches du quotidien en ligne
           </li>
         </ul>
         <p>

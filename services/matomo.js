@@ -10,6 +10,13 @@ export function initMatomo({
     return;
   }
 
+  // Uncomment to activate sampling
+  // only load script for 10% of users
+  //
+  // if (Math.random() < 0.1) {
+  //   return;
+  // }
+
   window._paq = window._paq || [];
   let previousPath = '';
   matopush(['setSiteId', siteId]);

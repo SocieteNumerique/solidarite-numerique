@@ -87,7 +87,7 @@ const Privacy = () => (
           rel="noopener noreferrer"
           target="_blank"
         >
-          stats.data.gouv.fr
+          ici
         </a>
         .
       </p>

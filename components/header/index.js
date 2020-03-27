@@ -48,15 +48,22 @@ const Header = () => {
                 </a>
               </div>
               <div className="title">
-                <a href="/" className="dont-apply-link-style">
+                <a
+                  href="/"
+                  className="dont-apply-link-style"
+                  title="lien vers la page d'accueil"
+                >
                   <div id="site-title">Solidarité numérique</div>
                 </a>
-                {/* <CallCTA inHeader /> */}
+                <CallCTA inHeader />
               </div>
             </div>
             <div style={{ flexGrow: 1 }} />
             <div className="ressources-link">
-              <a href="/#toutes-les-ressources">
+              <a
+                href="/#toutes-les-ressources"
+                title="lien vers toutes les ressources"
+              >
                 <RessourcesIcon />
                 <span>Toutes les ressources</span>
               </a>

@@ -6,10 +6,10 @@ const CallCTA = ({ inHeader }) => (
   <>
     <a
       href="tel:0170772372"
-      title="Numéro de téléphone Solidarité numériqeu"
+      title="Numéro de téléphone Solidarité numérique"
       className="dont-apply-link-style"
     >
-      <div>01 70 77 23 72</div>
+      <span>01 70 772 372</span>
     </a>
     <style jsx>{`
       a {
@@ -30,12 +30,12 @@ const CallCTA = ({ inHeader }) => (
         content: '(appel non surtaxé)';
         display: ${inHeader ? 'block' : 'none'};
         position: absolute;
-        right: -100px;
+        right: -130px;
         top: 5px;
         font-size: 0.7rem;
         font-weight: bold;
       }
-      a > div {
+      a > span {
         height: 100%;
         width: 100%;
         display: flex;

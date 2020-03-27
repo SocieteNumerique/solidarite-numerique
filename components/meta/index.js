@@ -6,7 +6,7 @@ import { truncate } from 'lodash';
 const SITE_URL = 'https://solidarite-numerique.fr';
 const SITE_NAME = 'Solidarité Numérique';
 const SITE_DESCRIPTION =
-  'Un centre de ressources et d’aide par téléphone, pour vous accompagner dans vos démarches pendant la crise du covid19';
+  'Pendant le confinement, mes habitudes changent. Le centre d’aide et de ressources Solidarité Numérique m’accompagne pour rendre mon quotidien plus facile.';
 
 const Meta = ({ title, description }) => {
   description = truncate(description, { length: 160, omission: ' [...]' });
@@ -14,16 +14,14 @@ const Meta = ({ title, description }) => {
   return (
     <>
       <NextSeo
-        // title={(title || SITE_NAME) + ' - 📞 01 70 77 23 72 (appel non surtaxé)'}
-        title={title || SITE_NAME}
+        title={(title || SITE_NAME) + ' - 📞 01 70 772 372 (appel non surtaxé)'}
         description={description || SITE_DESCRIPTION}
         canonical={SITE_URL}
         openGraph={{
           url: SITE_URL,
           locale: 'fr_FR',
-          title: title || SITE_NAME,
-          // title:
-          //   (title || SITE_NAME) + ' - 📞 01 70 77 23 72 (appel non surtaxé)',
+          title:
+            (title || SITE_NAME) + ' - 📞 01 70 772 372 (appel non surtaxé)',
           description: description || SITE_DESCRIPTION,
           images: [
             {
@@ -49,8 +47,7 @@ const Meta = ({ title, description }) => {
         <meta
           itemProp="name"
           content={
-            // (title || SITE_NAME) + ' - 📞 01 70 77 23 72 (appel gratuit)'
-            title || SITE_NAME
+            (title || SITE_NAME) + ' - 📞 01 70 772 372 (appel non surtaxé)'
           }
         />
         <meta

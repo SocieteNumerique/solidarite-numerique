@@ -28,8 +28,7 @@ module.exports = withFonts({
     for (let i = 0; i < categoriesArray.length; i++) {
       const categ = categories[categoriesArray[i]];
 
-      await waitFor(100); // waits 5 sec between each call for Airtable limitation
-      //await waitFor(5000); // waits 5 sec between each call for Airtable limitation
+      await waitFor(1000); // waits 1 sec between each call for Airtable limitation
       paths[`/${categ.path}`] = {
         page: '/[category]',
         query: { category: categ.path },

@@ -22,7 +22,7 @@ const CallCTA = () => (
     <a href="tel:0170772372" className="dont-apply-link-style">
       <div>
         {phoneIcon}
-        <span>01 70 77 23 72</span>
+        <span>01 70 772 372</span>
       </div>
     </a>
     <style jsx>{`
