@@ -13,7 +13,7 @@ const Page = ({
     <div id="page-layout">
       <Meta title={title} description={description} />
       <Header headerKey={headerKey || 'home'} />
-      {/* <BandeauPhone /> */}
+      <BandeauPhone />
       <main>{children}</main>
       {useFooter && <Footer />}
     </div>

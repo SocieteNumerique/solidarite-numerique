@@ -65,13 +65,13 @@ const Resource = ({ ressources, category }) => {
             </React.Fragment>
           ))}
         </div>
-        {/* <div className="phone">
+        <div className="phone">
           <h2>J’ai besoin d’aide</h2>
           <p>
             J’appelle le centre d’aide au <CallCTA />
           </p>
           <p>Appel non surtaxé, du lundi au vendredi, de 9h à 18h</p>
-        </div> */}
+        </div>
       </div>
       <style jsx>{`
         .page-head-wrapper {
