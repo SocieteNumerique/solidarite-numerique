@@ -3,23 +3,6 @@ import React from 'react';
 import { Page } from '../layouts';
 
 const JoinUs = () => {
-  if (typeof window !== 'undefined') {
-    let js;
-    let q;
-    let doc = document;
-
-    const id = 'typef_orm';
-    const b = 'https://embed.typeform.com/';
-
-    if (!doc.getElementById(id)) {
-      js = doc.createElement('script');
-      js.id = id;
-      js.src = b + 'embed.js';
-      q = doc.getElementsByTagName('script')[0];
-      q.parentNode.insertBefore(js, q);
-    }
-  }
-
   return (
     <Page useFooter={false} title="Rejoindre l’équipe des mediateurs">
       <div
@@ -61,6 +44,7 @@ const JoinUs = () => {
           ➞ c'est par ici
         </a>
       </div>
+      <script id="typef_orm" src="https://embed.typeform.com/embed.js"></script>
       <style jsx>{`
         .no-typeform {
           margin: 20px;

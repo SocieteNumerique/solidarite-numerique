@@ -43,18 +43,7 @@ const NewResource = () => (
         ➞ c'est par ici
       </a>
     </div>
-    <script
-      type="text/javascript"
-      dangerouslySetInnerHTML={{
-        __html: `var _paq = window._paq || [];
-  (function() {
-    var u = "//$yourPiwikDomain/";
-    _paq.push(['setTrackerUrl', u+'piwik.php']);
-    _paq.push(['setSiteId', 'X']);
-  })();'}}>`,
-      }}
-    />
-    <script id="typef_orm" src="https://embed.typeform.com/embed.js" />
+    <script id="typef_orm" src="https://embed.typeform.com/embed.js"></script>
     <style jsx>{`
       .no-typeform {
         margin: 20px;
