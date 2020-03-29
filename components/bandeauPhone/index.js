@@ -64,13 +64,14 @@ const BandeauPhone = () => (
     </div>
     <style jsx>{`
       .bandeau-telephone {
+        font-size: 0.9rem;
         background-color: #fff;
         width: calc(100% - 50px);
         position: fixed;
         bottom: 0;
         z-index: 10;
         flex-direction: column;
-        padding: 20px 25px;
+        padding: 10px 25px;
         border-top: 3px solid ${constants.colors.grey};
       }
       @media (min-width: 800px) {

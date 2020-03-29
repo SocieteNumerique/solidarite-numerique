@@ -15,7 +15,7 @@
     "picto": "/images/pictos/picto_demarchetravail.svg",
     "description": [
       "Je me renseigne sur le chômage partiel,",
-      "j’envoie une lettre recommandée. (modifié) "
+      "j’envoie une lettre recommandée."
     ],
     "path": "declaration-travail"
   },
@@ -23,7 +23,7 @@
     "title": "Voir un médecin",
     "description": [
       "Je dois consulter un médecin à distance,",
-      "j’ai besoin d’un arrêt maladie"
+      "j’ai besoin d’un arrêt maladie."
     ],
     "subTitle": "Pendant le confinement, je peux voir un médecin sur Internet (téléconsultation) si j’ai une question, besoin d’une ordonnance ou d’un arrêt de travail.",
     "picto": "/images/pictos/picto_telemedecine.svg",
@@ -33,7 +33,7 @@
     "title": "Rester en contact avec mes proches",
     "description": [
       "Je reçois et j’envoie des emails,",
-      "j’apprends à envoyer des photos en pièce jointe"
+      "j’apprends à envoyer des photos en pièce jointe."
     ],
     "subTitle": "Pendant le confinement, je peux continuer à prendre des nouvelles de mes amis et de ma famille. Je peux leur envoyer des photo ou les appeler en utilisant de la vidéo pour qu’ils me voient.",
     "picto": "/images/pictos/picto_proches.svg",
@@ -55,7 +55,7 @@
     "picto": "/images/pictos/picto_ecole.svg",
     "description": [
       "Je me connecte à un ENT,",
-      "je trouve des vidéos pédagogiques"
+      "je trouve des vidéos pédagogiques."
     ],
     "path": "ecole-a-la-maison"
   },

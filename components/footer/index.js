@@ -212,7 +212,7 @@ const Footer = () => {
         .disclaimer {
           text-align:center;
           font-size:0.8rem;
-          padding:30px 50px;
+          padding:30px 50px 100px;
           color:#666;
         }
 
