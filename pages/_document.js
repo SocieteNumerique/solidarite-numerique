@@ -39,8 +39,73 @@ class DevDocument extends Document {
   render() {
     return (
       <html lang="fr">
-        <Head />
+        <Head>
+          <style
+            dangerouslySetInnerHTML={{
+              __html: `
+            /* nunito-regular - latin */
+            @font-face {
+              font-family: 'Nunito';
+              font-style: normal;
+              font-weight: 400;
+              font-display: swap;
+              src: url('/fonts/nunito-v12-latin-regular.eot'); /* IE9 Compat Modes */
+              src: local('Nunito Regular'), local('Nunito-Regular'),
+                url('/fonts/nunito-v12-latin-regular.eot?#iefix')
+                  format('embedded-opentype'),
+                /* IE6-IE8 */ url('/fonts/nunito-v12-latin-regular.woff2') format('woff2'),
+                /* Super Modern Browsers */ url('/fonts/nunito-v12-latin-regular.woff')
+                  format('woff'),
+                /* Modern Browsers */ url('/fonts/nunito-v12-latin-regular.ttf')
+                  format('truetype'),
+                /* Safari, Android, iOS */ url('/fonts/nunito-v12-latin-regular.svg#Nunito')
+                  format('svg'); /* Legacy iOS */
+            }
+            
+            /* nunito-700 - latin */
+            @font-face {
+              font-family: 'Nunito';
+              font-style: normal;
+              font-weight: 700;
+              font-display: swap;
+              src: url('/fonts/nunito-v12-latin-700.eot'); /* IE9 Compat Modes */
+              src: local('Nunito Bold'), local('Nunito-Bold'),
+                url('/fonts/nunito-v12-latin-700.eot?#iefix') format('embedded-opentype'),
+                /* IE6-IE8 */ url('/fonts/nunito-v12-latin-700.woff2') format('woff2'),
+                /* Super Modern Browsers */ url('/fonts/nunito-v12-latin-700.woff')
+                  format('woff'),
+                /* Modern Browsers */ url('/fonts/nunito-v12-latin-700.ttf')
+                  format('truetype'),
+                /* Safari, Android, iOS */ url('/fonts/nunito-v12-latin-700.svg#Nunito')
+                  format('svg'); /* Legacy iOS */
+            }
+            
+            /* source-sans-pro-regular - latin */
+            @font-face {
+              font-family: 'Source Sans Pro';
+              font-style: normal;
+              font-weight: 400;
+              font-display: swap;
+              src: url('/fonts/source-sans-pro-v13-latin-regular.eot');
+              src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'),
+                url('/fonts/source-sans-pro-v13-latin-regular.eot?#iefix')
+                  format('embedded-opentype'),
+                url('/fonts/source-sans-pro-v13-latin-regular.woff2') format('woff2'),
+                url('/fonts/source-sans-pro-v13-latin-regular.woff') format('woff'),
+                url('/fonts/source-sans-pro-v13-latin-regular.ttf') format('truetype'),
+                url('/fonts/source-sans-pro-v13-latin-regular.svg#SourceSansPro')
+                  format('svg');
+            }`,
+            }}
+          />
+        </Head>
         <body>
+          <script
+            src="//instant.page/3.0.0"
+            type="module"
+            defer
+            integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"
+          ></script>
           <Main />
           <NextScript />
         </body>
@@ -53,7 +118,88 @@ class StaticDocument extends Document {
   render() {
     return (
       <html lang="fr">
-        <CustomHead />
+        <CustomHead>
+          <style
+            dangerouslySetInnerHTML={{
+              __html: `
+            /* nunito-regular - latin */
+            @font-face {
+              font-family: 'Nunito';
+              font-style: normal;
+              font-weight: 400;
+              font-display: swap;
+              src: url('/fonts/nunito-v12-latin-regular.eot'); /* IE9 Compat Modes */
+              src: local('Nunito Regular'), local('Nunito-Regular'),
+                url('/fonts/nunito-v12-latin-regular.eot?#iefix')
+                  format('embedded-opentype'),
+                /* IE6-IE8 */ url('/fonts/nunito-v12-latin-regular.woff2') format('woff2'),
+                /* Super Modern Browsers */ url('/fonts/nunito-v12-latin-regular.woff')
+                  format('woff'),
+                /* Modern Browsers */ url('/fonts/nunito-v12-latin-regular.ttf')
+                  format('truetype'),
+                /* Safari, Android, iOS */ url('/fonts/nunito-v12-latin-regular.svg#Nunito')
+                  format('svg'); /* Legacy iOS */
+            }
+            
+            /* nunito-700 - latin */
+            @font-face {
+              font-family: 'Nunito';
+              font-style: normal;
+              font-weight: 700;
+              font-display: swap;
+              src: url('/fonts/nunito-v12-latin-700.eot'); /* IE9 Compat Modes */
+              src: local('Nunito Bold'), local('Nunito-Bold'),
+                url('/fonts/nunito-v12-latin-700.eot?#iefix') format('embedded-opentype'),
+                /* IE6-IE8 */ url('/fonts/nunito-v12-latin-700.woff2') format('woff2'),
+                /* Super Modern Browsers */ url('/fonts/nunito-v12-latin-700.woff')
+                  format('woff'),
+                /* Modern Browsers */ url('/fonts/nunito-v12-latin-700.ttf')
+                  format('truetype'),
+                /* Safari, Android, iOS */ url('/fonts/nunito-v12-latin-700.svg#Nunito')
+                  format('svg'); /* Legacy iOS */
+            }
+            
+            /* source-sans-pro-regular - latin */
+            @font-face {
+              font-family: 'Source Sans Pro';
+              font-style: normal;
+              font-weight: 400;
+              font-display: swap;
+              src: url('/fonts/source-sans-pro-v13-latin-regular.eot');
+              src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'),
+                url('/fonts/source-sans-pro-v13-latin-regular.eot?#iefix')
+                  format('embedded-opentype'),
+                url('/fonts/source-sans-pro-v13-latin-regular.woff2') format('woff2'),
+                url('/fonts/source-sans-pro-v13-latin-regular.woff') format('woff'),
+                url('/fonts/source-sans-pro-v13-latin-regular.ttf') format('truetype'),
+                url('/fonts/source-sans-pro-v13-latin-regular.svg#SourceSansPro')
+                  format('svg');
+            }
+            
+            /* source-sans-pro-700 - latin */
+            @font-face {
+              font-family: 'Source Sans Pro';
+              font-style: normal;
+              font-weight: 700;
+              font-display: swap;
+              src: url('/fonts/source-sans-pro-v13-latin-700.eot');
+              src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'),
+                url('/fonts/source-sans-pro-v13-latin-700.eot?#iefix')
+                  format('embedded-opentype'),
+                url('/fonts/source-sans-pro-v13-latin-700.woff2') format('woff2'),
+                url('/fonts/source-sans-pro-v13-latin-700.woff') format('woff'),
+                url('/fonts/source-sans-pro-v13-latin-700.ttf') format('truetype'),
+                url('/fonts/source-sans-pro-v13-latin-700.svg#SourceSansPro');
+            }`,
+            }}
+          />
+        </CustomHead>
+        <script
+          src="//instant.page/3.0.0"
+          type="module"
+          defer
+          integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"
+        ></script>
         <body>
           <Main />
           {process.env.MATOMO_SITE_ID && process.env.MATOMO_URL && (

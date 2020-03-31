@@ -4,24 +4,21 @@ import constants from '../../constants';
 import { BandeauGouv } from '../../components';
 import { CallCTA } from '../../uiComponents';
 
-const RessourcesIcon = () => (
+const SearchIcon = () => (
   <>
     <svg
+      xmlns="http://www.w3.org/2000/svg"
       width="24"
       height="24"
       viewBox="0 0 24 24"
       fill="none"
-      xmlns="http://www.w3.org/2000/svg"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     >
-      <circle cx="4" cy="4" r="2" fill={`${constants.colors.fontColor}`} />
-      <circle cx="12" cy="4" r="2" fill={`${constants.colors.fontColor}`} />
-      <circle cx="20" cy="4" r="2" fill={`${constants.colors.fontColor}`} />
-      <circle cx="4" cy="12" r="2" fill={`${constants.colors.fontColor}`} />
-      <circle cx="12" cy="12" r="2" fill={`${constants.colors.fontColor}`} />
-      <circle cx="20" cy="12" r="2" fill={`${constants.colors.fontColor}`} />
-      <circle cx="4" cy="20" r="2" fill={`${constants.colors.fontColor}`} />
-      <circle cx="12" cy="20" r="2" fill={`${constants.colors.fontColor}`} />
-      <circle cx="20" cy="20" r="2" fill={`${constants.colors.fontColor}`} />
+      <circle cx="11" cy="11" r="8"></circle>
+      <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
     </svg>
     <style jsx>{`
       svg {
@@ -61,11 +58,11 @@ const Header = () => {
             <div style={{ flexGrow: 1 }} />
             <div className="ressources-link">
               <a
-                href="/#toutes-les-ressources"
-                title="lien vers toutes les ressources"
+                href="/rechercher-une-ressource"
+                title="Rechercher une ressource dans le site"
               >
-                <RessourcesIcon />
-                <span>Toutes les ressources</span>
+                <SearchIcon />
+                <span>Rechercher une ressource</span>
               </a>
             </div>
           </div>
@@ -114,6 +111,8 @@ const Header = () => {
           font-size: 1.1rem;
           text-decoration: none;
           font-weight: bold;
+          font-family: 'Nunito', sans-serif !important;
+
           color: ${constants.colors.solidNumPurple};
         }
         .top-left-wrapper > .title a:hover {

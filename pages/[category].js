@@ -65,12 +65,21 @@ const Resource = ({ ressources, category }) => {
             </React.Fragment>
           ))}
         </div>
-        <div className="phone">
-          <h2>J’ai besoin d’aide</h2>
-          <p>
-            J’appelle le centre d’aide au <CallCTA />
-          </p>
-          <p>Appel non surtaxé, du lundi au vendredi, de 9h à 18h</p>
+        <div className="right-column">
+          <div className="phone">
+            <h2>J’ai besoin d’aide</h2>
+            <img
+              src="/images/illus/teleoperatrice.svg"
+              alt="Besoin d’aide ? Un.e téléopérateur.rice vous répond !"
+            />
+            <p>
+              J’appelle le centre d’aide au <CallCTA />
+            </p>
+            <p>Appel non surtaxé, du lundi au vendredi, de 9h à 18h</p>
+          </div>
+          <div>
+            <a href="#header">↑ Revenir en au haut de la page</a>
+          </div>
         </div>
       </div>
       <style jsx>{`
@@ -79,6 +88,7 @@ const Resource = ({ ressources, category }) => {
         }
         .retour {
           font-weight: bold;
+          font-family: 'Nunito', sans-serif !important;
           font-size: 1rem;
           margin-top: 5px;
           padding: 5px;
@@ -88,7 +98,7 @@ const Resource = ({ ressources, category }) => {
           margin-top: 0px;
           margin-bottom: 70px;
           display: flex;
-          align-items: flex-start;
+          align-items: normal;
           justify-content: space-between;
         }
         .table-des-matieres {
@@ -116,23 +126,50 @@ const Resource = ({ ressources, category }) => {
           grid-template-columns: 49% 49%;
           grid-gap: 20px 20px;
         }
+
+        .right-column {
+          width: 28%;
+          padding: 0;
+          margin: 0;
+        }
+        .right-column > div:last-of-type {
+          position: sticky;
+          top: 90vh;
+          margin-left: 20px;
+          z-index: 1;
+        }
         .phone {
-          width: calc(28% - 60px);
+          width: calc(100% - 60px);
           padding: 20px;
+          margin: 0;
+          margin-left: 10px;
           margin-top: 100px;
           display: block;
           position: sticky;
           background-color: #ecedf3;
           border-radius: 8px;
           border: 3px solid ${constants.colors.grey};
-          top: 20px;
+          top: 50px;
           font-size: 0.9rem;
+          z-index: 2;
         }
 
         .phone h2 {
           margin: 0;
           padding: 0;
           font-size: 1.4rem;
+          margin-top: 20px;
+        }
+
+        .phone img {
+          position: absolute;
+          width: 80px;
+          height: 80px;
+          top: -20%;
+          border-radius: 100px;
+          overflow: hidden;
+          border: 3px solid #ccc;
+          left: calc(50% - 40px);
         }
 
         a.resource {

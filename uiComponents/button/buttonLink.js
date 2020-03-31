@@ -140,6 +140,7 @@ const ButtonLink = ({
         }
         .button-link.phone > .content-wrapper > b {
           font-weight: bold;
+          font-family: 'Nunito', sans-serif !important;
         }
         .button-link.phone > .content-wrapper > small {
           margin-left: 10px;

@@ -20,6 +20,7 @@ const CallCTA = ({ inHeader }) => (
         font-size: 1.2rem;
         background-color: ${constants.colors.solidNumYellow};
         font-weight: bold;
+        font-family: 'Nunito', sans-serif !important;
         position: relative;
         display: inline-block;
         margin: 2px auto 20px;
@@ -34,6 +35,7 @@ const CallCTA = ({ inHeader }) => (
         top: 5px;
         font-size: 0.7rem;
         font-weight: bold;
+        font-family: 'Nunito', sans-serif !important;
       }
       a > span {
         height: 100%;
@@ -41,6 +43,7 @@ const CallCTA = ({ inHeader }) => (
         display: flex;
         align-items: center;
         justify-content: center;
+        font-family: 'Nunito', sans-serif !important;
       }
       @media (max-width: 800px) {
         a {

@@ -12,7 +12,7 @@ const HomePage = () => {
         <div className="content-container ">
           <div className="hero-img">
             <img
-              src="/images/illus/illu_solidnum.png"
+              src="/images/illus/illu_home.svg"
               alt="Solidarite numerique, le centre d’aide pour les démarche en ligne"
               title="Solidarite numerique, le centre d’aide pour les démarche en ligne"
             />

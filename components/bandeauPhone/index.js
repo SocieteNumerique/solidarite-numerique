@@ -34,6 +34,7 @@ const CallCTA = () => (
         font-size: 1.2rem;
         background-color: #ffc107;
         font-weight: bold;
+        font-family: 'Nunito', sans-serif !important;
         position: relative;
         display: inline-block;
         margin: 2px auto;

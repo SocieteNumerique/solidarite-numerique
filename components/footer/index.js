@@ -94,20 +94,6 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div className="disclaimer">
-          Les ressources qui figurent sur ce site permettent d’apporter une
-          première aide aux personnes qui n’ont pas l’habitude d’utiliser
-          certains services en ligne essentiels. Elles ont été proposées par des
-          médiateurs volontaires et par des organisations qui sont engagées en
-          faveur de l’inclusion numérique. Ce recensement n'a pas de visée
-          promotionnelle ou exhaustive mais vise à proposer en urgence des
-          réponses aux questions et besoins des Français. Vous pouvez nous
-          écrire à{' '}
-          <a href="mailto:contact@solidarite-numerique.fr">
-            contact@solidarite-numerique.fr
-          </a>
-          .
-        </div>
       </footer>
       <style jsx>{`
         #footer {
@@ -208,18 +194,6 @@ const Footer = () => {
         .container h1:first-of-type {
           margin-top: 0;
         }
-
-        .disclaimer {
-          text-align:center;
-          font-size:0.8rem;
-          padding:30px 50px 100px;
-          color:#666;
-        }
-
-        .disclaimer a {
-          display:inline-block;
-        }
-
 
         @media only screen and (min-width: 1px) and (max-width: 800px) {
           .footer__social {

@@ -9,15 +9,20 @@ const BandeauMediateur = () => (
     <div className="bandeau-mediateur">
       <div className="container content-container">
         <div>
-          <h3>Vous êtes un médiateur numérique&nbsp;?</h3>
+          <h3>Vous aimeriez proposer des contenus&nbsp;?</h3>
           <p>
-            Nous avons besoin de vous pour conseiller les usagers et produire
-            des ressources
+            Les ressources qui figurent sur ce site permettent d’apporter une
+            première aide aux personnes qui n’ont pas l’habitude d’utiliser
+            certains services en ligne essentiels. Elles ont été proposées par
+            des médiateurs volontaires et par des organisations qui sont
+            engagées en faveur de l’inclusion numérique. Ce recensement n'a pas
+            de visée promotionnelle ou exhaustive mais vise à proposer en
+            urgence des réponses aux questions et besoins des Français.
           </p>
         </div>
         <div>
-          <ButtonLink href="/rejoignez-nous" alt large>
-            Je veux aider&nbsp;➞
+          <ButtonLink href="/nouvelle-ressource" alt large>
+            Proposer une ressource&nbsp;➞
           </ButtonLink>
         </div>
       </div>

@@ -18,6 +18,7 @@ module.exports = withFonts({
       '/vie-privee': { page: '/vie-privee' },
       '/nouvelle-ressource': { page: '/nouvelle-ressource' },
       '/rejoignez-nous': { page: '/rejoignez-nous' },
+      '/rechercher-une-ressource': { page: '/rechercher-une-ressource' },
       '/mentions-legales': { page: '/mentions-legales' },
       '/contact': { page: '/contact' },
       '/404': { page: '/404' },
