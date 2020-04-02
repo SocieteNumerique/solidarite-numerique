@@ -2,6 +2,8 @@ import Footer from './footer';
 import BandeauGouv from './bandeauGouv';
 import BandeauPhone from './bandeauPhone';
 import BandeauMediateur from './bandeauMediateur';
+import PhoneCard from './phoneCard';
+import ReviewCard from './reviewCard';
 import Pagehead from './pagehead';
 import Categories from './categories';
 import Header from './header';
@@ -14,6 +16,8 @@ export {
   BandeauPhone,
   BandeauGouv,
   BandeauMediateur,
+  PhoneCard,
+  ReviewCard,
   Categories,
   Pagehead,
 };

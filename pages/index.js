@@ -7,7 +7,7 @@ import { CallCTA } from '../uiComponents';
 
 const HomePage = () => {
   return (
-    <Page title="Solidarité numérique">
+    <Page title="Solidarité Numérique - Page d'accueil">
       <div className="baseline">
         <div className="content-container ">
           <div className="hero-img">

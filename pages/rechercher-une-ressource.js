@@ -5,6 +5,7 @@ import fetchResources from '../services/airtable';
 import constants from '../constants';
 import { Loader } from '../uiComponents';
 import searchVanilla from '../services/searchVanilla';
+import { BandeauMediateur, PhoneCard, ReviewCard } from '../components';
 
 const SearchIcon = () => (
   <>
@@ -45,7 +46,7 @@ const SearchPage = ({ allRessources }) => {
               type="text"
               placeholder="rechercher une ressource"
             ></input>
-            <button onClick={() => window.searchInRessources(allRessources)}>
+            <button onClick={() => window.searchInRessources()}>
               <SearchIcon />
               Rechercher
             </button>
@@ -74,10 +75,19 @@ const SearchPage = ({ allRessources }) => {
           </div>
         </div>
       </div>
+      <div className="bottom-cards">
+        <div className="bottom-cards-wrapper">
+          <PhoneCard />
+        </div>
+        <div className="bottom-cards-wrapper">
+          <ReviewCard />
+        </div>
+      </div>
+      <BandeauMediateur />
       <script
         type="text/javascript"
         dangerouslySetInnerHTML={{
-          __html: searchVanilla(allRessources),
+          __html: searchVanilla(JSON.stringify(allRessources)),
         }}
       ></script>
       <style jsx>{`
@@ -147,6 +157,17 @@ const SearchPage = ({ allRessources }) => {
           display: grid;
           grid-template-columns: 32% 32% 32%;
           grid-gap: 20px 20px;
+        }
+
+        .bottom-cards {
+          display: flex;
+          justify-content: center;
+          align-items: stretch;
+          margin-bottom: 70px;
+        }
+        .bottom-cards-wrapper {
+          max-width: 300px;
+          margin: 10px;
         }
         @media only screen and (min-width: 1px) and (max-width: 1000px) {
           .search-page-header h1 {

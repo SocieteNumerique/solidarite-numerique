@@ -20,6 +20,7 @@ module.exports = withFonts({
       '/rejoignez-nous': { page: '/rejoignez-nous' },
       '/rechercher-une-ressource': { page: '/rechercher-une-ressource' },
       '/mentions-legales': { page: '/mentions-legales' },
+      '/votre-avis': { page: '/votre-avis' },
       '/contact': { page: '/contact' },
       '/404': { page: '/404' },
     };

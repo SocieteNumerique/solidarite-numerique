@@ -6,7 +6,7 @@ const Pagehead = ({ category }) => (
   <>
     <div className="wrapper content-container">
       <div className="picto">
-        <img src={category.picto} alt={category.title} />
+        <img src={category.picto} alt="" />
       </div>
       <h1>{`J’ai besoin d’aide pour ${category.title.toLowerCase()}`}</h1>
     </div>

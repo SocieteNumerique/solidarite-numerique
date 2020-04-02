@@ -20,7 +20,7 @@ const TypeLabel = ({ type }) => {
         {icon && (
           <img
             src={'/images/icon/' + icon.path}
-            alt={`type de la ressource : ${type}`}
+            alt=""
             title={`type de la ressource : ${type}`}
           />
         )}

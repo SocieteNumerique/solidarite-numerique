@@ -2,8 +2,13 @@ import React from 'react';
 
 import categories from '../_ressources/categories.json';
 import { Page } from '../layouts';
-import { CallCTA, TypeLabel } from '../uiComponents';
-import { Pagehead } from '../components';
+import { TypeLabel } from '../uiComponents';
+import {
+  Pagehead,
+  BandeauMediateur,
+  PhoneCard,
+  ReviewCard,
+} from '../components';
 import fetchResources from '../services/airtable';
 
 import constants from '../constants';
@@ -22,7 +27,7 @@ const computeResBySubCateg = ressources =>
 const Resource = ({ ressources, category }) => {
   const ressourcesBySubCateg = computeResBySubCateg(ressources);
   return (
-    <Page>
+    <Page title={`Solidarité Numérique - Ressources : ${category.title}`}>
       <div className="content-container retour">
         <a href="/#toutes-les-ressources">← Retour</a>
       </div>
@@ -66,22 +71,16 @@ const Resource = ({ ressources, category }) => {
           ))}
         </div>
         <div className="right-column">
-          <div className="phone">
-            <h2>J’ai besoin d’aide</h2>
-            <img
-              src="/images/illus/teleoperatrice.svg"
-              alt="Besoin d’aide ? Un.e téléopérateur.rice vous répond !"
-            />
-            <p>
-              J’appelle le centre d’aide au <CallCTA />
-            </p>
-            <p>Appel non surtaxé, du lundi au vendredi, de 9h à 18h</p>
-          </div>
+          <PhoneCard useMarginTop={true} />
           <div>
             <a href="#header">↑ Revenir en au haut de la page</a>
           </div>
         </div>
       </div>
+      <div className="content-container" style={{ marginBottom: '40px' }}>
+        <ReviewCard />
+      </div>
+      <BandeauMediateur />
       <style jsx>{`
         .page-head-wrapper {
           background-color: #fff;
@@ -138,39 +137,6 @@ const Resource = ({ ressources, category }) => {
           margin-left: 20px;
           z-index: 1;
         }
-        .phone {
-          width: calc(100% - 60px);
-          padding: 20px;
-          margin: 0;
-          margin-left: 10px;
-          margin-top: 100px;
-          display: block;
-          position: sticky;
-          background-color: #ecedf3;
-          border-radius: 8px;
-          border: 3px solid ${constants.colors.grey};
-          top: 50px;
-          font-size: 0.9rem;
-          z-index: 2;
-        }
-
-        .phone h2 {
-          margin: 0;
-          padding: 0;
-          font-size: 1.4rem;
-          margin-top: 20px;
-        }
-
-        .phone img {
-          position: absolute;
-          width: 80px;
-          height: 80px;
-          top: -20%;
-          border-radius: 100px;
-          overflow: hidden;
-          border: 3px solid #ccc;
-          left: calc(50% - 40px);
-        }
 
         a.resource {
           width: 100%;
@@ -202,25 +168,21 @@ const Resource = ({ ressources, category }) => {
           flex-grow: 1;
         }
         @media only screen and (min-width: 600px) and (max-width: 1000px) {
-          .container {
-            width: 100%;
-          }
           .container > div {
             grid-template-columns: 49% 49%;
             margin-bottom: 50px;
           }
-          .phone {
-            display: none;
-          }
         }
         @media only screen and (min-width: 1px) and (max-width: 600px) {
-          .container {
-            width: 100%;
-          }
           .container > div {
             grid-template-columns: 100%;
           }
-          .phone {
+        }
+        @media only screen and (min-width: 1px) and (max-width: 1000px) {
+          .container {
+            width: 100%;
+          }
+          .right-column {
             display: none;
           }
         }

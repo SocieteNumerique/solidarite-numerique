@@ -19,7 +19,7 @@ const Categories = () => (
             >
               <div>
                 <h3>
-                  <img src={category.picto} alt={category.title} />
+                  <img src={category.picto} alt="" />
                   {category.title}
                 </h3>
                 {category.description.map(desc => (
