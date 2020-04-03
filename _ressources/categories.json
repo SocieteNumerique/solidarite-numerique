@@ -5,8 +5,7 @@
     "picto": "/images/pictos_optimized/picto_demarchefamille.svg",
     "description": [
       "J’utilise mon ordinateur, je vérifie si j’ai le droit à des aides sociales ou je déclare mes droits (CAF, …),",
-      "je télécharge mon autorisation de sortie pendant le confinement.",
-      "Voici des ressources utiles."
+      "je télécharge mon autorisation de sortie pendant le confinement."
     ],
     "path": "declaration-famille"
   },
@@ -17,7 +16,6 @@
     "description": [
       "Je fais mes démarches auprès de Pôle emploi,",
       "je m’informe sur le chômage partiel et sur les aides que je peux recevoir."
-      "Voici des ressources utiles."
     ],
     "path": "declaration-travail"
   },
@@ -25,8 +23,7 @@
     "title": "Voir un médecin",
     "description": [
       "Je souhaite voir un médecin grâce à Internet,",
-      "J'ai besoin de déclarer mon arrêt de travail.",
-      "Voici des ressources utiles."
+      "J'ai besoin de déclarer mon arrêt de travail."
     ],
     "subTitle": "Pendant le confinement, je peux voir un médecin sur Internet (téléconsultation) si j’ai une question, besoin d’une ordonnance ou d’un arrêt de travail.",
     "picto": "/images/pictos_optimized/picto_telemedecine.svg",
@@ -35,8 +32,7 @@
   "4- Communiquer avec ses proches à distance": {
     "title": "Rester en contact avec mes proches",
     "description": [
-      "Je peux téléphoner et échanger par Internet avec ma famille et mes proches,",
-      "Voici des ressources utiles."
+      "Je peux téléphoner et échanger par Internet avec ma famille et mes proches,"
     ],
     "subTitle": "Pendant le confinement, je peux continuer à prendre des nouvelles de mes amis et de ma famille. Je peux leur envoyer des photo ou les appeler en utilisant de la vidéo pour qu’ils me voient.",
     "picto": "/images/pictos_optimized/picto_proches.svg",
@@ -45,8 +41,7 @@
   "3- Télétravailler": {
     "title": "Travailler depuis chez moi",
     "description": [
-      "Je peux travailler à distance avec mes collègues sur des outils partagés.",
-      "Voici des ressources utiles."
+      "Je peux travailler à distance avec mes collègues sur des outils partagés."
     ],
     "subTitle": "Pendant le confinement, des outils peuvent m’aider à faire des réunions en ligne, travailler sur un document avec mes collègues ou améliorer ma connexion Internet.",
     "picto": "/images/pictos_optimized/picto_teletravail.svg",
@@ -59,14 +54,12 @@
     "description": [
       "Je me connecte à un ENT,",
       "j’occupe mes enfants et je les fais travailler à la maison."
-      "Voici des ressources utiles."
     ],
     "path": "ecole-a-la-maison"
   },
   "2- Faire ses courses alimentaires en ligne": {
     "description": [
-      "Je fais mes courses alimentaires en ligne ou auprès du commerçant le plus proche.",
-      "Voici des ressources utiles."
+      "Je fais mes courses alimentaires en ligne ou auprès du commerçant le plus proche."
     ],
     "title": "Faire mes courses sur internet",
     "subTitle": "Pendant le confinement, je peux passer ma commande de courses sur Internet. Je peux me les faire livrer ou aller les chercher si j’ai une voiture.",
@@ -77,8 +70,7 @@
     "title": "Trouver des informations vérifiées",
     "subTitle": "Pendant le confinement, je m’informe sur des sites de confiance pour suivre l’actualité.",
     "description": [
-      "Je veux m’informer en trouvant des informations vérifiées, notamment sur la pandémie du COVID-19.",
-      "Voici des ressources utiles."
+      "Je veux m’informer en trouvant des informations vérifiées, notamment sur la pandémie du COVID-19."
     ],
     "picto": "/images/pictos_optimized/picto_infoverig.svg",
     "path": "information"
