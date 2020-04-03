@@ -69,17 +69,29 @@ export default allRessources =>
     // else we display loader
     setResultClass('loading');
 
+    function meaningless(word) {
+      var stopWords = ['et', 'de','du', 'la', 'le', 'a', 'au','ce', 'par', 'des', 'ou', 'un', 'une', 'ca','ce','cet'];
+      if (word ==='') {
+        return true;
+      }
+      if(stopWords.indexOf(word) !== -1) {
+        return true;
+      }
+      return false;
+    }
+
     var searchTerms = removeAccents(searchInput.value).toLowerCase().split(' ');
 
     // compute results
     var results = [];
     for (var i = 0; i < allRessources.length; i++) {
+      var score = 0;
+      var item = allRessources[i];
+
       for (var u = 0; u < searchTerms.length; u ++) {
         var searchTerm = searchTerms[u];
 
-        if(searchTerm !== '') {
-          var item = allRessources[i];
-          var score = 0;
+        if(!meaningless(searchTerm)) {
           if (isPresent(item.title, searchTerm)) {
             score += 0.2;
           }
@@ -89,12 +101,14 @@ export default allRessources =>
           if (isPresent(item.url, searchTerm)) {
             score += 0.1;
           }
-          if (score > 0) {
-            results.push({ item: item, score: score });
-          }
         }
       }
+
+      if (score > 0) {
+        results.push({ item: item, score: score });
+      }
     }
+
 
     // Matomo
     if (window._paq) {
@@ -108,8 +122,6 @@ export default allRessources =>
       }, 600);
       return;
     }
-
-    // we could sort the results here
 
     // display results
     var resultContainer = document.getElementById('results');
@@ -137,11 +149,12 @@ export default allRessources =>
   }
 
   window.searchInRessources = searchInRessources;
-  var debouncedSearch = debounce(searchInRessources, 300);
+  var debouncedSearch = debounce(searchInRessources, 900);
 
   // add onKeydown listener
   // on Enter => triggers a search
-  // on any key => triggers a debounced(600ms) search
+  // on any key => triggers a debounced(900ms) search
+  // long debounce because people type slooooowly
   (function() {
     var resultInput = document.getElementById('search-input');
     resultInput.addEventListener('keydown', event => {

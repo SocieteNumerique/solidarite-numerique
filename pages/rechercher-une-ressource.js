@@ -39,7 +39,7 @@ const SearchPage = ({ allRessources }) => {
       </div>
       <div className="search-page-header">
         <div className="content-container ">
-          <h1>J’ai besoin d’aide pour utiliser internet pour :</h1>
+          <h1>J’ai besoin d’aide pour utiliser internet pour&nbsp;:</h1>
           <div className="search">
             <input
               id="search-input"
@@ -187,6 +187,15 @@ const SearchPage = ({ allRessources }) => {
           .container {
             width: 100%;
             grid-template-columns: 100%;
+          }
+          .search {
+            flex-direction: column;
+          }
+          .search button {
+            margin: 10px 0 0;
+          }
+          .bottom-cards > div:first-of-type {
+            display: none;
           }
         }
       `}</style>
