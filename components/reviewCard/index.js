@@ -7,11 +7,11 @@ const ReviewCard = () => (
     <div id="review-card-question">
       <h3>Tout s’est bien passé&nbsp;?</h3>
       <div>
-        <button onClick={() => window.review(true)}>Oui,</button> j’ai trouvé ce
-        que je cherchais
+        <button id="review-button-yes">Oui,</button> j’ai trouvé ce que je
+        cherchais
       </div>
       <div>
-        <button onClick={() => window.review(false)}>Non,</button> pas vraiment
+        <button id="review-button-no">Non,</button> pas vraiment
       </div>
     </div>
     <div id="review-card-apres-question">
@@ -58,6 +58,14 @@ const ReviewCard = () => (
       type="text/javascript"
       dangerouslySetInnerHTML={{
         __html: `
+        (function () {
+          var reviewButtonYes = document.getElementById('review-button-yes');
+          reviewButtonYes.onclick = function() { review(true); };
+          var reviewButtonNo = document.getElementById('review-button-no');
+          reviewButtonNo.onclick = function() { review(false); };
+        })();
+
+
         window.review = function(isPositive) {
           var reviewCardQuestion = document.getElementById('review-card-question');
           reviewCardQuestion.style.display= 'none';

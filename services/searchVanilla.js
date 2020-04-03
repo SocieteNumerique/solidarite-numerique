@@ -156,6 +156,9 @@ export default allRessources =>
   // on any key => triggers a debounced(900ms) search
   // long debounce because people type slooooowly
   (function() {
+    var searchBtn = document.getElementById('rechercher-une-ressource-button');
+    searchBtn.onclick = searchInRessources;
+
     var resultInput = document.getElementById('search-input');
     resultInput.addEventListener('keydown', event => {
       if (event.keyCode === 13) {

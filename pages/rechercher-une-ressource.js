@@ -46,7 +46,7 @@ const SearchPage = ({ allRessources }) => {
               type="text"
               placeholder="rechercher une ressource"
             ></input>
-            <button onClick={() => window.searchInRessources()}>
+            <button id="rechercher-une-ressource-button">
               <SearchIcon />
               Rechercher
             </button>
