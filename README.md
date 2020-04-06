@@ -26,3 +26,9 @@ Pour lancer le serveur en mode production :
 
 puis
 `npm run start`
+
+## Documentation du projet
+
+- [Choix d’Architecture](/documentation/architecture.md)
+- [Optimisations techniques](/documentation/optimisations.md)
+- [Analytics](/documentation/analytics.md)

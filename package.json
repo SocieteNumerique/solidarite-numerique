@@ -7,7 +7,8 @@
     "start": "next start",
     "build": "next build && next export",
     "lint": "eslint '**/*.{js,jsx}' --max-warnings 20",
-    "accessibility": "node ./scripts/check-a11y.js",
+    "check-accessibility": "node ./scripts/check-a11y.js",
+    "check-404": "npx blc http://localhost:3000 -ro",
     "export": "next export",
     "deploy-preview": "now",
     "deploy": "now --prod"
@@ -42,7 +43,6 @@
     "fibers": "^4.0.2",
     "gh-pages": "^2.2.0",
     "husky": "^4.2.3",
-    "lunr": "^2.3.8",
     "node-sass": "^4.13.1",
     "prettier": "^1.19.1",
     "rimraf": "^3.0.2",
