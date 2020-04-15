@@ -208,9 +208,9 @@ SearchPage.getInitialProps = async () => {
 
   const ressourcesAsArray = Object.keys(allRessources).map(key => {
     return {
-      title: allRessources[key]['Descriptif sommaire'],
+      desc: allRessources[key]['Descriptif sommaire'],
       url: allRessources[key]['Adresse (URL) de la ressource'],
-      desc: allRessources[key]['Intitulé de la ressource proposée'],
+      title: allRessources[key]['Intitulé de la ressource proposée'],
     };
   });
 
