@@ -100,12 +100,6 @@ class DevDocument extends Document {
           />
         </Head>
         <body>
-          <script
-            src="//instant.page/3.0.0"
-            type="module"
-            defer
-            integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"
-          ></script>
           <Main />
           <NextScript />
         </body>
@@ -122,6 +116,14 @@ class StaticDocument extends Document {
           <style
             dangerouslySetInnerHTML={{
               __html: `
+            .embeddedServiceHelpButton .helpButton .uiButton {
+                background-color: #005290;
+                font-family: "Arial", sans-serif;
+            }
+            .embeddedServiceHelpButton .helpButton .uiButton:focus {
+                outline: 1px solid #005290;
+            }
+
             /* nunito-regular - latin */
             @font-face {
               font-family: 'Nunito';
@@ -219,6 +221,66 @@ class StaticDocument extends Document {
               }}
             ></script>
           )}
+          <script
+            type="text/javascript"
+            src="https://service.force.com/embeddedservice/5.0/esw.min.js"
+          ></script>
+          <script
+            type="text/javascript"
+            dangerouslySetInnerHTML={{
+              __html: `
+              var initESW = function(gslbBaseURL) {
+                embedded_svc.settings.displayHelpButton = true; //Or false
+                embedded_svc.settings.language = 'fr'; //For example, enter 'en' or 'en-US'
+            
+                embedded_svc.settings.defaultMinimizedText = 'Démarrer une conversation'; //(Defaults to Chat with an Expert)
+                embedded_svc.settings.disabledMinimizedText = 'Chat hors ligne'; //(Defaults to Agent Offline)
+            
+                embedded_svc.settings.loadingText = 'Chargement'; //(Defaults to Loading)
+                //embedded_svc.settings.storageDomain = 'yourdomain.com'; //(Sets the domain for your deployment so that visitors can navigate subdomains during a chat session)
+            
+                // Settings for Chat
+                //embedded_svc.settings.directToButtonRouting = function(prechatFormData) {
+                  // Dynamically changes the button ID based on what the visitor enters in the pre-chat form.
+                  // Returns a valid button ID.
+                //};
+                //embedded_svc.settings.prepopulatedPrechatFields = {}; //Sets the auto-population of pre-chat form fields
+                //embedded_svc.settings.fallbackRouting = []; //An array of button IDs, user IDs, or userId_buttonId
+                embedded_svc.settings.offlineSupportMinimizedText = 'Chat hors-ligne'; //(Defaults to Contact Us)
+            
+                embedded_svc.settings.enabledFeatures = ['LiveAgent'];
+                embedded_svc.settings.entryFeature = 'LiveAgent';
+            
+                embedded_svc.init(
+                  'https://solidanum.my.salesforce.com',
+                  'https://assistance.solidarite-numerique.fr/',
+                  gslbBaseURL,
+                  '00D5I000000E0Kz',
+                  'Chat_Solidanum',
+                  {
+                    baseLiveAgentContentURL: 'https://c.la2-c2-cdg.salesforceliveagent.com/content',
+                    deploymentId: '5725I000000GpWn',
+                    buttonId: '5735I000000L1wa',
+                    baseLiveAgentURL: 'https://d.la2-c2-cdg.salesforceliveagent.com/chat',
+                    eswLiveAgentDevName: 'EmbeddedServiceLiveAgent_Parent04I5I000000CcLbUAK_1711c329dc2',
+                    isOfflineSupportEnabled: false
+                  }
+                );
+              };
+            
+              if (!window.embedded_svc) {
+                var s = document.createElement('script');
+                s.setAttribute('src', 'https://solidanum.my.salesforce.com/embeddedservice/5.0/esw.min.js');
+                s.onload = function() {
+                  initESW(null);
+                };
+                document.body.appendChild(s);
+              } else {
+                initESW('https://service.force.com');
+              }
+`,
+            }}
+          ></script>
         </body>
       </html>
     );
