@@ -14,17 +14,14 @@ const Privacy = () => (
         consultées.
       </p>
       <h2>
-        Ce site n'affiche pas de bannière de consentement aux cookies, pourquoi
+        Ce site ne me demande pas mon consentement aux cookies, pourquoi
         ?
       </h2>
       <p>
-        C'est vrai, vous n'avez pas eu à cliquer sur un bloc qui recouvre la
-        moitié de la page pour dire que vous êtes d'accord avec le dépôt de
-        cookies — même si vous ne savez pas ce que ça veut dire !<br />
-        Rien d'exceptionnel, pas de passe-droit lié à un .gouv.fr. Nous
-        respectons simplement la loi, qui dit que certains outils de suivi
-        d'audience, correctement configurés pour respecter la vie privée, sont
-        exemptés d'autorisation préalable. <br />
+        L'usage de certains outils de suivi d'audience, correctement
+        configurés pour respecter la vie privée, ne requiert pas le{' '}
+        <a href="https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000038783337" rel="noopener noreferrer" target="_blank">
+        recueil préalable du consentement.</a>
         Nous utilisons pour cela{' '}
         <a href="https://matomo.org/" rel="noopener noreferrer" target="_blank">
           Matomo
@@ -101,59 +98,45 @@ const Privacy = () => (
         <ul>
           <li>
             <a
-              href="https://www.cnil.fr/fr/cookies-traceurs-que-dit-la-loi"
+              href="https://www.cnil.fr/fr/cookies-et-autres-traceurs-la-cnil-publie-de-nouvelles-lignes-directrices"
               rel="noopener noreferrer"
               target="_blank"
             >
-              - Cookies et traceurs : que dit la loi ?
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.cnil.fr/fr/cookies-les-outils-pour-les-maitriser"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              - Cookies : les outils pour les maîtriser
+              - Cookies et traceurs : la CNIL publie de nouvelles lignes directrices
             </a>
           </li>
         </ul>
       </p>
-      <h2>Collecte de vos données à caractère personnel dans le formulaire</h2>
+      <h2>Tchat</h2>
       <p>
-        Les informations recueillies sur{' '}
-        <a href="/rejoignez-nous">ce formulaire</a> sont enregistrées dans un
+        Les informations que vous pouvez être amenés à nous confier 
+        lorsque vous nous sollicitez via le tchat sont enregistrées dans un
         fichier informatisé par La MedNum, SCIC SA dont le siège social est
         situé 135 boulevard Chanzy, 93 100 Montreuil.
       </p>
       <p>
-        Ces données sont recueillies afin de vérifier l’identité des personnes
-        contribuant au site en qualité de médiateur. La base légale du
-        traitement est l’article 5. 5° de la Loi n° 78-17 du 6 janvier 1978
-        relative à l'informatique, aux fichiers et aux libertés. Les données
-        sont conservées pendant la durée d’activité du compte, et jusqu’à un an
-        après la cessation de toute activité sur le compte. Dans la mesure où
-        vos contributions interviennent dans le cadre de l’exécution d’une
-        mission d’intérêt public, vos données pourront être transmises à l’Etat.
+        La base légale du traitement de vos données est votre consentement à ce traitement (article 5.1° de la Loi n° 78-17 du 6 janvier 1978 relative à l'informatique, aux fichiers et aux libertés). 
+        Nous recueillons, si vous l’acceptez:
+              - Votre adresse mail; 
+              - Votre code postal. 
+        Nous recueillons ces données afin d’améliorer le service que nous vous proposons pour répondre à vos besoins en accompagnement numérique. 
+        Nous conservons vos données durant les trois ans suivant notre dernier échange avec vous. 
+        Vos données sont accessibles par:
+              - La MedNum, responsable de traitement; 
+              - Son prestataire technique, Salesforce, qui stocke et sécurise  vos données; 
+              - L’Agence nationale de cohésion des territoires (ANCT); 
+              - Les spécialistes locaux de l’accompagnement numérique que sont: 
+                  - Hubik; 
+                  - La Régie de quartier de Trélazé ; 
+                  - Hinaura;
+                  - Les médiateurs qui vous accompagnent.
       </p>
       <p>
-        Vous pouvez accéder aux données vous concernant, les rectifier, demander
-        leur effacement ou exercer votre droit à la limitation du traitement de
-        vos données, demander la portabilité de vos données ou vous opposer au
-        traitement. Nous vous informons qu’en cas de non-fourniture des données
-        d’identification obligatoires, nous ne pourrons pas vous permettre de
-        contribuer en tant que médiateur. En effet, dans le cadre de notre
-        mission d’intérêt public, nous avons le souci légitime d’assurer la
-        traçabilité des sources de nos contributions. Nous ne pouvons donc
-        publier les contributions de personnes non identifiées.
-      </p>
-      <p>
-        Consultez le site cnil.fr pour plus d’informations sur vos droits. Pour
-        exercer ces droits ou pour toute question sur le traitement de vos
-        données dans ce dispositif, vous pouvez contacter La MedNum à l’adresse
-        mail suivante: contact@lamednum.coop. Si vous estimez, après nous avoir
-        contactés, que vos droits « Informatique et Libertés » ne sont pas
-        respectés, vous pouvez adresser une réclamation à la CNIL.
+        Vous pouvez nous demander d’accéder à vos données personnelles, en demander la rectification ou l'effacement, solliciter une limitation du traitement vous concernant, vous opposer à ce traitement ou encore solliciter la portabilité de vos données. 
+        Vous pouvez également retirer votre consentement au traitement de vos données, sans que la licéité du traitement effectué avant ce retrait ne soit remise en cause. 
+        Pour exercer ces droits ou pour toute question sur le traitement de vos données dans ce dispositif, vous pouvez nous contacter à l’adresse suivante: support@solidarité-numérique.fr. 
+        Si vous estimez, après nous avoir contactés, que vos droits « Informatique et Libertés » ne sont pas respectés, vous pouvez adresser une réclamation à la CNIL.
+        Vous pouvez également consulter le site cnil.fr pour plus d’informations sur vos droits.
       </p>
     </div>
     <style jsx>{`
