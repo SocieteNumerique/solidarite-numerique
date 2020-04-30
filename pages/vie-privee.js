@@ -120,6 +120,7 @@ const Privacy = () => (
               - Votre adresse mail; 
               - Votre code postal. 
         Nous recueillons ces données afin d’améliorer le service que nous vous proposons pour répondre à vos besoins en accompagnement numérique. 
+       Nous conservons également l’intitulé de vos conversations afin de garder trace de votre consentement à la fourniture de ces données. 
         Nous conservons vos données durant les trois ans suivant notre dernier échange avec vous. 
         Vos données sont accessibles par:
               - La MedNum, responsable de traitement; 
