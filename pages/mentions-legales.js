@@ -9,7 +9,7 @@ const MentionsLegales = () => {
         <h1>Mentions Légales</h1>
         <h2>Editeur</h2>
         <p>
-          SCIC La MedNum - 135 BOULEVARD CHANZY - 93100 MONTREUIL
+          La MedNum - 135 BOULEVARD CHANZY - 93100 MONTREUIL
           <br />
           Adresse contact : contact@lamednum.coop
           <br />
