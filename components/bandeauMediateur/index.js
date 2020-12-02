@@ -17,15 +17,13 @@ const BandeauMediateur = () => (
             src="https://github.com/cget-carto/France-services.git">
           </iframe>    
         </div>
-      </div>
-    </div>
-  <div className="bandeau-mediateur">
-      <div className="container content-container">
+        <hr>
         <div>
           <p>Vous aimez le contact humain, cherchez un métier qui a du sens dans un secteur d’avenir ? Rejoignez le mouvement national des conseillers numériques</p>
         </div>
       </div>
     </div>
+
     <style jsx>{`
       .bandeau-mediateur {
         color: #fff;
