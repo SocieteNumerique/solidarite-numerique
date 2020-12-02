@@ -17,7 +17,7 @@ const BandeauMediateur = () => (
             des médiateurs volontaires et par des organisations qui sont
             engagées en faveur de l’inclusion numérique. Ce recensement n'a pas
             de visée promotionnelle ou exhaustive mais vise à proposer en
-            urgence des réponses aux questions et besoins des Français.
+            urgence des réponses aux questions et besoins des Français
           </p>
         </div>
         <div>
