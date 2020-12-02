@@ -17,7 +17,8 @@ const BandeauMediateur = () => (
             src="https://github.com/cget-carto/France-services.git">
           </iframe>    
         </div>
-        <hr>
+      </div>
+      <div className="container content-container">
         <div>
           <p>Vous aimez le contact humain, cherchez un métier qui a du sens dans un secteur d’avenir ? Rejoignez le mouvement national des conseillers numériques</p>
         </div>
