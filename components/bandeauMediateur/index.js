@@ -9,7 +9,7 @@ const BandeauMediateur = () => (
     <div className="bandeau-mediateur">
       <div className="container content-container">
         <div>
-          <h3>Vous aimeriez proposer des contenus&nbsp;?</h3>
+          <h3>J’accède aux services publics près de chez moi</h3>
           <p>
             Les ressources qui figurent sur ce site permettent d’apporter une
             première aide aux personnes qui n’ont pas l’habitude d’utiliser
