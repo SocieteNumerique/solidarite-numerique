@@ -18,7 +18,7 @@ const HomePage = () => {
             />
           </div>
           <div className="hero-text">
-            <h1>Centre d’aide pour les démarches en ligne essentielles</h1>
+            <h1>Centre d’aide pour les usages numériques du quotidien</h1>
             <h2>
               Je trouve des réponses en ligne, ou j’appelle le&nbsp;
               <CallCTA />
