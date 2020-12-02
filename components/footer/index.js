@@ -67,6 +67,26 @@ const Footer = () => {
               />
             </a>
             <a
+              href="https://www.conseiller-numerique.gouv.fr/ "
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <img
+                src="/images/logo/CN.png"
+                alt="Conseiller Numérique"
+              />
+            </a>
+            <a
+              href="https://www.gouvernement.fr/france-relance"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <img
+                src="/images/logo/FR.png"
+                alt="France Relance"
+              />
+            </a>
+            <a
               href="https://www.gouvernement.fr/le-secretariat-d-etat-charge-du-numerique/"
               rel="noopener noreferrer"
               target="_blank"
