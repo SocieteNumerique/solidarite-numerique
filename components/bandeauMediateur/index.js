@@ -32,7 +32,7 @@ const BandeauMediateur = () => (
             >
               <img
                 src="/images/logo/CN.png"
-                alt="Conseiller Numérique"
+                alt="Conseiller Numérique "
               />
             </a>  
         </div>
