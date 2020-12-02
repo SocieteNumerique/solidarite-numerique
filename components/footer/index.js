@@ -72,9 +72,9 @@ const Footer = () => {
               target="_blank"
             >
               <img
-                src="/images/logo/ANCT.png"
-                alt="Agence nationale de la cohésion des territoires"
+                src="/images/logo/ANCT.png" 
                 style="height:60px"
+                alt="Agence nationale de la cohésion des territoires"
               />
             </a>
             <a
