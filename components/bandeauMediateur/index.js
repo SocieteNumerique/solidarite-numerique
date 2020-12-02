@@ -9,7 +9,7 @@ const BandeauMediateur = () => (
     <div className="bandeau-mediateur">
       <div className="container content-container">
         <div>
-          <h3>Vous aimeriez proposer des contenus&nbsp;?</h3>
+          <h3>J’accède aux services publics près de chez moi </h3>
           <div id="mapid" class="leaflet-container leaflet-retina leaflet-fade-anim leaflet-grab leaflet-touch-drag" tabindex="0" style="position: relative;"><div id="sidebar" class="leaflet-sidebar leaflet-control leaflet-sidebar-left">
        <!-- nav tabs -->
        <div class="leaflet-sidebar-tabs">
