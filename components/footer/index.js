@@ -67,13 +67,13 @@ const Footer = () => {
               />
             </a>
             <a
-              href="https://www.conseiller-numerique.gouv.fr/ "
+              href="https://agence-cohesion-territoires.gouv.fr/ "
               rel="noopener noreferrer"
               target="_blank"
             >
               <img
-                src="/images/logo/CN.png"
-                alt="Conseiller Numérique"
+                src="/images/logo/ANCT.png"
+                alt="Agence nationale de la cohésion des territoires"
               />
             </a>
             <a
