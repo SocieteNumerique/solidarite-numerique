@@ -30,7 +30,7 @@ const BandeauGouv = () => (
               target="_blank"
               rel="noopener noreferrer"
             >
-              https://www.gouvernement.fr/info-coronavirus
+              https://www.gouvernement.fr/info-coronavirus 
             </a>
           </div>
         </div>
