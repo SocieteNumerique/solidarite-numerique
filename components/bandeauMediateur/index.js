@@ -18,6 +18,9 @@ const BandeauMediateur = () => (
         </iframe>
           
         </div>
+        <div>
+          <p>Vous aimez le contact humain, cherchez un métier qui a du sens dans un secteur d’avenir ? Rejoignez le mouvement national des conseillers numériques</p>
+        </div>
       </div>
     </div>
     <style jsx>{`
