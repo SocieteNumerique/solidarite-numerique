@@ -140,7 +140,7 @@ const BandeauMediateur = () => (
         }
 
         .container > div:last-of-type {
-          margin-top: 20px;
+          margin-top: 20px
         }
       }
     `}</style>
