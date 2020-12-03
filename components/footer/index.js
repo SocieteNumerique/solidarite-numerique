@@ -66,16 +66,7 @@ const Footer = () => {
                 alt="Une initiative de la MedNum"
               />
             </a>
-            <a
-              href="https://agence-cohesion-territoires.gouv.fr/ "
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              <img
-                src="/images/logo/ANCT.png"
-                alt="Agence nationale de la cohésion des territoires"
-              />
-            </a>
+            
             <a
               href="https://www.gouvernement.fr/france-relance"
               rel="noopener noreferrer"
