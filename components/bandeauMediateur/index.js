@@ -21,7 +21,7 @@ const BandeauMediateur = () => (
               />
             </a>   
         </div>
-      </div>
+      </div> 
       <div className="container content-container">
         <div>
           <p>Vous aimez le contact humain, cherchez un métier qui a du sens dans un secteur d’avenir ?<br>Rejoignez le mouvement national des conseillers numériques</p>
