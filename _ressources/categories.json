@@ -76,12 +76,12 @@
     "path": "information"
   },
   "9- Clic and Connect": {
-    "title": "Clic and connect",
+    "title": "",
     "subTitle": "",
     "description": [
-      "<img src = /images/logo/clic_connect.png>"
+      ""
     ],
-    "picto": "",
+    "picto": "/images/logo/clic_connect.png",
     "path": "https://www.clic-connect.fr/"
   }
 }
