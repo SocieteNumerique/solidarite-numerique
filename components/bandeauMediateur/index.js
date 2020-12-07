@@ -18,7 +18,6 @@ const BandeauMediateur = () => (
               <img
                 src="/images/logo/FS.png"
                 alt="France Services"
-                width="200" height="100"
               />
             </a>   
         </div>
