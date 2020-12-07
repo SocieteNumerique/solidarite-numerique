@@ -63,6 +63,7 @@ const BandeauMediateur = () => (
       .container > div:first-of-type {
         flex-grow: 1;
         margin-right: 10px;
+        width: inherit;
       }
       .container > div:last-of-type {
         flex-shrink: 0;
