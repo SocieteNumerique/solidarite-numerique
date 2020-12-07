@@ -9,12 +9,12 @@ const BandeauMediateur = () => (
     <div className="bandeau-mediateur">
       <div className="container content-container">
         <div>
-          <h3>J’accède aux services publics près de chez moi</h3>
           <a
               href="https://www.cohesion-territoires.gouv.fr/france-services#e0"
               rel="noopener noreferrer"
               target="_blank"
             >
+              <h3>J’accède aux services publics près de chez moi</h3>
               <img
                 src="/images/logo/FS.png"
                 alt="France Services"
@@ -24,12 +24,12 @@ const BandeauMediateur = () => (
       </div> 
       <div className="container content-container">
         <div>
+          <p>Vous aimez le contact humain, cherchez un métier qui a du sens dans un secteur d’avenir? Rejoignez le mouvement national des conseillers numériques!</p>
           <a
               href="https://www.conseiller-numerique.gouv.fr/"
               rel="noopener noreferrer"
               target="_blank"
             >
-              <p>Vous aimez le contact humain, cherchez un métier qui a du sens dans un secteur d’avenir ? Rejoignez le mouvement national des conseillers numériques!</p>
               <img
                 src="/images/logo/CN.png"
                 alt="Conseiller Numérique "
