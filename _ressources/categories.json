@@ -74,14 +74,5 @@
     ],
     "picto": "/images/pictos_optimized/picto_infoverig.svg",
     "path": "information"
-  },
-  "9- Clic and Connect": {
-    "title": "Clic and connect",
-    "subTitle": "Clic and connect",
-    "description": [
-      "Clic and connect"
-    ],
-    "picto": "/images/logo/clic_connect.png",
-    "path": "http://www.clic-connect.fr"
   }
 }
