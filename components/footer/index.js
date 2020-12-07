@@ -89,6 +89,16 @@ const Footer = () => {
                 alt="En partenariat avec le gouvernement"
               />
             </a>
+            <a
+              href="https://agence-cohesion-territoires.gouv.fr/kit-de-communication-de-lanct-63"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <img
+                src="/images/logo/logo_anct.png"
+                alt="ANCT"
+              />
+            </a>
           </div>
           <ul className="footer__links">
             <li>
