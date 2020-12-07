@@ -53,6 +53,7 @@ const BandeauMediateur = () => (
       p {
         margin: 0;
         padding: 0;
+        width: fit-content;
       }
 
       .container {
