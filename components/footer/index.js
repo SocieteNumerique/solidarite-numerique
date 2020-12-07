@@ -85,7 +85,7 @@ const Footer = () => {
               avec le soutien du
               <img
                 className="logo"
-                src="/images/logo/logo_secnum.svg"
+                src="/images/logo/logo_secnum.png"
                 alt="En partenariat avec le gouvernement"
               />
             </a>
