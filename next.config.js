@@ -27,6 +27,7 @@ module.exports = withFonts({
 
     // const resources = await fetchResources();
     const categoriesArray = Object.keys(categories);
+    console.log('href=',{category.path});
     for (let i = 0; i < categoriesArray.length; i++) {
      // const categ = categories[categoriesArray[i]];
 
