@@ -45,6 +45,7 @@ const BandeauMediateur = () => (
         color: #fff;
         background-color: ${constants.colors.blue};
         padding: 30px 0;
+        max-height: 350px;
       }
       h3 {
         color: #fff;
@@ -64,6 +65,7 @@ const BandeauMediateur = () => (
       .fs-align{
         vertical-align: middle;
         padding: 10px 20px 0px 20px;
+        width: 50px;
       }
   
       .container > div:first-of-type {
