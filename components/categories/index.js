@@ -10,24 +10,46 @@ const Categories = () => (
       <div className="categorie-container">
         {Object.keys(categories).map(categoryKey => {
           const category = categories[categoryKey];
-          return (
-            <a
-              key={category.path}
-              href={category.path}
-              className="resource dont-apply-link-style"
-              title={category.title}
-            >
-              <div>
-                <h3>
-                  <img src={category.picto} alt="" />
-                  {category.title}
-                </h3>
-                {category.description.map(desc => (
-                  <p key={desc}>{desc}</p>
-                ))}
-              </div>
-            </a>
-          );
+          if (category.path='https://www.clic-connect.fr') {
+            return (
+              <a
+                key={category.path}
+                href={category.path}
+                className="resource dont-apply-link-style"
+                title={category.title}
+                target="_blank"
+              >
+                <div>
+                  <h3>
+                    <img src={category.picto} alt="" />
+                    {category.title}
+                  </h3>
+                  {category.description.map(desc => (
+                    <p key={desc}>{desc}</p>
+                  ))}
+                </div>
+              </a>
+            );
+          } else {
+             return (
+              <a
+                key={category.path}
+                href={category.path}
+                className="resource dont-apply-link-style"
+                title={category.title}
+              >
+                <div>
+                  <h3>
+                    <img src={category.picto} alt="" />
+                    {category.title}
+                  </h3>
+                  {category.description.map(desc => (
+                    <p key={desc}>{desc}</p>
+                  ))}
+                </div>
+              </a>
+            );
+          }
         })}
       </div>
     </div>
