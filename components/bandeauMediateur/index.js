@@ -50,6 +50,7 @@ const BandeauMediateur = () => (
       h3 {
         color: #fff;
         margin-top: 0;
+        padding: 20px 0px 0px 0px;
       }
       p {
         color: #fff;
