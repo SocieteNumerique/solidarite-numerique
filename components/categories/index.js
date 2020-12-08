@@ -10,6 +10,7 @@ const Categories = () => (
       <div className="categorie-container">
         {Object.keys(categories).map(categoryKey => {
           const category = categories[categoryKey];
+          console.log('href=',{category.path});
           return (
             <a
               key={category.path}
