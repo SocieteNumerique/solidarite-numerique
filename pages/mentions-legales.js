@@ -40,7 +40,7 @@ const MentionsLegales = () => {
           Nous collectons également, si vous acceptez de nous les confier:<br />
           <b>
 
-            <li>Votre code postal, qui nous permettra d’identifier, par le biais d’une enquête statistique anonymisée, les besoins spécifiques en accompagnement numérique de chaque territoire;</li>
+            <li><b>Votre code postal, qui nous permettra d’identifier, par le biais d’une enquête statistique anonymisée, les besoins spécifiques en accompagnement numérique de chaque territoire;</b></li>
             <li>Vos nom et prénom, afin de personnaliser le service que nous vous apportons;</li>
             <li>Votre adresse mail, si vous souhaitez que nous vous envoyons des ressources.</li>
 
