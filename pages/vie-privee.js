@@ -107,38 +107,6 @@ const Privacy = () => (
           </li>
         </ul>
       </p>
-      <h2>Tchat</h2>
-      <p>
-        Les informations que vous pouvez être amenés à nous confier 
-        lorsque vous nous sollicitez via le tchat sont enregistrées dans un
-        fichier informatisé par La MedNum, SCIC SA dont le siège social est
-        situé 135 boulevard Chanzy, 93 100 Montreuil.
-      </p>
-      <p>
-        La base légale du traitement de vos données est votre consentement à ce traitement (article 5.1° de la Loi n° 78-17 du 6 janvier 1978 relative à l'informatique, aux fichiers et aux libertés). 
-        Nous recueillons, si vous l’acceptez:
-              - Votre adresse mail; 
-              - Votre code postal. 
-        Nous recueillons ces données afin d’améliorer le service que nous vous proposons pour répondre à vos besoins en accompagnement numérique. 
-        Nous conservons également l’intitulé de vos conversations afin de garder trace de votre consentement à la fourniture de ces données. 
-        Nous conservons vos données durant les trois ans suivant notre dernier échange avec vous. 
-        Vos données sont accessibles par:
-              - La MedNum, responsable de traitement; 
-              - Son prestataire technique, Salesforce, qui stocke et sécurise  vos données; 
-              - L’Agence nationale de cohésion des territoires (ANCT); 
-              - Les spécialistes locaux de l’accompagnement numérique que sont: 
-                  - Hubik; 
-                  - La Régie de quartier de Trélazé ; 
-                  - Hinaura;
-                  - Les médiateurs qui vous accompagnent.
-      </p>
-      <p>
-        Vous pouvez nous demander d’accéder à vos données personnelles, en demander la rectification ou l'effacement, solliciter une limitation du traitement vous concernant, vous opposer à ce traitement ou encore solliciter la portabilité de vos données. 
-        Vous pouvez également retirer votre consentement au traitement de vos données, sans que la licéité du traitement effectué avant ce retrait ne soit remise en cause. 
-        Pour exercer ces droits ou pour toute question sur le traitement de vos données dans ce dispositif, vous pouvez nous contacter à l’adresse suivante: support@solidarité-numérique.fr. 
-        Si vous estimez, après nous avoir contactés, que vos droits « Informatique et Libertés » ne sont pas respectés, vous pouvez adresser une réclamation à la CNIL.
-        Vous pouvez également consulter le site cnil.fr pour plus d’informations sur vos droits.
-      </p>
     </div>
     <style jsx>{`
       .matomo-optout {
