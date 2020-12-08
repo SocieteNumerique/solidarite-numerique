@@ -15,7 +15,7 @@ const BandeauMediateur = () => (
               target="_blank"
             >
               <h3>J’accède aux services publics près de chez moi</h3>
-              <img
+              <img className="floatRight"
                 src="/images/logo/FS.png"
                 alt="France Services"
               />
@@ -59,6 +59,10 @@ const BandeauMediateur = () => (
       .container {
         display: flex;
         align-items: center;
+      }
+  
+      .floatRight{
+        float:right;
       }
   
       .container > div:first-of-type {
