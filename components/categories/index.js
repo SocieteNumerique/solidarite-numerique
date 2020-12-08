@@ -18,7 +18,7 @@ const Categories = () => (
                 href={category.path}
                 className="resource dont-apply-link-style"
                 title={category.title}
-                {category.path = 'https://www.clic-connect.fr' ? target="_blank"}
+                {category.path='https://www.clic-connect.fr' ? target="_blank" : target="_self"}
               >
                 <div>
                   <h3>
