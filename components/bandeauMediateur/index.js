@@ -14,11 +14,11 @@ const BandeauMediateur = () => (
               rel="noopener noreferrer"
               target="_blank"
             >
-              <h3>J’accède aux services publics près de chez moi
               <img className="fs-align"
                 src="/images/logo/FS.png"
                 alt="France Services"
-              /></h3>
+              />
+              <h3>J’accède aux services publics près de chez moi</h3>
             </a>   
         </div>
       </div> 
@@ -29,7 +29,7 @@ const BandeauMediateur = () => (
               rel="noopener noreferrer"
               target="_blank"
             >
-              <img className="fs-align"
+              <img className="fs1-align"
                 src="/images/logo/CN.png"
                 alt="Conseiller Numérique "
               />
@@ -65,6 +65,13 @@ const BandeauMediateur = () => (
       .fs-align{
         vertical-align: middle;
         padding: 10px 20px 0px 20px;
+        height: 100px;
+        float: right;
+      }
+  
+      .fs1-align{
+        vertical-align: middle;
+        padding: 10px 10px 0px 20px;
         height: 100px;
         float: right;
       }
