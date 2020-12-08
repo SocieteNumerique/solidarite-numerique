@@ -72,7 +72,7 @@ const Footer = () => {
               rel="noopener noreferrer"
               target="_blank"
             >
-               
+               <p> </p>
               <img
                 src="/images/logo/FR.png"
                 alt="France Relance"
