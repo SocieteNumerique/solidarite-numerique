@@ -28,17 +28,17 @@ module.exports = withFonts({
     // const resources = await fetchResources();
     const categoriesArray = Object.keys(categories);
     for (let i = 0; i < categoriesArray.length; i++) {
-      const categ = categories[categoriesArray[i]];
+     // const categ = categories[categoriesArray[i]];
 
       await waitFor(1000); // waits 1 sec between each call for Airtable limitation
-      paths[`/${categ.path}`] = {
-        page: '/[category]',
-        query: { category: categ.path },
-      };
+      //paths[`/${categ.path}`] = {
+        //page: '/[category]',
+        //query: { category: categ.path },
+      //};
     }
 
-    saveSitemap(paths);
-    saveUrlList(paths);
+    //saveSitemap(paths);
+    //saveUrlList(paths);
 
     return paths;
   },
