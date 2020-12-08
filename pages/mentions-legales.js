@@ -34,7 +34,7 @@ const MentionsLegales = () => {
         </p>
         <p>
         Les informations que vous nous confiez sont enregistrées dans un fichier informatisé par
-        L'Agence Nationale de Cohésion des Territoires, 20, avenue de Ségur TSA 10717,
+        L&apos;Agence Nationale de Cohésion des Territoires, 20, avenue de Ségur TSA 10717,
         75 334 Paris Cedex 07<br />
         La base légale du traitement de vos données est l’article 5.6 de la Loi n° 78-17 du 6 janvier
         1978 relative à l’informatique, aux fichiers et aux libertés.<br />
@@ -58,7 +58,7 @@ const MentionsLegales = () => {
         Nous conservons vos données pour une durée de trois ans suite à votre dernier appel.
         Vos données sont accessibles par:<br />
 
-        L'Agence Nationale de Cohésion des territoires, responsable du traitement<br />
+        L&apos;Agence Nationale de Cohésion des territoires, responsable du traitement<br />
         Ses prestataires techniques, Aircall et la Régie de Quartiers de Trélazé, qui
         stockent et sécurisent vos données;<br />
         La MedNum, coordinateur du projet<br />
@@ -66,7 +66,7 @@ const MentionsLegales = () => {
         Les médiateurs qui vous accompagnent.<br />
 
         Vous pouvez nous demander d’accéder à vos données personnelles, en demander la
-        rectification ou l'effacement, ou encore solliciter une limitation du traitement vous
+        rectification ou l&apos;effacement, ou encore solliciter une limitation du traitement vous
         concernant.<br />
         Vous pouvez également vous opposer au traitement et solliciter la portabilité de vos
         données.<br />
