@@ -12,14 +12,13 @@ const Categories = () => (
           const category = categories[categoryKey];
   console.log('category = ',category);
   console.log('category.path = ',category.path);
-          if (category.path='https://www.clic-connect.fr') {
             return (
               <a
                 key={category.path}
                 href={category.path}
                 className="resource dont-apply-link-style"
                 title={category.title}
-                target="_blank"
+                {category.path = 'https://www.clic-connect.fr' ? target="_blank"}
               >
                 <div>
                   <h3>
@@ -32,26 +31,6 @@ const Categories = () => (
                 </div>
               </a>
             );
-          } else {
-             return (
-              <a
-                key={category.path}
-                href={category.path}
-                className="resource dont-apply-link-style"
-                title={category.title}
-              >
-                <div>
-                  <h3>
-                    <img src={category.picto} alt="" />
-                    {category.title}
-                  </h3>
-                  {category.description.map(desc => (
-                    <p key={desc}>{desc}</p>
-                  ))}
-                </div>
-              </a>
-            );
-          }
         })}
       </div>
     </div>
