@@ -14,19 +14,11 @@ const BandeauMediateur = () => (
               rel="noopener noreferrer"
               target="_blank"
             >
-              <table>
-                <tr>
-                  <th>
-              <h3>J’accède aux services publics près de chez moi</h3>
-                  </th>
-                  <th>
+              <h3>J’accède aux services 
               <img className="floatRight"
                 src="/images/logo/FS.png"
                 alt="France Services"
-              />
-                  </th>
-                </tr>
-              </table>
+              /> publics près de chez moi</h3>
             </a>   
         </div>
       </div> 
