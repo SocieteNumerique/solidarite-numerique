@@ -45,7 +45,8 @@ const MentionsLegales = () => {
             <li>Votre adresse mail, si vous souhaitez que nous vous envoyons des ressources.</li>
     </ul>
           </b>
-
+Nous conservons vos données pour une durée de trois ans suite à votre dernier appel.
+Vos données sont accessibles par:<br />
         </p>
       </div>
     </Page>
