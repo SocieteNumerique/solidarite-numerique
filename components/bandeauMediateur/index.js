@@ -29,7 +29,7 @@ const BandeauMediateur = () => (
               rel="noopener noreferrer"
               target="_blank"
             >
-              <table width=100%>
+              <table>
               <tr>
               <th><p>Vous aimez le contact humain, cherchez un métier qui a du sens dans un secteur d’avenir? Rejoignez le mouvement national des conseillers numériques!</p></th>
               <th><img className="fs-align"
