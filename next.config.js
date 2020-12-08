@@ -33,7 +33,7 @@ module.exports = withFonts({
       await waitFor(1000); // waits 1 sec between each call for Airtable limitation
       paths[`/${categ.path}`] = {
         page: '/[category]',
-       query: { category: categ.path },
+        query: { category: categ.path },
       };
     }
 
