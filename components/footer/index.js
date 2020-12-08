@@ -197,7 +197,7 @@ const Footer = () => {
 
         .partenaire img {
           width: auto;
-          max-width: 152px;
+          max-width: 209px;
           height: 82px;
           margin:3px;
         }
