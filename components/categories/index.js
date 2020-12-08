@@ -10,15 +10,12 @@ const Categories = () => (
       <div className="categorie-container">
         {Object.keys(categories).map(categoryKey => {
           const category = categories[categoryKey];
-  console.log('category = ',category);
-  console.log('category.path = ',category.path);
             return (
               <a
                 key={category.path}
                 href={category.path}
                 className="resource dont-apply-link-style"
                 title={category.title}
-                target="_blank"
               >
                 <div>
                   <h3>
