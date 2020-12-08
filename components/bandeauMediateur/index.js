@@ -63,6 +63,7 @@ const BandeauMediateur = () => (
   
       .fs-align{
         vertical-align: middle;
+        padding: 10px 20px 0px 20px;
       }
   
       .container > div:first-of-type {
