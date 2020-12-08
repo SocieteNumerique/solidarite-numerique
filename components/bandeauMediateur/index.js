@@ -10,7 +10,7 @@ const BandeauMediateur = () => (
       <div className="container content-container">
         <div>
           <a
-              href="https://www.cohesion-territoires.gouv.fr/france-services#e0"
+              href="https://cget-carto.github.io/France-services/"
               rel="noopener noreferrer"
               target="_blank"
             >
