@@ -67,7 +67,7 @@ const Footer = () => {
               />
             </a>
             <a
-              href="https://agence-cohesion-territoires.gouv.fr/kit-de-communication-de-lanct-63"
+              href="https://agence-cohesion-territoires.gouv.fr"
               rel="noopener noreferrer"
               target="_blank"
             >
