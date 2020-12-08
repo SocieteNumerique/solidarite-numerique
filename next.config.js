@@ -27,9 +27,10 @@ module.exports = withFonts({
 
     // const resources = await fetchResources();
     const categoriesArray = Object.keys(categories);
+    console.log('categoriesArray = ',categoriesArray);
     for (let i = 0; i < categoriesArray.length; i++) {
       const categ = categories[categoriesArray[i]];
-
+      console.log('categ=',categ);
       await waitFor(1000); // waits 1 sec between each call for Airtable limitation
       paths[`/${categ.path}`] = {
         page: '/[category]',
