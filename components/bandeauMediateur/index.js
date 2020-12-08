@@ -14,11 +14,11 @@ const BandeauMediateur = () => (
               rel="noopener noreferrer"
               target="_blank"
             >
-              <h3>J’accède aux services publics près de chez moi</h3>
+              <h3>J’accède aux services publics près de chez moi
               <img className="fs-align"
                 src="/images/logo/FS.png"
                 alt="France Services"
-              />
+              /></h3>
             </a>   
         </div>
       </div> 
