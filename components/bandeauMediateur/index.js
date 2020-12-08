@@ -29,15 +29,11 @@ const BandeauMediateur = () => (
               rel="noopener noreferrer"
               target="_blank"
             >
-              <table>
-              <tr>
-              <th><p>Vous aimez le contact humain, cherchez un métier qui a du sens dans un secteur d’avenir? Rejoignez le mouvement national des conseillers numériques!</p></th>
-              <th><img className="fs-align"
+              <p>Vous aimez le contact humain, cherchez un métier qui a du sens dans un secteur d’avenir? Rejoignez le mouvement national des conseillers numériques!</p>
+              <img className="fs-align"
                 src="/images/logo/CN.png"
                 alt="Conseiller Numérique "
-              /></th>
-              </tr>
-              </table>
+              />
             </a>  
         </div>
       </div>
@@ -70,6 +66,7 @@ const BandeauMediateur = () => (
         vertical-align: middle;
         padding: 10px 20px 0px 20px;
         height: 100px;
+        float: right;
       }
   
       .container > div:first-of-type {
