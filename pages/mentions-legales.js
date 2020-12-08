@@ -39,10 +39,13 @@ const MentionsLegales = () => {
           Ainsi, nous recueillons votre numéro de téléphone portable, afin de retrouver votre requête précédente dans le cas où vous nous rappeleriez, et de répondre au mieux à vos besoins. Ce recueil nous permet également de vous envoyer des ressources par SMS, si vous acceptez d’en recevoir.<br />
           Nous collectons également, si vous acceptez de nous les confier:<br />
           <b>
-            Votre code postal, qui nous permettra d’identifier, par le biais d’une enquête statistique anonymisée, les besoins spécifiques en accompagnement numérique de chaque territoire;<br />
-            Vos nom et prénom, afin de personnaliser le service que nous vous apportons;<br />
-            Votre adresse mail, si vous souhaitez que nous vous envoyons des ressources.<br />
+    <ul>
+            <li>Votre code postal, qui nous permettra d’identifier, par le biais d’une enquête statistique anonymisée, les besoins spécifiques en accompagnement numérique de chaque territoire;</li>
+            <li>Vos nom et prénom, afin de personnaliser le service que nous vous apportons;</li>
+            <li>Votre adresse mail, si vous souhaitez que nous vous envoyons des ressources.</li>
+    </ul>
           </b>
+
         </p>
       </div>
     </Page>
