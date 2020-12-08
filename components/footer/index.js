@@ -66,15 +66,21 @@ const Footer = () => {
                 alt="Une initiative de la MedNum"
               />
             </a>
-            
+            <a
+              href="https://agence-cohesion-territoires.gouv.fr/kit-de-communication-de-lanct-63"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <img
+                src="/images/logo/logo_anct.png"
+                alt="ANCT"
+              />
+            </a>
             <a
               href="https://www.gouvernement.fr/france-relance"
               rel="noopener noreferrer"
               target="_blank"
             >
-               <p> 
-               
-                </p>
               <img
                 src="/images/logo/FR.png"
                 alt="France Relance"
@@ -90,16 +96,6 @@ const Footer = () => {
                 className="logo"
                 src="/images/logo/logo_secnum.png"
                 alt="En partenariat avec le gouvernement"
-              />
-            </a>
-            <a
-              href="https://agence-cohesion-territoires.gouv.fr/kit-de-communication-de-lanct-63"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              <img
-                src="/images/logo/logo_anct.png"
-                alt="ANCT"
               />
             </a>
           </div>
