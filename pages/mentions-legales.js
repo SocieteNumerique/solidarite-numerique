@@ -54,6 +54,12 @@ Vos données sont accessibles par:<br />
     &nbsp;&nbsp;&nbsp; Les médiateurs qui vous accompagnent.<br />
     
     
+Vous pouvez nous demander d’accéder à vos données personnelles, en demander la rectification ou l&apos;effacement, ou encore solliciter une limitation du traitement vous concernant.<br />
+Vous pouvez également vous opposer au traitement et solliciter la portabilité de vos données.<br />
+Pour exercer ces droits ou pour toute question sur le traitement de vos données dans ce dispositif, vous pouvez nous contacter à l’adresse suivante: dpo@anct.gouv.fr<br />
+Si vous estimez, après nous avoir contactés, que vos droits &laquo; Informatique et Libertés &raquo; ne sont pas respectés, vous pouvez adresser une réclamation à la CNIL.<br />
+Vous pouvez également consulter le site <a href="http://cnil.fr">cnil.fr</a> pour plus d’informations sur vos droits.<br />
+    
         </p>
       </div>
     </Page>
