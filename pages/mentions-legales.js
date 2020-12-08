@@ -47,6 +47,13 @@ const MentionsLegales = () => {
           </b>
 Nous conservons vos données pour une durée de trois ans suite à votre dernier appel.<br />
 Vos données sont accessibles par:<br />
+    &nbsp;&nbsp;&nbsp; L&apos;Agence Nationale de Cohésion des territoires, responsable du traitement<br />
+    &nbsp;&nbsp;&nbsp; Ses prestataires techniques, Aircall et la Régie de Quartiers de Trélazé, qui stockent et sécurisent vos données;<br />
+    &nbsp;&nbsp;&nbsp; La MedNum, coordinateur du projet<br />
+    &nbsp;&nbsp;&nbsp; Hubik et Hinaura, partenaires formation<br />
+    &nbsp;&nbsp;&nbsp; Les médiateurs qui vous accompagnent.<br />
+    
+    
         </p>
       </div>
     </Page>
