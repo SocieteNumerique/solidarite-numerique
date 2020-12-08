@@ -38,27 +38,25 @@ const MentionsLegales = () => {
           Nous recueillons vos données dans la poursuite de notre intérêt légitime: l’amélioration du service que nous vous proposons pour répondre à vos besoins en accompagnement numérique.<br />
           Ainsi, nous recueillons votre numéro de téléphone portable, afin de retrouver votre requête précédente dans le cas où vous nous rappeleriez, et de répondre au mieux à vos besoins. Ce recueil nous permet également de vous envoyer des ressources par SMS, si vous acceptez d’en recevoir.<br />
           Nous collectons également, si vous acceptez de nous les confier:<br />
-          <b>
 
-            <li><b>Votre code postal, qui nous permettra d’identifier, par le biais d’une enquête statistique anonymisée, les besoins spécifiques en accompagnement numérique de chaque territoire;</b></li>
+            <li>Votre code postal, qui nous permettra d’identifier, par le biais d’une enquête statistique anonymisée, les besoins spécifiques en accompagnement numérique de chaque territoire;</li>
             <li>Vos nom et prénom, afin de personnaliser le service que nous vous apportons;</li>
             <li>Votre adresse mail, si vous souhaitez que nous vous envoyons des ressources.</li>
 
-          </b>
-Nous conservons vos données pour une durée de trois ans suite à votre dernier appel.<br />
-Vos données sont accessibles par:<br />
-    &nbsp;&nbsp;&nbsp; L&apos;Agence Nationale de Cohésion des territoires, responsable du traitement<br />
-    &nbsp;&nbsp;&nbsp; Ses prestataires techniques, Aircall et la Régie de Quartiers de Trélazé, qui stockent et sécurisent vos données;<br />
-    &nbsp;&nbsp;&nbsp; La MedNum, coordinateur du projet<br />
-    &nbsp;&nbsp;&nbsp; Hubik et Hinaura, partenaires formation<br />
-    &nbsp;&nbsp;&nbsp; Les médiateurs qui vous accompagnent.<br />
+          Nous conservons vos données pour une durée de trois ans suite à votre dernier appel.<br />
+          Vos données sont accessibles par:<br />
     
+            <li>L&apos;Agence Nationale de Cohésion des territoires, responsable du traitement</li>
+            <li>Ses prestataires techniques, Aircall et la Régie de Quartiers de Trélazé, qui stockent et sécurisent vos données;</li>
+            <li>La MedNum, coordinateur du projet</li>
+            <li>Hubik et Hinaura, partenaires formation</li>
+            <li>Les médiateurs qui vous accompagnent.</li>
     
-Vous pouvez nous demander d’accéder à vos données personnelles, en demander la rectification ou l&apos;effacement, ou encore solliciter une limitation du traitement vous concernant.<br />
-Vous pouvez également vous opposer au traitement et solliciter la portabilité de vos données.<br />
-Pour exercer ces droits ou pour toute question sur le traitement de vos données dans ce dispositif, vous pouvez nous contacter à l’adresse suivante: dpo@anct.gouv.fr<br />
-Si vous estimez, après nous avoir contactés, que vos droits &laquo; Informatique et Libertés &raquo; ne sont pas respectés, vous pouvez adresser une réclamation à la CNIL.<br />
-Vous pouvez également consulter le site <a href="http://cnil.fr">cnil.fr</a> pour plus d’informations sur vos droits.<br />
+          Vous pouvez nous demander d’accéder à vos données personnelles, en demander la rectification ou l&apos;effacement, ou encore solliciter une limitation du traitement vous concernant.<br />
+          Vous pouvez également vous opposer au traitement et solliciter la portabilité de vos données.<br />
+          Pour exercer ces droits ou pour toute question sur le traitement de vos données dans ce dispositif, vous pouvez nous contacter à l’adresse suivante: dpo@anct.gouv.fr<br />
+          Si vous estimez, après nous avoir contactés, que vos droits &laquo; Informatique et Libertés &raquo; ne sont pas respectés, vous pouvez adresser une réclamation à la CNIL.<br />
+          Vous pouvez également consulter le site <a href="http://cnil.fr">cnil.fr</a> pour plus d’informations sur vos droits.<br />
     
         </p>
       </div>
