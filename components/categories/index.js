@@ -10,6 +10,8 @@ const Categories = () => (
       <div className="categorie-container">
         {Object.keys(categories).map(categoryKey => {
           const category = categories[categoryKey];
+  console.log('category = ',category);
+  console.log('category.path = ',category.path);
           if (category.path='https://www.clic-connect.fr') {
             return (
               <a
