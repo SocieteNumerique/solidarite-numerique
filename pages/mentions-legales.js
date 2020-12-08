@@ -72,7 +72,7 @@ const MentionsLegales = () => {
         données.<br />
         Pour exercer ces droits ou pour toute question sur le traitement de vos données dans ce
         dispositif, vous pouvez nous contacter à l&aposadresse suivante: dpo@anct.gouv.fr<br />
-        Si vous estimez, après nous avoir contactés, que vos droits « Informatique et Libertés » ne
+        Si vous estimez, après nous avoir contactés, que vos droits « Informatique et Libertés &raquo; ne
         sont pas respectés, vous pouvez adresser une réclamation à la CNIL.<br />
         Vous pouvez également consulter le site <a href="http://cnil.fr">cnil.fr</a> pour plus d’informations sur vos droits.
       </p>
