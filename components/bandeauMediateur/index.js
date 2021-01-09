@@ -42,7 +42,7 @@ const BandeauMediateur = () => (
         max-height: 350px;
       }
       h3 {
-        color: #fff;
+        color: #0048b3;
         margin-top: 0;
         padding: 20px 0px 0px 0px;
       }
