@@ -1,0 +1,312 @@
+body {
+	padding: 0;
+	margin:0;
+}
+
+
+html, body, #mapid {
+	width: 100%;
+	height: 100%;
+	display: block;
+  	overflow-y: hidden;
+	font-family: 'abel-regular', Arial, Helvetica, sans-serif;
+	font-size: .98em;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* 								LEAFLET SIDEBAR					   	 		  */													
+/* -------------------------------------------------------------------------- */
+
+.leaflet-sidebar-header {
+	background-color: #273375;
+	display: block;
+	position: static;
+}
+
+.leaflet-sidebar-content {
+	background-color: rgba(255,255,255,.75);
+	backdrop-filter:blur(6px);
+}
+
+.leaflet-sidebar-tabs > ul > li.active,
+.leaflet-sidebar-tabs > ul > li.active:hover {
+	 background-color: #273375;
+ }
+
+.leaflet-sidebar-tabs > ul > li:hover {
+	background-color: rgba(0,0,0,.25);
+	/* opacity: .1; */
+	transition: .2s
+}
+
+.leaflet-sidebar-tabs {
+	 background-color: #F4F4F4;
+	 box-shadow: 2px 0px 2px 0px #656565;
+}
+
+/* -------------------------------------------------------------------------- */
+/* 									LEAFLET MAP						 		  */
+/* -------------------------------------------------------------------------- */
+
+.leaflet-tooltip {
+	font-size:1em;
+	/* font-weight:bold; */
+	padding:0 5px;
+	border:none;
+	color: white;
+	opacity: 1;
+	background-color: rgba(39,51,117,1);
+	margin: -25px 0px;
+}
+
+.leaflet-tooltip-clicked {
+	font-size:1.1em;
+	font-weight:bold;
+	padding:0 5px;
+	border:none;
+	color: white;
+	background-color: rgba(39,51,117,1);
+	margin: -35px 0px;
+}
+
+/* feather icons */
+.feather-icons {
+	margin-top: 25%;
+	height: 50%;
+}
+
+#logo_fs {
+	padding-top:10px;
+	height:137px;
+	vertical-align:middle
+}
+
+#intro {
+	display: block;
+}
+
+#goTo {
+	cursor: pointer;
+	margin-top:10px;
+	right:45px;
+	z-index: 1000;
+	display: block;
+	position: absolute;
+	font-family: 'abel-regular', Arial, Helvetica, sans-serif;
+	font-weight: bolder;
+	border: none;
+	height: 30px;
+	border-color: transparent;
+	padding: 5px;
+	border-radius: 4px;
+	box-shadow: 0 1px 5px rgba(0,0,0,0.45);
+	outline: none;
+	transition: .2s ease-in-out;
+}
+
+#legende > ul {
+	font-size: 1em;
+	font-style:italic;
+	font-weight: 500;
+	padding: 0;
+	color:black;
+	list-style: none;
+}
+
+.info-legende {
+	padding-left: 5px;
+	padding-right: 7px;
+	padding-top: 3px;
+	padding-bottom: 2px;
+	background-color:rgba(255,255,255,.95);
+	box-shadow: -0.02px 0 5px rgba(0,0,0,.5);
+	border-radius: 5px;
+}
+
+.picto_legende {
+	width: 12px;
+	height: 12px;
+	padding-right: 5px;
+}
+
+/* -------------------------------------------------------------------------- */
+/* 							   EXPLORER LES ESPACES	 						  */			
+/* -------------------------------------------------------------------------- */
+
+#trouvez-moi {
+	background-color:rgba(0,0,0,0);
+	font-family: 'abel-regular';
+	font-weight: bolder;
+	width: 100%;
+	font-family: 'abel-regular';
+	font-size: .95em;
+	display: flex;
+	border: none;
+	border-color: transparent;
+	padding: 10px;
+	border-radius:20px;
+	box-shadow: -0.02px 0 5px rgba(0,0,0,.5);
+	transition: .1ss ease-in-out;
+	cursor: pointer;
+	justify-content: center;
+}
+
+#trouvez-moi:hover {
+	background-color: #273375;
+	color:white;
+	transition: ease-in-out .2s;
+	transform: scale(1.01);
+}
+
+#trouvez-moi-feather {
+	height: 16px;
+	margin: 0px;
+	padding-right: 5px;
+	justify-content: middle;
+}
+
+/* -------------------------------------------------------------------------- */
+/* 								CHAMP DE RECHERCHE 							  */									
+/* -------------------------------------------------------------------------- */
+
+#searchField {
+	width: 90%;
+	font-family: 'abel-regular';
+	font-size: .95em;
+	height: 25px;
+	border-color: transparent;
+	padding: 5px;
+	border-radius: 5px;
+	box-shadow: -0.02px 0 5px rgba(0,0,0,0.2);
+}
+
+#searchField:focus {
+	outline: none;
+}
+
+/* Bouton d'effacement du cham de recherche */
+#resetSearch {
+	float: right;
+	display: none;
+	background-color: rgba(0,0,0,0);
+	position: absolute;
+	margin-top: -39px;
+	right:10%;
+	border: none;
+	border-color: transparent;
+	padding: 5px;
+	border-radius:5px;
+	transition: .1s ease-in-out;
+	cursor: pointer;
+	z-index: 1000;
+}
+
+#resetSearch > .feather-icons {
+	height: 17px;
+	opacity: .5;
+}
+
+
+#resetSearch:focus {
+	outline: none;
+}
+
+hr {
+	width:65%;
+	margin-top: 20px;
+	margin-right: 20%;
+	border: none;
+	border-top: solid 1px;
+	color:#273375;
+	opacity: .5;
+}
+
+/* -------------------------------------------------------------------------- */
+/* 								FICHE d'INFORMATION	 						  */
+/* -------------------------------------------------------------------------- */
+
+.picto-fiche {
+	margin: 0;
+	padding:0;
+	margin-top: -3px;
+	vertical-align: middle;
+	height:20px;
+	padding-right: 10px;
+};
+
+td {
+	padding: 10px;
+}
+
+#ficheInfo > table > tbody > tr > td {
+	padding-top:5px;
+	padding-left: 30px;
+}
+
+#ficheInfo > h2 {
+	color:#273375;
+	margin-bottom: 5px;
+}
+
+#text_reseau_fs {
+	font-weight: bolder;
+}
+
+.reseau_principale {
+	color:#19A007;
+	background-color:rgba(0,0,0,0);
+	display: block;
+	font-family: 'abel-regular';
+	font-weight: bolder;
+	font-size: 1em;
+	text-align: center;
+	width: 50%;
+	border-radius: 15px;
+	border: 1px solid #19A007;
+	padding: 5px;
+	margin-bottom: 10px;
+	/* border: none;
+	border-color: transparent; */
+	box-shadow: -0.02px 0 2px rgba(0,0,0,.5);
+}
+
+.reseau_principale:hover {
+	cursor: pointer;
+	background-color: #19A007;
+	color:white;
+	transition: .1s;
+	transform: scale(1.01);
+}
+
+
+.reseau_antenne {
+	color:#273375;
+	background-color:rgba(0,0,0,0);
+	display: block;
+	font-family: 'abel-regular';
+	font-weight: bolder;
+	font-size: 1em;
+	text-align: center;
+	width: 50%;
+	border-radius: 15px;
+	border: 1px solid #273375;
+	padding: 5px;
+	margin-bottom: 10px;
+	/* border: none;
+	border-color: transparent; */
+	box-shadow: -0.02px 0 2px rgba(0,0,0,.5);
+}
+
+.reseau_antenne:hover {
+	cursor: pointer;
+	background-color: #273375;
+	color:white;
+	transition: .1s;
+	transform: scale(1.01);
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* 									A PROPOS	 						  	  */
+/* -------------------------------------------------------------------------- */
