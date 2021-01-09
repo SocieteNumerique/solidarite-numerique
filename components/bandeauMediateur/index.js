@@ -7,7 +7,7 @@ import constants from '../../constants';
 const BandeauMediateur = () => (
   <>
     <div width = "100%" height = "410">  
-      <iframe src="https://cget-carto.github.io/France-services/" title="France services" width = "90%" height = "520"></iframe>
+      <iframe src="https://cget-carto.github.io/France-services/" title="France services" width = "90%" height = "520" margin:0 auto;></iframe>
     </div>
   
     <div className="bandeau-mediateur">
