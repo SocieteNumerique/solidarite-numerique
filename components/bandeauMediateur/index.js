@@ -6,7 +6,7 @@ import constants from '../../constants';
 
 const BandeauMediateur = () => (
   <>
-    <div width = "80%" height = "520" margin:0 auto;>  
+    <div className="map" width = "80%" height = "520" >    
       <iframe src="https://cget-carto.github.io/France-services/" title="France services" width = "100%" height = "520"></iframe>
     </div>
   
@@ -43,6 +43,9 @@ const BandeauMediateur = () => (
 
 
     <style jsx>{`
+      .map {
+        margin:0 auto;
+      }
       .bandeau-mediateur {
         color: #fff;
         background-color: ${constants.colors.blue};
