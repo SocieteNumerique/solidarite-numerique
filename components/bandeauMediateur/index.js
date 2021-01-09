@@ -6,24 +6,12 @@ import constants from '../../constants';
 
 const BandeauMediateur = () => (
   <>
-    <div className="map" width = "80%" height = "520" >    
+    <div className="map" width = "80%" height = "520" > 
+      <h3>J’accède aux services publics près de chez moi</h3>
       <iframe src="https://cget-carto.github.io/France-services/" title="France services" width = "80%" height = "520"></iframe>
     </div>
   
     <div className="bandeau-mediateur">
-      <div className="container content-container">
-        <div>
-              <img className="fs-align"
-                src="/images/logo/FS.png"
-                alt="France Services"
-              />
-              <h3>J’accède aux services publics près de chez moi</h3>
-  
-
-  
-  
-        </div>
-      </div> 
       <div className="container content-container">
         <div>
           <a
