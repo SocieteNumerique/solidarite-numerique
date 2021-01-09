@@ -43,7 +43,7 @@ const BandeauMediateur = () => (
 
 
     <style jsx>{`
-      map {
+      .map {
         margin:0 auto
       }
       .bandeau-mediateur {
