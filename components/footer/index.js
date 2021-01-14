@@ -139,7 +139,7 @@ const Footer = () => {
           padding: 0;
         }
         .footer__links {
-          margin: 0; text-align: center;
+          margin: 0; text-align: center; width:100%;
         }
         .footer__links li { list-style: none; display: inline-block; }
         .footer__links li > a{
