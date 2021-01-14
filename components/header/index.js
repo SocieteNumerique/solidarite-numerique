@@ -39,7 +39,7 @@ const Header = () => {
               <div className="logo layout-center">
                 <a href="/" className="dont-apply-link-style">
                   <img
-                    src="/images/logo/phoneheart.svg"
+                    src="/images/logo/snum.svg"
                     alt="Logo solidarite-numerique"
                   />
                 </a>
@@ -148,6 +148,7 @@ const Header = () => {
           .top-left-wrapper {
             max-width: calc(100% - 70px);
           }
+          .logo { align-items: center; }
           .logo img {
             margin: 5px 0;
             height: 40px;
