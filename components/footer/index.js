@@ -139,15 +139,9 @@ const Footer = () => {
           padding: 0;
         }
         .footer__links {
-          display: flex;
-          width: 100%;
-          flex-direction:column;
-          justify-content: center;
-          margin: 0;
-          line-height: 2em;
-          flex-grow:0;
-          align-items: flex-end;
+          margin: 0; text-align: center;
         }
+        .footer__links li { list-style: none; display: inline-block; }
         .footer__links li > a{
           padding: 6px 20px;
           display: block;
