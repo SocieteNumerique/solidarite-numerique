@@ -103,7 +103,7 @@ const Header = () => {
           margin: 0 20px 0 0;
         }
         .top-left-wrapper > .logo img {
-          width: 60px;
+          width: 120px;
         }
         .top-left-wrapper > .title a {
           margin-top: 15px;
@@ -148,7 +148,7 @@ const Header = () => {
           .top-left-wrapper {
             max-width: calc(100% - 70px);
           }
-          .logo { align-items: center; }
+          .logo.layout-center { align-items: center; }
           .logo img {
             margin: 5px 0;
             height: 40px;
