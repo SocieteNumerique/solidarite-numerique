@@ -99,6 +99,8 @@ const Footer = () => {
               />
             </a>
           </div>
+        </div>
+        <div className="container bottom_footer">
           <ul className="footer__links">
             <li>
               <a href="/contact">Nous contacter</a>
