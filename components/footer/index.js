@@ -90,8 +90,9 @@ const Footer = () => {
               href="https://www.gouvernement.fr/le-secretariat-d-etat-charge-du-numerique/"
               rel="noopener noreferrer"
               target="_blank"
+               className="soutien"
             >
-              
+              <span>avec le soutien du</span>              
               <img
                 className="logo"
                 src="/images/logo/logo_secnum.png"
@@ -199,6 +200,7 @@ const Footer = () => {
         .container h1:first-of-type {
           margin-top: 0;
         }
+        .soutien span { vertical-align: middle; font-size: 16px; }
         @media only screen and (min-width: 1px) and (max-width: 800px) {
           .footer__social {
             flex-direction: column;
@@ -223,6 +225,7 @@ const Footer = () => {
             margin: 10px auto;
           }
         }
+  
       `}</style>
     </>
   );
