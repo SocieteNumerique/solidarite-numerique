@@ -21,19 +21,7 @@ const MentionsLegales = () => {
           </p>
         <h2>Illustrations</h2>
           <p>Visuel principal de la page d’accueil : un grand merci à Sarah Lepreux.</p>
-        <h1>Serveur vocal</h1>
-        <h2>Message d’accueil</h2>
-          <p></p>
-        <h2>Message fermeture du service</h2>
-          <p>Bonjour et merci de votre appel. Solidarité Numérique est fermé pour le moment. Nous pouvons vous accompagner pour vos démarches en ligne du lundi au vendredi de 9h à 18h.<br />
-          (Vous trouverez de l'aide sur notre site internet solidarité-numerique.fr)
-          </p>
-        <h2>[Fêtes] Message fermeture du service</h2>
-          <p>Bonjour et merci de votre appel. Solidarité Numérique est fermé pour le moment.  Durant cette période de fin d’année nous pouvons vous accompagner pour vos démarches en ligne du lundi au jeudi de 11h à 16h.<br />
-          A très vite !
-          </p>
-        <h2>Message d'indisponibilité</h2>
-          <p>Tous nos médiateurs numériques sont actuellement en communication. Merci de nous rappeler ultérieurement. A très vite !</p>
+        
       </div>
     </Page>
   );
