@@ -200,7 +200,7 @@ const Footer = () => {
         .container h1:first-of-type {
           margin-top: 0;
         }
-        .soutien span { vertical-align: middle; font-size: 16px; }
+        .soutien span { vertical-align: middle; font-size: 16px; padding-right: 10px; }
         .soutien img { vertical-align: middle;  }
         @media only screen and (min-width: 1px) and (max-width: 800px) {
           .footer__social {
