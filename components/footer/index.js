@@ -91,7 +91,7 @@ const Footer = () => {
               rel="noopener noreferrer"
               target="_blank"
             >
-              avec le soutien du
+              
               <img
                 className="logo"
                 src="/images/logo/logo_secnum.png"
