@@ -201,6 +201,7 @@ const Footer = () => {
           margin-top: 0;
         }
         .soutien span { vertical-align: middle; font-size: 16px; }
+        .soutien img { vertical-align: middle;  }
         @media only screen and (min-width: 1px) and (max-width: 800px) {
           .footer__social {
             flex-direction: column;
