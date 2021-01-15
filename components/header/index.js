@@ -50,7 +50,7 @@ const Header = () => {
                   className="dont-apply-link-style"
                   title="lien vers la page d'accueil"
                 >
-                  <div id="site-title">Solidarité numérique</div>
+                  
                 </a>
                 <CallCTA inHeader />
               </div>
