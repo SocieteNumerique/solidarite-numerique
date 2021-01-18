@@ -95,7 +95,7 @@ const Footer = () => {
               <span>avec le soutien du</span>              
               <img
                 className="logo"
-                src="/images/logo/logo_secnum.png"
+                src="/images/logo/logosecnum.png"
                 alt="En partenariat avec le gouvernement"
               />
             </a>
@@ -179,8 +179,7 @@ const Footer = () => {
           margin:0 20px;
         }
         .partenaire {
-          margin: auto;
-          margin 20px 0;
+          margin 20px auto;
         }
         .partenaire img {
           width: auto;
