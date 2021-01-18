@@ -91,8 +91,7 @@ const Footer = () => {
               rel="noopener noreferrer"
               target="_blank"
                className="soutien"
-            >
-              <!-- <span>avec le soutien du</span> -->             
+            >           
               <img
                 className="logo"
                 src="/images/logo/logosecnum.png"
