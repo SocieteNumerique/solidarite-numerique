@@ -19,7 +19,7 @@ const MentionsLegales = () => {
           Adresse contact : <a href = "mailto: support@zeit.co">support@zeit.co</a>
           </p>
         <h2>Illustrations</h2>
-          <p>Visuel principal de la page d’accueil : un grand merci à Sarah Lepreux.</p>
+          <p>Visuel principal de la page d’accueil : un grand merci à Sarah Lepreux.</p> 
         
       </div>
     </Page>
