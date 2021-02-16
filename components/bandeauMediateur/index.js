@@ -66,7 +66,7 @@ const BandeauMediateur = () => (
   
       .fs1-align{
         vertical-align: middle;
-        padding: 40px 20px 0px 10px;
+        padding: 35px 20px 0px 10px;
         height: 80px;
         float: left;
       }
