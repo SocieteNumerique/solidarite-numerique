@@ -21,8 +21,7 @@ const BandeauGouv = () => (
         </svg>
         <div>
           <div>
-            Pour protéger vos proches et afin de limiter la diffusion du
-            coronavirus, restez chez vous.
+            Pour vous protéger et protéger les autres du coronavirus, adoptez les mesures barrières.
           </div>
           <div>
             <a
