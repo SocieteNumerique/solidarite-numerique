@@ -20,7 +20,7 @@ const BandeauMediateur = () => (
               target="_blank"
             >
               <img className="fs1-align"
-                src="/images/logo/CN.png"
+                src="/images/logo/logo-conseiller-numerique.png 2021.png.png"
                 alt="Conseiller Numérique "
               />
               <p>Vous aimez le contact humain, cherchez un métier qui a du sens dans un secteur d’avenir ? Rejoignez le mouvement national des conseillers numériques !</p>
